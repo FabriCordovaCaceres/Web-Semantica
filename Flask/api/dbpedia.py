@@ -60,13 +60,87 @@ def verificate_name(name_search):
     else:
         return {"error" : 400,"message ": "No existe la entidad en la ontologia de dbpedia"}
 
-def searchDBPedia(query):
-	results = []
+# Pre-construir índice de DBPedia
+_dbpedia_index = None
+
+def build_dbpedia_index():
+	"""Construye índice de DBPedia una sola vez"""
+	global _dbpedia_index
+	if _dbpedia_index is not None:
+		return _dbpedia_index
+
+	_dbpedia_index = []
 	for iri, predicate, obj in graph.triples((None, RDF.type, None)):
-		name = preprocess(iri.split('/')[-1])
-		if (match(name, query)) >= 50.0:
-			results.append({'iri': iri, 'name': name})
+		name = preprocess(str(iri).split('/')[-1])
+		_dbpedia_index.append({'iri': str(iri), 'name': name})
+
+	print(f"Índice DBPedia construido con {len(_dbpedia_index)} enfermedades")
+	return _dbpedia_index
+
+# Construir al cargar
+build_dbpedia_index()
+
+def searchDBPedia(query):
+	"""Búsqueda optimizada con índice pre-construido"""
+	results = []
+	index = build_dbpedia_index()
+
+	for entry in index:
+		if match(entry['name'], query) >= 50.0:
+			results.append({'iri': entry['iri'], 'name': entry['name']})
+
 	return results
+
+def searchDBPediaOnline(query, lang='es'):
+    """
+    BÚSQUEDA ONLINE: Consulta SPARQL en tiempo real a DBPedia.
+    Busca enfermedades relacionadas con oncología que coincidan con la query.
+    """
+    sparql.setReturnFormat(JSON)
+
+    # Buscar primero en inglés (DBPedia tiene más datos en inglés)
+    sparql.setQuery(f"""
+        PREFIX dbo: <http://dbpedia.org/ontology/>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+        SELECT DISTINCT ?disease ?nameEn ?nameEs ?abstract
+        WHERE {{
+            ?disease rdf:type dbo:Disease ;
+                     rdfs:label ?nameEn .
+            FILTER(lang(?nameEn) = "en")
+            FILTER(CONTAINS(LCASE(?nameEn), LCASE("{query}")))
+
+            OPTIONAL {{
+                ?disease rdfs:label ?nameEs .
+                FILTER(lang(?nameEs) = "es")
+            }}
+            OPTIONAL {{
+                ?disease dbo:abstract ?abstract .
+                FILTER(lang(?abstract) = "es" || lang(?abstract) = "en")
+            }}
+        }}
+        LIMIT 15
+    """)
+
+    try:
+        results = sparql.query().convert()
+        diseases = []
+        for binding in results['results']['bindings']:
+            # Preferir nombre en español si existe
+            name = binding.get('nameEs', binding.get('nameEn', {})).get('value', 'Sin nombre')
+            abstract_text = binding.get('abstract', {}).get('value', 'Sin descripción disponible')
+
+            diseases.append({
+                'iri': binding['disease']['value'],
+                'name': name,
+                'name_en': binding.get('nameEn', {}).get('value', ''),
+                'abstract': abstract_text[:300] + '...' if len(abstract_text) > 300 else abstract_text,
+                'source': 'DBPedia Online (SPARQL)'
+            })
+        return diseases
+    except Exception as e:
+        print(f"Error en búsqueda online DBPedia: {e}")
+        return []
 
 def storeData(entity_type, lang):
     sparql.setReturnFormat(JSON)

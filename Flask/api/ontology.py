@@ -1,6 +1,7 @@
 from owlready2 import *
 from pathlib import Path
 from mtranslate import translate
+from functools import lru_cache
 
 from restructure import *
 from preprocess import preprocess, match as fuzzymatch
@@ -10,17 +11,20 @@ path = path.parent.parent
 path = path/"resourse/ontology.owx"
 
 ontologie = get_ontology(str(path)).load()
-# get_ontology("C:/Users/USER/Documents/WebSemantica/web-semantics/oncology.rdf").load()
+
+# Cache para traducciones
+_translation_cache = {}
+
+def cached_translate(text, dest='es'):
+	"""Traducción con caché en memoria"""
+	key = (text, dest)
+	if key not in _translation_cache:
+		_translation_cache[key] = translate(text, dest)
+	return _translation_cache[key]
 
 def getClassesOntologie():
 	"""
 	Retrieve all classes and their subclasses from the ontology.
-
-	Returns:
-		list: A list of dictionaries, each representing a class in the ontology.
-			Each dictionary contains the 'name_class' and 'sub_clasess' of the class.
-			'sub_clasess' is a list of dictionaries, each representing a subclass of the class.
-			Each of these dictionaries contains the 'name_class' and 'sub_clasess' of the subclass.
 	"""
 	clasess = []
 	for classOntology in ontologie.classes():
@@ -30,43 +34,66 @@ def getClassesOntologie():
 
 name_classes = getClassesOntologie()
 
+# Pre-construir índice de búsqueda al iniciar
+_search_index = None
+
+def build_search_index():
+	"""Construye un índice en memoria para búsquedas rápidas"""
+	global _search_index
+	if _search_index is not None:
+		return _search_index
+
+	_search_index = []
+	for individual in ontologie.individuals():
+		class_name = str(list(individual.is_a)[0])
+		nombre_prop = getNombreProp(individual, individual.get_properties())
+		nombre = nombre_prop[0] if nombre_prop and nombre_prop != "No se encontro" else individual.name
+
+		# Recolectar todos los valores de propiedades
+		searchable_values = []
+		for propertie in individual.get_properties():
+			values = getattr(individual, propertie.name, None)
+			if values:
+				for value in values:
+					searchable_values.append(preprocess(str(value)))
+
+		_search_index.append({
+			'individual': individual,
+			'class_name': class_name,
+			'nombre': nombre,
+			'searchable': ' '.join(searchable_values)
+		})
+
+	print(f"Índice construido con {len(_search_index)} individuos")
+	return _search_index
+
+# Construir índice al cargar el módulo
+build_search_index()
+
 def search(query: str):
 	"""
-	Search within the ontology for individuals whose properties contain the query string, and return a dictionary of matches, where the keys are the class names of the individuals and the values are lists of dictionaries containing the name of the property and the iri of the individual.
-
-	Parameters
-	----------
-	query : str
-		The string to search for
-
-	Returns
-	-------
-	dict
-		A dictionary of matches, where the keys are the class names of the individuals and the values are lists of dictionaries containing the name of the property and the iri of the individual
+	Búsqueda optimizada usando índice pre-construido.
 	"""
-	# if query not in name_classes:
-	# 	return {"error" : 400,"message ": "No existe la entidad en la ontologia local"}
-	
 	results = {}
-	for individual in ontologie.individuals():
-		#print(f"Searching within : {individual}")
-		for propertie in individual.get_properties():
-			ok = 0 
-			for value in getattr(individual, propertie.name, None): 
-				match = fuzzymatch(preprocess(str(value)), query)
-				if match>=50.0: 
-					class_name = str(list(individual.is_a)[0])
-					if class_name not in results: 
-						results[class_name] = []
-					results[class_name].append({
-						'name': translate(getNombreProp(individual, individual.get_properties())[0], dest='es'), 
-						'iri': individual.iri,
-						'name_individual': getNombreProp(individual, individual.get_properties())[0], 
-						'sample_name': individual.name
-					})
-					ok = 1
-					break
-			if ok == 1: break
+	index = build_search_index()
+
+	for entry in index:
+		# Buscar en el texto pre-procesado
+		match_score = fuzzymatch(entry['searchable'], query)
+		if match_score >= 50.0:
+			class_name = entry['class_name']
+			if class_name not in results:
+				results[class_name] = []
+
+			# Usar caché para traducciones
+			nombre = entry['nombre']
+			results[class_name].append({
+				'name': cached_translate(nombre, dest='es'),
+				'iri': entry['individual'].iri,
+				'name_individual': nombre,
+				'sample_name': entry['individual'].name
+			})
+
 	return results
 
 def get(iri: str):

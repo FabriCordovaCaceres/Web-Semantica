@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button, Col, Form, InputGroup, Row } from 'react-bootstrap';
+import { Button, Col, Form, InputGroup, Row, Badge, Card } from 'react-bootstrap';
 import Result from './Result';
 import messages_es from '../translations/es.json';
 import messages_en from '../translations/en.json';
@@ -24,10 +24,14 @@ function Search() {
   const [result, setResult] = useState(null);
   const [isSearchClicked, setIsSearchClicked] = useState(false);
   const [loading, setLoading] = useState(false);
-  
+  const [searchSource, setSearchSource] = useState('');
+
+  // Búsqueda combinada (ontología local + DBPedia offline)
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!query) return;
     setLoading(true);
+    setSearchSource('Combinada (Ontología Local + DBPedia Caché)');
     await fetch(`${host}/search?query=${query}&lang=${locale}`)
       .then(response => response.json())
       .then(data => {
@@ -38,10 +42,62 @@ function Search() {
       .finally(() => setLoading(false));
   }
 
+  // Búsqueda ONLINE - SPARQL en tiempo real a DBPedia
+  const handleSearchOnline = async () => {
+    if (!query) return;
+    setLoading(true);
+    setSearchSource('DBPedia ONLINE (SPARQL en tiempo real)');
+    await fetch(`${host}/searchOnline?query=${query}&lang=${locale}`)
+      .then(response => response.json())
+      .then(data => {
+        setIsSearchClicked(true);
+        const formatted = {};
+        if (data.results && data.results.length > 0) {
+          formatted['DBPedia Online - Resultados en tiempo real'] = data.results.map(r => ({
+            iri: r.iri,
+            name: r.name || r.name_en,
+            abstract: r.abstract
+          }));
+        } else {
+          formatted['Sin resultados online'] = [];
+        }
+        setResult(formatted);
+      })
+      .catch(error => {
+        console.error(error);
+        setResult({ 'Error: Sin conexión a internet': [] });
+      })
+      .finally(() => setLoading(false));
+  }
+
+  // Búsqueda OFFLINE - Caché local de DBPedia (500 enfermedades)
+  const handleSearchOffline = async () => {
+    if (!query) return;
+    setLoading(true);
+    setSearchSource('DBPedia OFFLINE (Caché Local - 500 enfermedades)');
+    await fetch(`${host}/searchOffline?query=${query}&lang=${locale}`)
+      .then(response => response.json())
+      .then(data => {
+        setIsSearchClicked(true);
+        const formatted = {};
+        if (data.results && data.results.length > 0) {
+          formatted['DBPedia Offline - Caché Local'] = data.results.map(r => ({
+            iri: r.iri,
+            name: r.name
+          }));
+        } else {
+          formatted['Sin resultados en caché'] = [];
+        }
+        setResult(formatted);
+      })
+      .catch(error => console.error(error))
+      .finally(() => setLoading(false));
+  }
+
   const handleChangeTranslation = (e) => {
     e.preventDefault();
     setLocale(e.target.value);
-    setResult(null); 
+    setResult(null);
     setIsSearchClicked(false);
   };
 
@@ -79,6 +135,42 @@ function Search() {
             </Form.Select>
           </Col>
         </Row>
+
+        {/* Botones de búsqueda Online/Offline */}
+        <Row className='mt-3 mb-3 justify-content-center'>
+          <Col xs={12} className='text-center'>
+            <div className='d-flex justify-content-center gap-2 flex-wrap'>
+              <Button
+                variant='success'
+                onClick={handleSearchOnline}
+                disabled={!query || loading}
+              >
+                Buscar ONLINE (DBPedia)
+              </Button>
+              <Button
+                variant='warning'
+                onClick={handleSearchOffline}
+                disabled={!query || loading}
+              >
+                Buscar OFFLINE (Caché)
+              </Button>
+            </div>
+            <small className='text-muted d-block mt-2'>
+              Online: Requiere internet | Offline: Funciona sin internet
+            </small>
+          </Col>
+        </Row>
+
+        {/* Indicador de fuente de búsqueda */}
+        {searchSource && isSearchClicked && (
+          <Row className='mb-2'>
+            <Col xs={12} className='text-center'>
+              <Badge bg={searchSource.includes('ONLINE') ? 'success' : searchSource.includes('OFFLINE') ? 'warning' : 'secondary'} className='p-2'>
+                Fuente: {searchSource}
+              </Badge>
+            </Col>
+          </Row>
+        )}
 
         <div className={`mx-auto results-container ${isSearchClicked ? 'show-results' : ''}`}>
           {loading ? <ProgressBar/> : result && Object.keys(result).map(k => (

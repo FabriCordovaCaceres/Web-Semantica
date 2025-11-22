@@ -2,7 +2,7 @@
 from flask import Flask, abort, request
 # JSON format for responses
 from flask import jsonify
-# NLP processing 
+# NLP processing
 from preprocess import preprocess
 # Ontology searches: local and external (DBPedia)
 import ontology
@@ -13,6 +13,8 @@ from translator import translate as translate_
 from restructure import struct_class
 # CORS web
 from flask_cors import CORS
+# Paralelismo
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 def create_app():
     app = Flask(__name__)
@@ -20,6 +22,9 @@ def create_app():
 
 app = create_app()
 CORS(app)
+
+# Pool de threads para búsquedas paralelas
+executor = ThreadPoolExecutor(max_workers=2)
 
 """ API ROUTES """
 @app.route('/searchClass', methods=['GET'])
@@ -37,13 +42,22 @@ def search():
     lang = request.args['lang']
 
     if query is None:
-        return jsonify({'error': 'Must have a query'}) # this must redirect the frontend
-    
-    result_dbpedia = dbpedia.searchDBPedia(preprocess(translate_(query, dest='en')))
-    
-    result = ontology.search(preprocess(translate_(query, dest='es')))
-    
-    if len(result_dbpedia) != 0: result['DOID.dbpedia.Disease'] = result_dbpedia
+        return jsonify({'error': 'Must have a query'})
+
+    # Pre-procesar traducciones una sola vez
+    query_en = preprocess(translate_(query, dest='en'))
+    query_es = preprocess(translate_(query, dest='es'))
+
+    # Ejecutar búsquedas en paralelo
+    future_dbpedia = executor.submit(dbpedia.searchDBPedia, query_en)
+    future_ontology = executor.submit(ontology.search, query_es)
+
+    # Esperar resultados
+    result = future_ontology.result()
+    result_dbpedia = future_dbpedia.result()
+
+    if len(result_dbpedia) != 0:
+        result['DOID.dbpedia.Disease'] = result_dbpedia
 
     if len(result) == 0:
         msg = translate_('No existen busquedas encontradas', dest=lang)
@@ -51,12 +65,60 @@ def search():
 
     return result
     
+@app.route('/searchOnline', methods=['GET'])
+def searchOnline():
+    """
+    BÚSQUEDA ONLINE: Consulta en tiempo real al endpoint SPARQL de DBPedia.
+    Requiere conexión a internet.
+    """
+    query = request.args.get('query', '')
+    lang = request.args.get('lang', 'es')
+
+    if not query:
+        return jsonify({'error': 'Se requiere un parámetro query'})
+
+    # Traducir query al inglés para mejor búsqueda en DBPedia
+    query_en = translate_(query, dest='en')
+
+    # Búsqueda online a DBPedia
+    result_online = dbpedia.searchDBPediaOnline(query_en, lang)
+
+    return jsonify({
+        'source': 'DBPedia Online (SPARQL Endpoint)',
+        'query': query,
+        'results': result_online,
+        'count': len(result_online)
+    })
+
+@app.route('/searchOffline', methods=['GET'])
+def searchOffline():
+    """
+    BÚSQUEDA OFFLINE: Busca en el caché local de 500 enfermedades
+    descargadas de DBPedia al iniciar la aplicación.
+    No requiere conexión a internet.
+    """
+    query = preprocess(request.args.get('query', ''))
+    lang = request.args.get('lang', 'es')
+
+    if not query:
+        return jsonify({'error': 'Se requiere un parámetro query'})
+
+    # Búsqueda offline en caché local
+    result_offline = dbpedia.searchDBPedia(query)
+
+    return jsonify({
+        'source': 'DBPedia Offline (Caché Local - 500 enfermedades)',
+        'query': query,
+        'results': result_offline,
+        'count': len(result_offline)
+    })
+
 @app.route('/addition', methods=['GET'])
 def route_addition():
     query = request.args['query']
 
     # return jsonify(ontology.getClassesOntologie())
-    return jsonify(dbpedia.storeData(translator.translate(query, dest='en').text, request.args['lang']))
+    return jsonify(dbpedia.storeData(translate_(query, dest='en'), request.args['lang']))
     # return jsonify(dbpedia.verificate_name(query))
 
 def translate(result, lang):
