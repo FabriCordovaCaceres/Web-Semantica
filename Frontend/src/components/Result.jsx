@@ -12,13 +12,15 @@ function Result(props) {
           <Card.Header><h5>{ nameClass }</h5></Card.Header>
           {arrayClass.map((a, i) => (
             <React.Fragment key={i}>
-              { nameClass === 'DOID.dbpedia.Disease' ? 
-                (
-                  <Link target='_blank' to={a.iri}>
+              { a.iri &&
+                a.iri.toLowerCase().startsWith('http') &&
+                a.iri.toLowerCase().includes('dbpedia.org')
+                ? (
+                  <a href={a.iri} target='_blank' rel='noreferrer'>
                     <Card.Subtitle className='m-2'>{a.name}</Card.Subtitle>
-                  </Link>
+                  </a>
                 ) : (
-                  <Link target='_blank' to={`${locale}/class/${encodeURIComponent(nameClass)}/individual/${encodeURIComponent(a.iri)}`}>
+                  <Link to={`/${locale}/class/${encodeURIComponent(nameClass)}/individual/${encodeURIComponent(a.iri)}`}>
                     <Card.Subtitle className='m-2'>{a.name}</Card.Subtitle>
                   </Link>
                 )

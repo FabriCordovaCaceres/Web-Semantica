@@ -57,7 +57,7 @@ def search():
     result_dbpedia = future_dbpedia.result()
 
     if len(result_dbpedia) != 0:
-        result['DOID.dbpedia.Disease'] = result_dbpedia
+        result['DBPedia (Cache Local)'] = result_dbpedia
 
     if len(result) == 0:
         msg = translate_('No existen busquedas encontradas', dest=lang)
