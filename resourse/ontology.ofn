@@ -1,0 +1,1703 @@
+Prefix(:=<http://www.semanticweb.org/ontologies//untitled-ontoloy-10/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(oncology-ontology:=<http://www.semanticweb.org/ontologies/oncology-ontology#>)
+
+
+Ontology(<http://www.semanticweb.org/ontologies/oncology-ontology>
+
+Declaration(Class(oncology-ontology:Alimento))
+Declaration(Class(oncology-ontology:Alimento_Permitido))
+Declaration(Class(oncology-ontology:Alimento_Restringuido))
+Declaration(Class(oncology-ontology:Biopsia))
+Declaration(Class(oncology-ontology:Cancer))
+Declaration(Class(oncology-ontology:Centro_medico))
+Declaration(Class(oncology-ontology:Cuarto_nivel))
+Declaration(Class(oncology-ontology:Endoscopia))
+Declaration(Class(oncology-ontology:Examen_de_imagen))
+Declaration(Class(oncology-ontology:Examen_de_sangre))
+Declaration(Class(oncology-ontology:Examen_fisico))
+Declaration(Class(oncology-ontology:Medicamento))
+Declaration(Class(oncology-ontology:Medicina_Alternativa))
+Declaration(Class(oncology-ontology:Medicina_Tradicional))
+Declaration(Class(oncology-ontology:Membrana))
+Declaration(Class(oncology-ontology:Organo))
+Declaration(Class(oncology-ontology:Persona))
+Declaration(Class(oncology-ontology:Primer_nivel))
+Declaration(Class(oncology-ontology:Prueba_diagnostica))
+Declaration(Class(oncology-ontology:Prueba_genetica))
+Declaration(Class(oncology-ontology:Remedio_Herbal))
+Declaration(Class(oncology-ontology:Segundo_nivel))
+Declaration(Class(oncology-ontology:Sistema))
+Declaration(Class(oncology-ontology:Suplemento_Alimenticio))
+Declaration(Class(oncology-ontology:Suplemento_Nutricional))
+Declaration(Class(oncology-ontology:Tejido))
+Declaration(Class(oncology-ontology:Tercer_nivel))
+Declaration(Class(oncology-ontology:Tipo_Tejido))
+Declaration(Class(oncology-ontology:Tratamiento))
+Declaration(Class(oncology-ontology:Tratamiento_Complementario))
+Declaration(Class(oncology-ontology:Tratamiento_Medico))
+Declaration(ObjectProperty(oncology-ontology:afectaAUn))
+Declaration(ObjectProperty(oncology-ontology:afectaOrgano))
+Declaration(ObjectProperty(oncology-ontology:aliviaSintomasDe))
+Declaration(ObjectProperty(oncology-ontology:ayudaAl))
+Declaration(ObjectProperty(oncology-ontology:combate))
+Declaration(ObjectProperty(oncology-ontology:detecta))
+Declaration(ObjectProperty(oncology-ontology:noPuedeConsumirseEn))
+Declaration(ObjectProperty(oncology-ontology:ofreceTratamiento))
+Declaration(ObjectProperty(oncology-ontology:perteneceA))
+Declaration(ObjectProperty(oncology-ontology:puedeConsumirseEn))
+Declaration(ObjectProperty(oncology-ontology:puedeHacerceUna))
+Declaration(ObjectProperty(oncology-ontology:realizaExamen))
+Declaration(ObjectProperty(oncology-ontology:tienenUn))
+Declaration(DataProperty(oncology-ontology:advertencia_abandono_tratamiento_medico))
+Declaration(DataProperty(oncology-ontology:alimento_nombre))
+Declaration(DataProperty(oncology-ontology:beneficio))
+Declaration(DataProperty(oncology-ontology:caloria_suplemento_nutricional))
+Declaration(DataProperty(oncology-ontology:cancer_nombre))
+Declaration(DataProperty(oncology-ontology:celulas))
+Declaration(DataProperty(oncology-ontology:descripcion_alimento))
+Declaration(DataProperty(oncology-ontology:descripcion_centro_medico))
+Declaration(DataProperty(oncology-ontology:descripcion_remedio))
+Declaration(DataProperty(oncology-ontology:descripcion_tratamiento_medico))
+Declaration(DataProperty(oncology-ontology:desechos_metabolicos))
+Declaration(DataProperty(oncology-ontology:desventaja_tratamiento_medico))
+Declaration(DataProperty(oncology-ontology:duracion_tratamiento_medico))
+Declaration(DataProperty(oncology-ontology:edad))
+Declaration(DataProperty(oncology-ontology:efecto_colateral_tratamiento_medico))
+Declaration(DataProperty(oncology-ontology:efecto_remedio_herbal))
+Declaration(DataProperty(oncology-ontology:efecto_secundario_tratamiento_medico))
+Declaration(DataProperty(oncology-ontology:fabricante_medicamento))
+Declaration(DataProperty(oncology-ontology:fabricante_suplemento_nutricional))
+Declaration(DataProperty(oncology-ontology:factores_de_riesgo))
+Declaration(DataProperty(oncology-ontology:fases_del_cancer))
+Declaration(DataProperty(oncology-ontology:fibras))
+Declaration(DataProperty(oncology-ontology:funcion_medicina_alternativa))
+Declaration(DataProperty(oncology-ontology:funcion_remedio_herbal))
+Declaration(DataProperty(oncology-ontology:funcion_tratamiento_medico))
+Declaration(DataProperty(oncology-ontology:ganglios))
+Declaration(DataProperty(oncology-ontology:genero))
+Declaration(DataProperty(oncology-ontology:glandulas))
+Declaration(DataProperty(oncology-ontology:nombre_alimento))
+Declaration(DataProperty(oncology-ontology:nombre_centro_medico))
+Declaration(DataProperty(oncology-ontology:nombre_medicamento))
+Declaration(DataProperty(oncology-ontology:nombre_medicina_alternativa))
+Declaration(DataProperty(oncology-ontology:nombre_persona))
+Declaration(DataProperty(oncology-ontology:nombre_remedio_herbal))
+Declaration(DataProperty(oncology-ontology:nombre_suplemento_nutricional))
+Declaration(DataProperty(oncology-ontology:nombre_tratamiento_medico))
+Declaration(DataProperty(oncology-ontology:organo_descricion))
+Declaration(DataProperty(oncology-ontology:organo_nombre))
+Declaration(DataProperty(oncology-ontology:probabilidad_de_mortalidad))
+Declaration(DataProperty(oncology-ontology:probabilidad_de_recuperacion))
+Declaration(DataProperty(oncology-ontology:probabilidad_supervivencia_tratamiento_medico))
+Declaration(DataProperty(oncology-ontology:proteina_suplemento_nutricional))
+Declaration(DataProperty(oncology-ontology:prueba_diagnostica_area_de_evaluacion))
+Declaration(DataProperty(oncology-ontology:prueba_diagnostica_descripcion))
+Declaration(DataProperty(oncology-ontology:prueba_diagnostica_nombre))
+Declaration(DataProperty(oncology-ontology:remedio_nombre))
+Declaration(DataProperty(oncology-ontology:riesgo_tratamiento_medico))
+Declaration(DataProperty(oncology-ontology:sintoma))
+Declaration(DataProperty(oncology-ontology:sistema_nombre))
+Declaration(DataProperty(oncology-ontology:tipo_alimento))
+Declaration(DataProperty(oncology-ontology:tipo_medicamento))
+Declaration(DataProperty(oncology-ontology:tipo_tratamiento_medico))
+Declaration(DataProperty(oncology-ontology:ventaja_tratamiento_medico))
+Declaration(DataProperty(oncology-ontology:vitamina))
+Declaration(NamedIndividual(oncology-ontology:Alimento_01))
+Declaration(NamedIndividual(oncology-ontology:Alimento_02))
+Declaration(NamedIndividual(oncology-ontology:Alimento_03))
+Declaration(NamedIndividual(oncology-ontology:Alimento_04))
+Declaration(NamedIndividual(oncology-ontology:Alimento_05))
+Declaration(NamedIndividual(oncology-ontology:Alimento_06))
+Declaration(NamedIndividual(oncology-ontology:Alimento_07))
+Declaration(NamedIndividual(oncology-ontology:Alimento_08))
+Declaration(NamedIndividual(oncology-ontology:Alimento_09))
+Declaration(NamedIndividual(oncology-ontology:Alimento_10))
+Declaration(NamedIndividual(oncology-ontology:Cancer_01))
+Declaration(NamedIndividual(oncology-ontology:Cancer_02))
+Declaration(NamedIndividual(oncology-ontology:Cancer_03))
+Declaration(NamedIndividual(oncology-ontology:Cancer_04))
+Declaration(NamedIndividual(oncology-ontology:Cancer_05))
+Declaration(NamedIndividual(oncology-ontology:Cancer_06))
+Declaration(NamedIndividual(oncology-ontology:Cancer_07))
+Declaration(NamedIndividual(oncology-ontology:Cancer_08))
+Declaration(NamedIndividual(oncology-ontology:Cancer_09))
+Declaration(NamedIndividual(oncology-ontology:Centro_medico_01))
+Declaration(NamedIndividual(oncology-ontology:Centro_medico_02))
+Declaration(NamedIndividual(oncology-ontology:Centro_medico_03))
+Declaration(NamedIndividual(oncology-ontology:Centro_medico_04))
+Declaration(NamedIndividual(oncology-ontology:Centro_medico_05))
+Declaration(NamedIndividual(oncology-ontology:Centro_medico_06))
+Declaration(NamedIndividual(oncology-ontology:Centro_medico_07))
+Declaration(NamedIndividual(oncology-ontology:Centro_medico_08))
+Declaration(NamedIndividual(oncology-ontology:Centro_medico_09))
+Declaration(NamedIndividual(oncology-ontology:Centro_medico_10))
+Declaration(NamedIndividual(oncology-ontology:Medicamento_01))
+Declaration(NamedIndividual(oncology-ontology:Medicamento_02))
+Declaration(NamedIndividual(oncology-ontology:Medicamento_03))
+Declaration(NamedIndividual(oncology-ontology:Organo_01))
+Declaration(NamedIndividual(oncology-ontology:Organo_02))
+Declaration(NamedIndividual(oncology-ontology:Organo_03))
+Declaration(NamedIndividual(oncology-ontology:Organo_04))
+Declaration(NamedIndividual(oncology-ontology:Organo_05))
+Declaration(NamedIndividual(oncology-ontology:Organo_06))
+Declaration(NamedIndividual(oncology-ontology:Organo_07))
+Declaration(NamedIndividual(oncology-ontology:Organo_08))
+Declaration(NamedIndividual(oncology-ontology:Organo_09))
+Declaration(NamedIndividual(oncology-ontology:Organo_10))
+Declaration(NamedIndividual(oncology-ontology:Organo_11))
+Declaration(NamedIndividual(oncology-ontology:Persona_1))
+Declaration(NamedIndividual(oncology-ontology:Persona_2))
+Declaration(NamedIndividual(oncology-ontology:Persona_3))
+Declaration(NamedIndividual(oncology-ontology:Persona_4))
+Declaration(NamedIndividual(oncology-ontology:Persona_5))
+Declaration(NamedIndividual(oncology-ontology:Persona_6))
+Declaration(NamedIndividual(oncology-ontology:Persona_7))
+Declaration(NamedIndividual(oncology-ontology:Prueba_diagnostica_01))
+Declaration(NamedIndividual(oncology-ontology:Prueba_diagnostica_02))
+Declaration(NamedIndividual(oncology-ontology:Prueba_diagnostica_03))
+Declaration(NamedIndividual(oncology-ontology:Prueba_diagnostica_04))
+Declaration(NamedIndividual(oncology-ontology:Prueba_diagnostica_05))
+Declaration(NamedIndividual(oncology-ontology:Prueba_diagnostica_06))
+Declaration(NamedIndividual(oncology-ontology:Prueba_diagnostica_07))
+Declaration(NamedIndividual(oncology-ontology:Prueba_diagnostica_08))
+Declaration(NamedIndividual(oncology-ontology:Prueba_diagnostica_09))
+Declaration(NamedIndividual(oncology-ontology:Prueba_diagnostica_10))
+Declaration(NamedIndividual(oncology-ontology:Prueba_diagnostica_11))
+Declaration(NamedIndividual(oncology-ontology:Prueba_diagnostica_12))
+Declaration(NamedIndividual(oncology-ontology:Remedio_Herbal_01))
+Declaration(NamedIndividual(oncology-ontology:Remedio_Herbal_02))
+Declaration(NamedIndividual(oncology-ontology:Remedio_Herbal_03))
+Declaration(NamedIndividual(oncology-ontology:Remedio_Herbal_04))
+Declaration(NamedIndividual(oncology-ontology:Remedio_Herbal_05))
+Declaration(NamedIndividual(oncology-ontology:Remedio_Herbal_06))
+Declaration(NamedIndividual(oncology-ontology:Sistema_01))
+Declaration(NamedIndividual(oncology-ontology:Sistema_02))
+Declaration(NamedIndividual(oncology-ontology:Sistema_03))
+Declaration(NamedIndividual(oncology-ontology:Sistema_04))
+Declaration(NamedIndividual(oncology-ontology:Sistema_05))
+Declaration(NamedIndividual(oncology-ontology:Sistema_06))
+Declaration(NamedIndividual(oncology-ontology:Suplemento_Nutricional_01))
+Declaration(NamedIndividual(oncology-ontology:Suplemento_Nutricional_02))
+Declaration(NamedIndividual(oncology-ontology:Suplemento_Nutricional_03))
+Declaration(NamedIndividual(oncology-ontology:Tratamiento_Medico_01))
+Declaration(NamedIndividual(oncology-ontology:Tratamiento_Medico_02))
+Declaration(NamedIndividual(oncology-ontology:Tratamiento_Medico_03))
+Declaration(NamedIndividual(oncology-ontology:Tratamiento_Medico_04))
+Declaration(AnnotationProperty(oncology-ontology:pertenece))
+Declaration(AnnotationProperty(oncology-ontology:puedeTenerCancer))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: oncology-ontology:afectaAUn (oncology-ontology:afectaAUn)
+
+SubObjectPropertyOf(oncology-ontology:afectaAUn owl:topObjectProperty)
+ObjectPropertyDomain(oncology-ontology:afectaAUn oncology-ontology:Cancer)
+ObjectPropertyRange(oncology-ontology:afectaAUn oncology-ontology:Sistema)
+
+# Object Property: oncology-ontology:afectaOrgano (oncology-ontology:afectaOrgano)
+
+SubObjectPropertyOf(oncology-ontology:afectaOrgano owl:topObjectProperty)
+ObjectPropertyDomain(oncology-ontology:afectaOrgano oncology-ontology:Cancer)
+ObjectPropertyRange(oncology-ontology:afectaOrgano oncology-ontology:Organo)
+
+# Object Property: oncology-ontology:aliviaSintomasDe (oncology-ontology:aliviaSintomasDe)
+
+SubObjectPropertyOf(oncology-ontology:aliviaSintomasDe owl:topObjectProperty)
+ObjectPropertyDomain(oncology-ontology:aliviaSintomasDe oncology-ontology:Remedio_Herbal)
+ObjectPropertyRange(oncology-ontology:aliviaSintomasDe oncology-ontology:Cancer)
+
+# Object Property: oncology-ontology:ayudaAl (oncology-ontology:ayudaAl)
+
+SubObjectPropertyOf(oncology-ontology:ayudaAl owl:topObjectProperty)
+
+# Object Property: oncology-ontology:combate (oncology-ontology:combate)
+
+SubObjectPropertyOf(oncology-ontology:combate owl:topObjectProperty)
+ObjectPropertyDomain(oncology-ontology:combate oncology-ontology:Tratamiento)
+ObjectPropertyRange(oncology-ontology:combate oncology-ontology:Cancer)
+
+# Object Property: oncology-ontology:detecta (oncology-ontology:detecta)
+
+SubObjectPropertyOf(oncology-ontology:detecta owl:topObjectProperty)
+ObjectPropertyDomain(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica)
+ObjectPropertyRange(oncology-ontology:detecta oncology-ontology:Cancer)
+
+# Object Property: oncology-ontology:noPuedeConsumirseEn (oncology-ontology:noPuedeConsumirseEn)
+
+SubObjectPropertyOf(oncology-ontology:noPuedeConsumirseEn owl:topObjectProperty)
+ObjectPropertyDomain(oncology-ontology:noPuedeConsumirseEn oncology-ontology:Alimento_Restringuido)
+ObjectPropertyRange(oncology-ontology:noPuedeConsumirseEn oncology-ontology:Tratamiento_Medico)
+
+# Object Property: oncology-ontology:ofreceTratamiento (oncology-ontology:ofreceTratamiento)
+
+SubObjectPropertyOf(oncology-ontology:ofreceTratamiento owl:topObjectProperty)
+ObjectPropertyDomain(oncology-ontology:ofreceTratamiento oncology-ontology:Centro_medico)
+ObjectPropertyRange(oncology-ontology:ofreceTratamiento oncology-ontology:Tratamiento)
+
+# Object Property: oncology-ontology:perteneceA (oncology-ontology:perteneceA)
+
+SubObjectPropertyOf(oncology-ontology:perteneceA owl:topObjectProperty)
+ObjectPropertyDomain(oncology-ontology:perteneceA oncology-ontology:Organo)
+ObjectPropertyRange(oncology-ontology:perteneceA oncology-ontology:Sistema)
+
+# Object Property: oncology-ontology:puedeConsumirseEn (oncology-ontology:puedeConsumirseEn)
+
+SubObjectPropertyOf(oncology-ontology:puedeConsumirseEn owl:topObjectProperty)
+ObjectPropertyDomain(oncology-ontology:puedeConsumirseEn oncology-ontology:Alimento_Permitido)
+ObjectPropertyRange(oncology-ontology:puedeConsumirseEn oncology-ontology:Tratamiento_Medico)
+
+# Object Property: oncology-ontology:puedeHacerceUna (oncology-ontology:puedeHacerceUna)
+
+SubObjectPropertyOf(oncology-ontology:puedeHacerceUna owl:topObjectProperty)
+ObjectPropertyDomain(oncology-ontology:puedeHacerceUna oncology-ontology:Persona)
+ObjectPropertyRange(oncology-ontology:puedeHacerceUna oncology-ontology:Prueba_diagnostica)
+
+# Object Property: oncology-ontology:realizaExamen (oncology-ontology:realizaExamen)
+
+SubObjectPropertyOf(oncology-ontology:realizaExamen owl:topObjectProperty)
+ObjectPropertyDomain(oncology-ontology:realizaExamen oncology-ontology:Centro_medico)
+ObjectPropertyRange(oncology-ontology:realizaExamen oncology-ontology:Prueba_diagnostica)
+
+# Object Property: oncology-ontology:tienenUn (oncology-ontology:tienenUn)
+
+SubObjectPropertyOf(oncology-ontology:tienenUn owl:topObjectProperty)
+ObjectPropertyDomain(oncology-ontology:tienenUn oncology-ontology:Persona)
+ObjectPropertyRange(oncology-ontology:tienenUn oncology-ontology:Cancer)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: oncology-ontology:advertencia_abandono_tratamiento_medico (oncology-ontology:advertencia_abandono_tratamiento_medico)
+
+SubDataPropertyOf(oncology-ontology:advertencia_abandono_tratamiento_medico owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:advertencia_abandono_tratamiento_medico oncology-ontology:Tratamiento_Medico)
+DataPropertyRange(oncology-ontology:advertencia_abandono_tratamiento_medico xsd:string)
+
+# Data Property: oncology-ontology:alimento_nombre (oncology-ontology:alimento_nombre)
+
+SubDataPropertyOf(oncology-ontology:alimento_nombre owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:alimento_nombre oncology-ontology:Alimento)
+DataPropertyRange(oncology-ontology:alimento_nombre xsd:string)
+
+# Data Property: oncology-ontology:beneficio (oncology-ontology:beneficio)
+
+SubDataPropertyOf(oncology-ontology:beneficio owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:beneficio oncology-ontology:Remedio_Herbal)
+DataPropertyRange(oncology-ontology:beneficio xsd:string)
+
+# Data Property: oncology-ontology:caloria_suplemento_nutricional (oncology-ontology:caloria_suplemento_nutricional)
+
+SubDataPropertyOf(oncology-ontology:caloria_suplemento_nutricional owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:caloria_suplemento_nutricional oncology-ontology:Suplemento_Nutricional)
+DataPropertyRange(oncology-ontology:caloria_suplemento_nutricional xsd:integer)
+
+# Data Property: oncology-ontology:cancer_nombre (oncology-ontology:cancer_nombre)
+
+SubDataPropertyOf(oncology-ontology:cancer_nombre owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:cancer_nombre oncology-ontology:Cancer)
+DataPropertyRange(oncology-ontology:cancer_nombre xsd:string)
+
+# Data Property: oncology-ontology:celulas (oncology-ontology:celulas)
+
+SubDataPropertyOf(oncology-ontology:celulas owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:celulas oncology-ontology:Organo)
+DataPropertyRange(oncology-ontology:celulas xsd:string)
+
+# Data Property: oncology-ontology:descripcion_alimento (oncology-ontology:descripcion_alimento)
+
+SubDataPropertyOf(oncology-ontology:descripcion_alimento owl:topDataProperty)
+
+# Data Property: oncology-ontology:descripcion_centro_medico (oncology-ontology:descripcion_centro_medico)
+
+SubDataPropertyOf(oncology-ontology:descripcion_centro_medico owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:descripcion_centro_medico oncology-ontology:Centro_medico)
+DataPropertyRange(oncology-ontology:descripcion_centro_medico xsd:string)
+
+# Data Property: oncology-ontology:descripcion_remedio (oncology-ontology:descripcion_remedio)
+
+SubDataPropertyOf(oncology-ontology:descripcion_remedio owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:descripcion_remedio oncology-ontology:Remedio_Herbal)
+DataPropertyRange(oncology-ontology:descripcion_remedio xsd:string)
+
+# Data Property: oncology-ontology:descripcion_tratamiento_medico (oncology-ontology:descripcion_tratamiento_medico)
+
+SubDataPropertyOf(oncology-ontology:descripcion_tratamiento_medico owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:descripcion_tratamiento_medico oncology-ontology:Tratamiento_Medico)
+DataPropertyRange(oncology-ontology:descripcion_tratamiento_medico xsd:string)
+
+# Data Property: oncology-ontology:desechos_metabolicos (oncology-ontology:desechos_metabolicos)
+
+SubDataPropertyOf(oncology-ontology:desechos_metabolicos owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:desechos_metabolicos oncology-ontology:Organo)
+DataPropertyRange(oncology-ontology:desechos_metabolicos xsd:string)
+
+# Data Property: oncology-ontology:desventaja_tratamiento_medico (oncology-ontology:desventaja_tratamiento_medico)
+
+SubDataPropertyOf(oncology-ontology:desventaja_tratamiento_medico owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:desventaja_tratamiento_medico oncology-ontology:Tratamiento_Medico)
+DataPropertyRange(oncology-ontology:desventaja_tratamiento_medico xsd:string)
+
+# Data Property: oncology-ontology:duracion_tratamiento_medico (oncology-ontology:duracion_tratamiento_medico)
+
+SubDataPropertyOf(oncology-ontology:duracion_tratamiento_medico owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:duracion_tratamiento_medico oncology-ontology:Tratamiento_Medico)
+DataPropertyRange(oncology-ontology:duracion_tratamiento_medico xsd:float)
+
+# Data Property: oncology-ontology:edad (oncology-ontology:edad)
+
+SubDataPropertyOf(oncology-ontology:edad owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:edad oncology-ontology:Persona)
+DataPropertyRange(oncology-ontology:edad xsd:int)
+
+# Data Property: oncology-ontology:efecto_colateral_tratamiento_medico (oncology-ontology:efecto_colateral_tratamiento_medico)
+
+SubDataPropertyOf(oncology-ontology:efecto_colateral_tratamiento_medico owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:efecto_colateral_tratamiento_medico oncology-ontology:Tratamiento_Medico)
+DataPropertyRange(oncology-ontology:efecto_colateral_tratamiento_medico xsd:string)
+
+# Data Property: oncology-ontology:efecto_remedio_herbal (oncology-ontology:efecto_remedio_herbal)
+
+SubDataPropertyOf(oncology-ontology:efecto_remedio_herbal owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:efecto_remedio_herbal oncology-ontology:Remedio_Herbal)
+DataPropertyRange(oncology-ontology:efecto_remedio_herbal xsd:string)
+
+# Data Property: oncology-ontology:efecto_secundario_tratamiento_medico (oncology-ontology:efecto_secundario_tratamiento_medico)
+
+SubDataPropertyOf(oncology-ontology:efecto_secundario_tratamiento_medico owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:efecto_secundario_tratamiento_medico oncology-ontology:Tratamiento_Medico)
+DataPropertyRange(oncology-ontology:efecto_secundario_tratamiento_medico xsd:string)
+
+# Data Property: oncology-ontology:fabricante_medicamento (oncology-ontology:fabricante_medicamento)
+
+SubDataPropertyOf(oncology-ontology:fabricante_medicamento owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:fabricante_medicamento oncology-ontology:Medicamento)
+DataPropertyRange(oncology-ontology:fabricante_medicamento xsd:string)
+
+# Data Property: oncology-ontology:fabricante_suplemento_nutricional (oncology-ontology:fabricante_suplemento_nutricional)
+
+SubDataPropertyOf(oncology-ontology:fabricante_suplemento_nutricional owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:fabricante_suplemento_nutricional oncology-ontology:Suplemento_Nutricional)
+DataPropertyRange(oncology-ontology:fabricante_suplemento_nutricional xsd:string)
+
+# Data Property: oncology-ontology:factores_de_riesgo (oncology-ontology:factores_de_riesgo)
+
+SubDataPropertyOf(oncology-ontology:factores_de_riesgo owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer)
+DataPropertyRange(oncology-ontology:factores_de_riesgo xsd:string)
+
+# Data Property: oncology-ontology:fases_del_cancer (oncology-ontology:fases_del_cancer)
+
+SubDataPropertyOf(oncology-ontology:fases_del_cancer owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:fases_del_cancer oncology-ontology:Cancer)
+DataPropertyRange(oncology-ontology:fases_del_cancer xsd:string)
+
+# Data Property: oncology-ontology:fibras (oncology-ontology:fibras)
+
+SubDataPropertyOf(oncology-ontology:fibras owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:fibras oncology-ontology:Organo)
+DataPropertyRange(oncology-ontology:fibras xsd:string)
+
+# Data Property: oncology-ontology:funcion_medicina_alternativa (oncology-ontology:funcion_medicina_alternativa)
+
+SubDataPropertyOf(oncology-ontology:funcion_medicina_alternativa owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:funcion_medicina_alternativa oncology-ontology:Medicina_Alternativa)
+DataPropertyRange(oncology-ontology:funcion_medicina_alternativa xsd:string)
+
+# Data Property: oncology-ontology:funcion_remedio_herbal (oncology-ontology:funcion_remedio_herbal)
+
+SubDataPropertyOf(oncology-ontology:funcion_remedio_herbal owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:funcion_remedio_herbal oncology-ontology:Remedio_Herbal)
+DataPropertyRange(oncology-ontology:funcion_remedio_herbal xsd:string)
+
+# Data Property: oncology-ontology:funcion_tratamiento_medico (oncology-ontology:funcion_tratamiento_medico)
+
+SubDataPropertyOf(oncology-ontology:funcion_tratamiento_medico owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:funcion_tratamiento_medico oncology-ontology:Tratamiento_Medico)
+DataPropertyRange(oncology-ontology:funcion_tratamiento_medico xsd:string)
+
+# Data Property: oncology-ontology:ganglios (oncology-ontology:ganglios)
+
+SubDataPropertyOf(oncology-ontology:ganglios owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:ganglios oncology-ontology:Organo)
+DataPropertyRange(oncology-ontology:ganglios xsd:string)
+
+# Data Property: oncology-ontology:genero (oncology-ontology:genero)
+
+SubDataPropertyOf(oncology-ontology:genero owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:genero oncology-ontology:Persona)
+DataPropertyRange(oncology-ontology:genero DataOneOf("Femenino" "Masculino"))
+
+# Data Property: oncology-ontology:glandulas (oncology-ontology:glandulas)
+
+SubDataPropertyOf(oncology-ontology:glandulas owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:glandulas oncology-ontology:Organo)
+DataPropertyRange(oncology-ontology:glandulas xsd:string)
+
+# Data Property: oncology-ontology:nombre_alimento (oncology-ontology:nombre_alimento)
+
+SubDataPropertyOf(oncology-ontology:nombre_alimento owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:nombre_alimento oncology-ontology:Alimento)
+DataPropertyRange(oncology-ontology:nombre_alimento xsd:string)
+
+# Data Property: oncology-ontology:nombre_centro_medico (oncology-ontology:nombre_centro_medico)
+
+SubDataPropertyOf(oncology-ontology:nombre_centro_medico owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:nombre_centro_medico oncology-ontology:Centro_medico)
+DataPropertyRange(oncology-ontology:nombre_centro_medico xsd:string)
+
+# Data Property: oncology-ontology:nombre_medicamento (oncology-ontology:nombre_medicamento)
+
+SubDataPropertyOf(oncology-ontology:nombre_medicamento owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:nombre_medicamento oncology-ontology:Medicamento)
+DataPropertyRange(oncology-ontology:nombre_medicamento xsd:string)
+
+# Data Property: oncology-ontology:nombre_medicina_alternativa (oncology-ontology:nombre_medicina_alternativa)
+
+SubDataPropertyOf(oncology-ontology:nombre_medicina_alternativa owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:nombre_medicina_alternativa oncology-ontology:Medicina_Alternativa)
+DataPropertyRange(oncology-ontology:nombre_medicina_alternativa xsd:string)
+
+# Data Property: oncology-ontology:nombre_persona (oncology-ontology:nombre_persona)
+
+SubDataPropertyOf(oncology-ontology:nombre_persona owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:nombre_persona oncology-ontology:Persona)
+DataPropertyRange(oncology-ontology:nombre_persona xsd:string)
+
+# Data Property: oncology-ontology:nombre_remedio_herbal (oncology-ontology:nombre_remedio_herbal)
+
+SubDataPropertyOf(oncology-ontology:nombre_remedio_herbal owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:nombre_remedio_herbal oncology-ontology:Remedio_Herbal)
+DataPropertyRange(oncology-ontology:nombre_remedio_herbal xsd:string)
+
+# Data Property: oncology-ontology:nombre_suplemento_nutricional (oncology-ontology:nombre_suplemento_nutricional)
+
+SubDataPropertyOf(oncology-ontology:nombre_suplemento_nutricional owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:nombre_suplemento_nutricional oncology-ontology:Suplemento_Nutricional)
+DataPropertyRange(oncology-ontology:nombre_suplemento_nutricional xsd:string)
+
+# Data Property: oncology-ontology:nombre_tratamiento_medico (oncology-ontology:nombre_tratamiento_medico)
+
+SubDataPropertyOf(oncology-ontology:nombre_tratamiento_medico owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:nombre_tratamiento_medico oncology-ontology:Tratamiento_Medico)
+DataPropertyRange(oncology-ontology:nombre_tratamiento_medico xsd:string)
+
+# Data Property: oncology-ontology:organo_descricion (oncology-ontology:organo_descricion)
+
+SubDataPropertyOf(oncology-ontology:organo_descricion owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:organo_descricion oncology-ontology:Organo)
+DataPropertyRange(oncology-ontology:organo_descricion xsd:string)
+
+# Data Property: oncology-ontology:organo_nombre (oncology-ontology:organo_nombre)
+
+SubDataPropertyOf(oncology-ontology:organo_nombre owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:organo_nombre oncology-ontology:Organo)
+DataPropertyRange(oncology-ontology:organo_nombre xsd:string)
+
+# Data Property: oncology-ontology:probabilidad_de_mortalidad (oncology-ontology:probabilidad_de_mortalidad)
+
+SubDataPropertyOf(oncology-ontology:probabilidad_de_mortalidad owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:probabilidad_de_mortalidad oncology-ontology:Cancer)
+DataPropertyRange(oncology-ontology:probabilidad_de_mortalidad xsd:string)
+
+# Data Property: oncology-ontology:probabilidad_de_recuperacion (oncology-ontology:probabilidad_de_recuperacion)
+
+SubDataPropertyOf(oncology-ontology:probabilidad_de_recuperacion owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:probabilidad_de_recuperacion oncology-ontology:Cancer)
+DataPropertyRange(oncology-ontology:probabilidad_de_recuperacion xsd:string)
+
+# Data Property: oncology-ontology:probabilidad_supervivencia_tratamiento_medico (oncology-ontology:probabilidad_supervivencia_tratamiento_medico)
+
+SubDataPropertyOf(oncology-ontology:probabilidad_supervivencia_tratamiento_medico owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:probabilidad_supervivencia_tratamiento_medico oncology-ontology:Tratamiento_Medico)
+DataPropertyRange(oncology-ontology:probabilidad_supervivencia_tratamiento_medico xsd:float)
+
+# Data Property: oncology-ontology:proteina_suplemento_nutricional (oncology-ontology:proteina_suplemento_nutricional)
+
+SubDataPropertyOf(oncology-ontology:proteina_suplemento_nutricional owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:proteina_suplemento_nutricional oncology-ontology:Suplemento_Nutricional)
+DataPropertyRange(oncology-ontology:proteina_suplemento_nutricional xsd:double)
+
+# Data Property: oncology-ontology:prueba_diagnostica_area_de_evaluacion (oncology-ontology:prueba_diagnostica_area_de_evaluacion)
+
+SubDataPropertyOf(oncology-ontology:prueba_diagnostica_area_de_evaluacion owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:prueba_diagnostica_area_de_evaluacion oncology-ontology:Prueba_diagnostica)
+DataPropertyRange(oncology-ontology:prueba_diagnostica_area_de_evaluacion xsd:string)
+
+# Data Property: oncology-ontology:prueba_diagnostica_descripcion (oncology-ontology:prueba_diagnostica_descripcion)
+
+SubDataPropertyOf(oncology-ontology:prueba_diagnostica_descripcion owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:prueba_diagnostica_descripcion oncology-ontology:Prueba_diagnostica)
+DataPropertyRange(oncology-ontology:prueba_diagnostica_descripcion xsd:string)
+
+# Data Property: oncology-ontology:prueba_diagnostica_nombre (oncology-ontology:prueba_diagnostica_nombre)
+
+SubDataPropertyOf(oncology-ontology:prueba_diagnostica_nombre owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:prueba_diagnostica_nombre oncology-ontology:Prueba_diagnostica)
+DataPropertyRange(oncology-ontology:prueba_diagnostica_nombre xsd:string)
+
+# Data Property: oncology-ontology:remedio_nombre (oncology-ontology:remedio_nombre)
+
+SubDataPropertyOf(oncology-ontology:remedio_nombre owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:remedio_nombre oncology-ontology:Remedio_Herbal)
+DataPropertyRange(oncology-ontology:remedio_nombre xsd:string)
+
+# Data Property: oncology-ontology:riesgo_tratamiento_medico (oncology-ontology:riesgo_tratamiento_medico)
+
+SubDataPropertyOf(oncology-ontology:riesgo_tratamiento_medico owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:riesgo_tratamiento_medico oncology-ontology:Tratamiento_Medico)
+DataPropertyRange(oncology-ontology:riesgo_tratamiento_medico xsd:string)
+
+# Data Property: oncology-ontology:sintoma (oncology-ontology:sintoma)
+
+SubDataPropertyOf(oncology-ontology:sintoma owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:sintoma oncology-ontology:Cancer)
+DataPropertyRange(oncology-ontology:sintoma xsd:string)
+
+# Data Property: oncology-ontology:sistema_nombre (oncology-ontology:sistema_nombre)
+
+SubDataPropertyOf(oncology-ontology:sistema_nombre owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:sistema_nombre oncology-ontology:Sistema)
+DataPropertyRange(oncology-ontology:sistema_nombre xsd:string)
+
+# Data Property: oncology-ontology:tipo_alimento (oncology-ontology:tipo_alimento)
+
+SubDataPropertyOf(oncology-ontology:tipo_alimento owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:tipo_alimento oncology-ontology:Alimento)
+DataPropertyRange(oncology-ontology:tipo_alimento xsd:string)
+
+# Data Property: oncology-ontology:tipo_medicamento (oncology-ontology:tipo_medicamento)
+
+SubDataPropertyOf(oncology-ontology:tipo_medicamento owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:tipo_medicamento oncology-ontology:Medicamento)
+DataPropertyRange(oncology-ontology:tipo_medicamento xsd:string)
+
+# Data Property: oncology-ontology:tipo_tratamiento_medico (oncology-ontology:tipo_tratamiento_medico)
+
+SubDataPropertyOf(oncology-ontology:tipo_tratamiento_medico owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:tipo_tratamiento_medico oncology-ontology:Tratamiento_Medico)
+DataPropertyRange(oncology-ontology:tipo_tratamiento_medico xsd:string)
+
+# Data Property: oncology-ontology:ventaja_tratamiento_medico (oncology-ontology:ventaja_tratamiento_medico)
+
+SubDataPropertyOf(oncology-ontology:ventaja_tratamiento_medico owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:ventaja_tratamiento_medico oncology-ontology:Tratamiento_Medico)
+DataPropertyRange(oncology-ontology:ventaja_tratamiento_medico xsd:string)
+
+# Data Property: oncology-ontology:vitamina (oncology-ontology:vitamina)
+
+SubDataPropertyOf(oncology-ontology:vitamina owl:topDataProperty)
+DataPropertyDomain(oncology-ontology:vitamina oncology-ontology:Alimento)
+DataPropertyRange(oncology-ontology:vitamina xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: oncology-ontology:Alimento (oncology-ontology:Alimento)
+
+SubClassOf(oncology-ontology:Alimento oncology-ontology:Suplemento_Alimenticio)
+DisjointClasses(oncology-ontology:Alimento oncology-ontology:Suplemento_Nutricional)
+
+# Class: oncology-ontology:Alimento_Permitido (oncology-ontology:Alimento_Permitido)
+
+SubClassOf(oncology-ontology:Alimento_Permitido oncology-ontology:Alimento)
+DisjointClasses(oncology-ontology:Alimento_Permitido oncology-ontology:Alimento_Restringuido)
+
+# Class: oncology-ontology:Alimento_Restringuido (oncology-ontology:Alimento_Restringuido)
+
+SubClassOf(oncology-ontology:Alimento_Restringuido oncology-ontology:Alimento)
+
+# Class: oncology-ontology:Biopsia (oncology-ontology:Biopsia)
+
+SubClassOf(oncology-ontology:Biopsia oncology-ontology:Prueba_diagnostica)
+
+# Class: oncology-ontology:Cancer (oncology-ontology:Cancer)
+
+SubClassOf(oncology-ontology:Cancer owl:Thing)
+
+# Class: oncology-ontology:Centro_medico (oncology-ontology:Centro_medico)
+
+
+# Class: oncology-ontology:Cuarto_nivel (oncology-ontology:Cuarto_nivel)
+
+SubClassOf(oncology-ontology:Cuarto_nivel oncology-ontology:Centro_medico)
+
+# Class: oncology-ontology:Endoscopia (oncology-ontology:Endoscopia)
+
+SubClassOf(oncology-ontology:Endoscopia oncology-ontology:Prueba_diagnostica)
+
+# Class: oncology-ontology:Examen_de_imagen (oncology-ontology:Examen_de_imagen)
+
+SubClassOf(oncology-ontology:Examen_de_imagen oncology-ontology:Prueba_diagnostica)
+
+# Class: oncology-ontology:Examen_de_sangre (oncology-ontology:Examen_de_sangre)
+
+SubClassOf(oncology-ontology:Examen_de_sangre oncology-ontology:Prueba_diagnostica)
+
+# Class: oncology-ontology:Examen_fisico (oncology-ontology:Examen_fisico)
+
+SubClassOf(oncology-ontology:Examen_fisico oncology-ontology:Prueba_diagnostica)
+
+# Class: oncology-ontology:Medicamento (oncology-ontology:Medicamento)
+
+SubClassOf(oncology-ontology:Medicamento oncology-ontology:Tratamiento)
+
+# Class: oncology-ontology:Medicina_Alternativa (oncology-ontology:Medicina_Alternativa)
+
+SubClassOf(oncology-ontology:Medicina_Alternativa oncology-ontology:Tratamiento_Complementario)
+
+# Class: oncology-ontology:Medicina_Tradicional (oncology-ontology:Medicina_Tradicional)
+
+SubClassOf(oncology-ontology:Medicina_Tradicional oncology-ontology:Tratamiento_Complementario)
+
+# Class: oncology-ontology:Membrana (oncology-ontology:Membrana)
+
+SubClassOf(oncology-ontology:Membrana oncology-ontology:Tejido)
+DisjointClasses(oncology-ontology:Membrana oncology-ontology:Tipo_Tejido)
+
+# Class: oncology-ontology:Organo (oncology-ontology:Organo)
+
+AnnotationAssertion(rdfs:comment oncology-ontology:Organo "Cumple una funcion dentro de un sistema")
+SubClassOf(oncology-ontology:Organo owl:Thing)
+
+# Class: oncology-ontology:Persona (oncology-ontology:Persona)
+
+SubClassOf(oncology-ontology:Persona owl:Thing)
+
+# Class: oncology-ontology:Primer_nivel (oncology-ontology:Primer_nivel)
+
+SubClassOf(oncology-ontology:Primer_nivel oncology-ontology:Centro_medico)
+
+# Class: oncology-ontology:Prueba_diagnostica (oncology-ontology:Prueba_diagnostica)
+
+EquivalentClasses(oncology-ontology:Prueba_diagnostica ObjectUnionOf(oncology-ontology:Biopsia oncology-ontology:Endoscopia oncology-ontology:Examen_de_imagen oncology-ontology:Examen_de_sangre oncology-ontology:Examen_fisico oncology-ontology:Prueba_genetica))
+SubClassOf(oncology-ontology:Prueba_diagnostica owl:Thing)
+
+# Class: oncology-ontology:Prueba_genetica (oncology-ontology:Prueba_genetica)
+
+SubClassOf(oncology-ontology:Prueba_genetica oncology-ontology:Prueba_diagnostica)
+
+# Class: oncology-ontology:Remedio_Herbal (oncology-ontology:Remedio_Herbal)
+
+SubClassOf(oncology-ontology:Remedio_Herbal oncology-ontology:Medicina_Tradicional)
+
+# Class: oncology-ontology:Segundo_nivel (oncology-ontology:Segundo_nivel)
+
+SubClassOf(oncology-ontology:Segundo_nivel oncology-ontology:Centro_medico)
+
+# Class: oncology-ontology:Sistema (oncology-ontology:Sistema)
+
+SubClassOf(oncology-ontology:Sistema owl:Thing)
+
+# Class: oncology-ontology:Suplemento_Alimenticio (oncology-ontology:Suplemento_Alimenticio)
+
+SubClassOf(oncology-ontology:Suplemento_Alimenticio oncology-ontology:Tratamiento_Complementario)
+
+# Class: oncology-ontology:Suplemento_Nutricional (oncology-ontology:Suplemento_Nutricional)
+
+SubClassOf(oncology-ontology:Suplemento_Nutricional oncology-ontology:Suplemento_Alimenticio)
+
+# Class: oncology-ontology:Tejido (oncology-ontology:Tejido)
+
+SubClassOf(oncology-ontology:Tejido oncology-ontology:Organo)
+
+# Class: oncology-ontology:Tercer_nivel (oncology-ontology:Tercer_nivel)
+
+SubClassOf(oncology-ontology:Tercer_nivel oncology-ontology:Centro_medico)
+
+# Class: oncology-ontology:Tipo_Tejido (oncology-ontology:Tipo_Tejido)
+
+SubClassOf(oncology-ontology:Tipo_Tejido oncology-ontology:Tejido)
+
+# Class: oncology-ontology:Tratamiento (oncology-ontology:Tratamiento)
+
+SubClassOf(oncology-ontology:Tratamiento owl:Thing)
+
+# Class: oncology-ontology:Tratamiento_Complementario (oncology-ontology:Tratamiento_Complementario)
+
+SubClassOf(oncology-ontology:Tratamiento_Complementario oncology-ontology:Tratamiento)
+
+# Class: oncology-ontology:Tratamiento_Medico (oncology-ontology:Tratamiento_Medico)
+
+SubClassOf(oncology-ontology:Tratamiento_Medico oncology-ontology:Tratamiento)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: oncology-ontology:Alimento_01 (oncology-ontology:Alimento_01)
+
+ClassAssertion(oncology-ontology:Alimento_Permitido oncology-ontology:Alimento_01)
+ObjectPropertyAssertion(oncology-ontology:puedeConsumirseEn oncology-ontology:Alimento_01 oncology-ontology:Tratamiento_Medico_04)
+DataPropertyAssertion(oncology-ontology:alimento_nombre oncology-ontology:Alimento_01 "Brócoli")
+DataPropertyAssertion(oncology-ontology:descripcion_alimento oncology-ontology:Alimento_01 "El brócoli es una hortaliza rica en antioxidantes, fibra y compuestos como el sulforafano, que han demostrado tener propiedades anticancerígenas.")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_01 "Vitamina A")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_01 "Vitamina B6")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_01 "Vitamina C")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_01 "Vitamina K")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_01 "Ácido fólico")
+
+# Individual: oncology-ontology:Alimento_02 (oncology-ontology:Alimento_02)
+
+ClassAssertion(oncology-ontology:Alimento_Permitido oncology-ontology:Alimento_02)
+ObjectPropertyAssertion(oncology-ontology:puedeConsumirseEn oncology-ontology:Alimento_02 oncology-ontology:Tratamiento_Medico_04)
+DataPropertyAssertion(oncology-ontology:alimento_nombre oncology-ontology:Alimento_02 "Zanahoria")
+DataPropertyAssertion(oncology-ontology:descripcion_alimento oncology-ontology:Alimento_02 "La zanahoria es una fuente excelente de betacarotenos, precursores de la vitamina A, y tiene propiedades antioxidantes que pueden ayudar a combatir el cáncer.")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_02 "Vitamina A")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_02 "Vitamina B6")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_02 "Vitamina B8")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_02 "Vitamina C")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_02 "Vitamina K")
+
+# Individual: oncology-ontology:Alimento_03 (oncology-ontology:Alimento_03)
+
+ClassAssertion(oncology-ontology:Alimento_Permitido oncology-ontology:Alimento_03)
+ObjectPropertyAssertion(oncology-ontology:puedeConsumirseEn oncology-ontology:Alimento_03 oncology-ontology:Tratamiento_Medico_04)
+DataPropertyAssertion(oncology-ontology:alimento_nombre oncology-ontology:Alimento_03 "Tomate")
+DataPropertyAssertion(oncology-ontology:descripcion_alimento oncology-ontology:Alimento_03 "El tomate es rico en licopeno, un antioxidante que ha sido vinculado a la reducción del riesgo de cáncer, especialmente en el cáncer de próstata.")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_03 "Vitamina A")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_03 "Vitamina B6")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_03 "Vitamina C")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_03 "Vitamina E")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_03 "Vitamina K")
+
+# Individual: oncology-ontology:Alimento_04 (oncology-ontology:Alimento_04)
+
+ClassAssertion(oncology-ontology:Alimento_Permitido oncology-ontology:Alimento_04)
+ObjectPropertyAssertion(oncology-ontology:puedeConsumirseEn oncology-ontology:Alimento_04 oncology-ontology:Tratamiento_Medico_04)
+DataPropertyAssertion(oncology-ontology:alimento_nombre oncology-ontology:Alimento_04 "Espinaca")
+DataPropertyAssertion(oncology-ontology:descripcion_alimento oncology-ontology:Alimento_04 "La espinaca es rica en hierro y antioxidantes, y ha demostrado ayudar a la prevención del cáncer debido a su contenido en flavonoides y otros compuestos antiinflamatorios.")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_04 "Vitamina A")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_04 "Vitamina C")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_04 "Vitamina E")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_04 "Vitamina K")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_04 "Ácido fólico")
+
+# Individual: oncology-ontology:Alimento_05 (oncology-ontology:Alimento_05)
+
+ClassAssertion(oncology-ontology:Alimento_Permitido oncology-ontology:Alimento_05)
+ObjectPropertyAssertion(oncology-ontology:puedeConsumirseEn oncology-ontology:Alimento_05 oncology-ontology:Tratamiento_Medico_01)
+ObjectPropertyAssertion(oncology-ontology:puedeConsumirseEn oncology-ontology:Alimento_05 oncology-ontology:Tratamiento_Medico_04)
+DataPropertyAssertion(oncology-ontology:alimento_nombre oncology-ontology:Alimento_05 "Cúrcuma")
+DataPropertyAssertion(oncology-ontology:descripcion_alimento oncology-ontology:Alimento_05 "La cúrcuma contiene curcumina, un compuesto que tiene propiedades antiinflamatorias y ha sido estudiado por su posible efecto en la prevención y tratamiento de diversos tipos de cáncer.")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_05 "Vitamina B6")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_05 "Vitamina C")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_05 "Vitamina E")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_05 "Vitamina K")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_05 "Ácido fólico")
+
+# Individual: oncology-ontology:Alimento_06 (oncology-ontology:Alimento_06)
+
+ClassAssertion(oncology-ontology:Alimento_Restringuido oncology-ontology:Alimento_06)
+ObjectPropertyAssertion(oncology-ontology:noPuedeConsumirseEn oncology-ontology:Alimento_06 oncology-ontology:Tratamiento_Medico_04)
+DataPropertyAssertion(oncology-ontology:descripcion_alimento oncology-ontology:Alimento_06 "Carne roja")
+DataPropertyAssertion(oncology-ontology:descripcion_alimento oncology-ontology:Alimento_06 "La carne roja procesada o en exceso puede aumentar el riesgo de inflamación y está asociada a mayores riesgos en pacientes con cáncer de colon.")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_06 "Grasas Saturadas")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_06 "Hierro")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_06 "Proteninas")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_06 "Vitamina B12")
+DataPropertyAssertion(oncology-ontology:vitamina oncology-ontology:Alimento_06 "Zinc")
+
+# Individual: oncology-ontology:Alimento_07 (oncology-ontology:Alimento_07)
+
+ClassAssertion(oncology-ontology:Alimento_Restringuido oncology-ontology:Alimento_07)
+ObjectPropertyAssertion(oncology-ontology:noPuedeConsumirseEn oncology-ontology:Alimento_07 oncology-ontology:Tratamiento_Medico_04)
+DataPropertyAssertion(oncology-ontology:alimento_nombre oncology-ontology:Alimento_07 "Alcohol")
+DataPropertyAssertion(oncology-ontology:descripcion_alimento oncology-ontology:Alimento_07 "El alcohol en exceso puede debilitar el sistema inmunológico y aumentar el riesgo de recurrencia del cáncer.")
+
+# Individual: oncology-ontology:Alimento_08 (oncology-ontology:Alimento_08)
+
+ClassAssertion(oncology-ontology:Alimento_Restringuido oncology-ontology:Alimento_08)
+ObjectPropertyAssertion(oncology-ontology:noPuedeConsumirseEn oncology-ontology:Alimento_08 oncology-ontology:Tratamiento_Medico_04)
+DataPropertyAssertion(oncology-ontology:alimento_nombre oncology-ontology:Alimento_08 "Azúcar Refinada")
+DataPropertyAssertion(oncology-ontology:descripcion_alimento oncology-ontology:Alimento_08 "El azúcar refinada puede aumentar los niveles de insulina, lo cual puede favorecer el crecimiento de células cancerosas.")
+
+# Individual: oncology-ontology:Alimento_09 (oncology-ontology:Alimento_09)
+
+ClassAssertion(oncology-ontology:Alimento_Restringuido oncology-ontology:Alimento_09)
+ObjectPropertyAssertion(oncology-ontology:noPuedeConsumirseEn oncology-ontology:Alimento_09 oncology-ontology:Tratamiento_Medico_04)
+DataPropertyAssertion(oncology-ontology:alimento_nombre oncology-ontology:Alimento_09 "Sal")
+DataPropertyAssertion(oncology-ontology:descripcion_alimento oncology-ontology:Alimento_09 "El consumo excesivo de sal puede aumentar el riesgo de cáncer gástrico y otros problemas relacionados con la salud digestiva.")
+
+# Individual: oncology-ontology:Alimento_10 (oncology-ontology:Alimento_10)
+
+ClassAssertion(oncology-ontology:Alimento_Restringuido oncology-ontology:Alimento_10)
+ObjectPropertyAssertion(oncology-ontology:noPuedeConsumirseEn oncology-ontology:Alimento_10 oncology-ontology:Tratamiento_Medico_04)
+DataPropertyAssertion(oncology-ontology:alimento_nombre oncology-ontology:Alimento_10 "Alimentos Fritos")
+DataPropertyAssertion(oncology-ontology:descripcion_alimento oncology-ontology:Alimento_10 "Los alimentos fritos pueden contener grasas trans que aumentan el riesgo de inflamación y empeoran la condición de pacientes con cáncer.")
+
+# Individual: oncology-ontology:Cancer_01 (oncology-ontology:Cancer_01)
+
+ClassAssertion(oncology-ontology:Cancer oncology-ontology:Cancer_01)
+ObjectPropertyAssertion(oncology-ontology:afectaOrgano oncology-ontology:Cancer_01 oncology-ontology:Organo_10)
+DataPropertyAssertion(oncology-ontology:cancer_nombre oncology-ontology:Cancer_01 "Cancer de cervix")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_01 "Infección por virus del papiloma humano (VPH)")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_01 "antecedentes de cáncer cervical en la familia")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_01 "inmunosupresión")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_01 "tabaquismo")
+DataPropertyAssertion(oncology-ontology:fases_del_cancer oncology-ontology:Cancer_01 "Estadio 0: Carcinoma in situ.
+Estadio I: Cáncer limitado al cuello uterino.
+Estadio II: Cáncer que se ha diseminado a la parte superior de la vagina o los tejidos alrededor del útero.
+Estadio III: Cáncer que se ha diseminado a la parte inferior de la vagina o las paredes pélvicas.
+Estadio IV: Cáncer metastásico.")
+DataPropertyAssertion(oncology-ontology:probabilidad_de_mortalidad oncology-ontology:Cancer_01 "En estadios III y IV, la mortalidad puede ser del 30-50%.")
+DataPropertyAssertion(oncology-ontology:probabilidad_de_recuperacion oncology-ontology:Cancer_01 "En estadios tempranas (I y II), la tasa de recuperación puede ser del 80-90%. En etapas avanzadas, puede caer por debajo del 50%.")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_01 "Sangrado vaginal anormal")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_01 "dolor durante las relaciones sexuales")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_01 "dolor pélvico")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_01 "secreción vaginal inusual")
+
+# Individual: oncology-ontology:Cancer_02 (oncology-ontology:Cancer_02)
+
+ClassAssertion(oncology-ontology:Cancer oncology-ontology:Cancer_02)
+ObjectPropertyAssertion(oncology-ontology:afectaOrgano oncology-ontology:Cancer_02 oncology-ontology:Organo_02)
+DataPropertyAssertion(oncology-ontology:cancer_nombre oncology-ontology:Cancer_02 "Cancer de colon")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_02 "antecedentes familiares")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_02 "dieta baja en fibra y alta en grasas")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_02 "edad avanzada")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_02 "enfermedades inflamatorias del intestino")
+DataPropertyAssertion(oncology-ontology:fases_del_cancer oncology-ontology:Cancer_02 "Estadio 0: Carcinoma in situ.
+Estadio I: Tumor en la pared del colon, sin afectación de ganglios linfáticos.
+Estadio II: Tumor más profundo, posiblemente afectando la pared del colon, pero sin afectación de ganglios linfáticos.
+Estadio III: Diseminación a ganglios linfáticos cercanos.
+Estadio IV: Cáncer metastásico.")
+DataPropertyAssertion(oncology-ontology:probabilidad_de_mortalidad oncology-ontology:Cancer_02 "En estadios III y IV, la tasa de mortalidad puede ser del 30-50%.")
+DataPropertyAssertion(oncology-ontology:probabilidad_de_recuperacion oncology-ontology:Cancer_02 "En estadios tempranos (I y II), puede ser del 90%. En estadios avanzados, puede disminuir a 20-30%.")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_02 "Cambios en los hábitos intestinales")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_02 "dolor abdominal persistente")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_02 "pérdida de peso inexplicada")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_02 "sangrado rectal")
+
+# Individual: oncology-ontology:Cancer_03 (oncology-ontology:Cancer_03)
+
+ClassAssertion(oncology-ontology:Cancer oncology-ontology:Cancer_03)
+ObjectPropertyAssertion(oncology-ontology:afectaOrgano oncology-ontology:Cancer_03 oncology-ontology:Organo_05)
+DataPropertyAssertion(oncology-ontology:cancer_nombre oncology-ontology:Cancer_03 "Cancer de mama")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_03 "Bulto en el seno")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_03 "cambios en la forma o tamaño del seno")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_03 "piel de naranja en el seno")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_03 "secreción del pezón")
+DataPropertyAssertion(oncology-ontology:fases_del_cancer oncology-ontology:Cancer_03 "Estadio 0: Carcinoma in situ (no invasivo).
+Estadio I: Tumor pequeño (≤ 2 cm), sin ganglios linfáticos afectados.
+Estadio II: Tumor más grande (2-5 cm) o ganglios linfáticos afectados.
+Estadio III: Tumor de mayor tamaño y múltiples ganglios linfáticos afectados.
+Estadio IV: Cáncer metastásico (se ha diseminado a otros órganos).")
+DataPropertyAssertion(oncology-ontology:probabilidad_de_mortalidad oncology-ontology:Cancer_03 "En etapas avanzadas (III y IV), la tasa de mortalidad puede ser del 20-30%.")
+DataPropertyAssertion(oncology-ontology:probabilidad_de_recuperacion oncology-ontology:Cancer_03 "En estadios tempranas (I y II), la probabilidad de recuperación es superior al 90%. En etapas avanzadas, puede disminuir considerablemente.")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_03 "Historia familiar de cáncer de mama")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_03 "consumo de alcohol")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_03 "exposición a radiación")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_03 "mutaciones genéticas (BRCA1, BRCA2)")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_03 "obesidad")
+
+# Individual: oncology-ontology:Cancer_04 (oncology-ontology:Cancer_04)
+
+ClassAssertion(oncology-ontology:Cancer oncology-ontology:Cancer_04)
+ObjectPropertyAssertion(oncology-ontology:afectaOrgano oncology-ontology:Cancer_04 oncology-ontology:Organo_08)
+DataPropertyAssertion(oncology-ontology:cancer_nombre oncology-ontology:Cancer_04 "Cancer de prostata")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_04 "Edad avanzada")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_04 "dieta alta en grasas")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_04 "historia familiar")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_04 "raza (más común en hombres afroamericanos)")
+DataPropertyAssertion(oncology-ontology:fases_del_cancer oncology-ontology:Cancer_04 "Estadio I: Tumor pequeño, no se siente durante un examen rectal.
+Estadio II: Tumor más grande, aún confinado a la próstata.
+Estadio III: Cáncer que se ha diseminado fuera de la próstata pero no a otros órganos.
+Estadio IV: Cáncer que se ha diseminado a otros órganos, como huesos o ganglios linfáticos.")
+DataPropertyAssertion(oncology-ontology:probabilidad_de_mortalidad oncology-ontology:Cancer_04 "En estadios III y IV, la mortalidad puede ser del 10-30%.")
+DataPropertyAssertion(oncology-ontology:probabilidad_de_recuperacion oncology-ontology:Cancer_04 "Alta en estadios tempranos (I y II), con tasas de recuperación del 95% o más. En estadios avanzados, puede bajar a alrededor del 30-40%.")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_04 "Dificultad para orinar")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_04 "dolor en la pelvis o en la espalda baja")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_04 "flujo de orina débil")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_04 "sangre en la orina")
+
+# Individual: oncology-ontology:Cancer_05 (oncology-ontology:Cancer_05)
+
+ClassAssertion(oncology-ontology:Cancer oncology-ontology:Cancer_05)
+ObjectPropertyAssertion(oncology-ontology:afectaOrgano oncology-ontology:Cancer_05 oncology-ontology:Organo_11)
+DataPropertyAssertion(oncology-ontology:cancer_nombre oncology-ontology:Cancer_05 "Cancer de pulmon")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_05 "antecedentes familiares de cáncer")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_05 "exposición a asbestos")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_05 "exposición a humo de segunda mano")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_05 "tabaquismo")
+DataPropertyAssertion(oncology-ontology:fases_del_cancer oncology-ontology:Cancer_05 "Estadio I: Tumor pequeño, confinado a los pulmones.
+Estadio II: Tumor más grande o diseminación a ganglios linfáticos cercanos.
+Estadio III: Diseminación a ganglios linfáticos en el tórax o estructuras cercanas.
+Estadio IV: Cáncer metastásico.")
+DataPropertyAssertion(oncology-ontology:probabilidad_de_mortalidad oncology-ontology:Cancer_05 "Altamente mortal; en estadios avanzados, la tasa de mortalidad puede ser superior al 80%.")
+DataPropertyAssertion(oncology-ontology:probabilidad_de_recuperacion oncology-ontology:Cancer_05 "En estadios tempranos (I y II), puede ser del 50-70%, pero en estadios avanzados, puede bajar a menos del 5%.")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_05 "Tos persistente")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_05 "dificultad para respirar")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_05 "dolor en el pecho")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_05 "hemoptisis (tos con sangre)")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_05 "pérdida de peso inexplicada")
+
+# Individual: oncology-ontology:Cancer_06 (oncology-ontology:Cancer_06)
+
+ClassAssertion(oncology-ontology:Cancer oncology-ontology:Cancer_06)
+ObjectPropertyAssertion(oncology-ontology:afectaOrgano oncology-ontology:Cancer_06 oncology-ontology:Organo_01)
+DataPropertyAssertion(oncology-ontology:cancer_nombre oncology-ontology:Cancer_06 "Cancer de pancreas")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_06 "antecedentes familiares de cáncer")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_06 "dietas altas en grasas")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_06 "edad avanzada")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_06 "sobrepeso")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_06 "tabaquismo")
+DataPropertyAssertion(oncology-ontology:fases_del_cancer oncology-ontology:Cancer_06 "Estadio I: El cáncer está confinado al páncreas.
+Estadio II: El cáncer se ha diseminado a tejidos cercanos o ganglios linfáticos.
+Estadio III: El cáncer se ha diseminado a estructuras cercanas y ganglios linfáticos.
+Estadio IV: El cáncer se ha diseminado a otras partes del cuerpo, como el hígado o los pulmones.")
+DataPropertyAssertion(oncology-ontology:probabilidad_de_mortalidad oncology-ontology:Cancer_06 "Aproximadamente el 95% de las personas con cáncer de páncreas en este estadio fallecen dentro de 5 años")
+DataPropertyAssertion(oncology-ontology:probabilidad_de_recuperacion oncology-ontology:Cancer_06 "Estadio I: La tasa de supervivencia a 5 años es aproximadamente del 39%.
+Estadio II: La tasa de supervivencia a 5 años es aproximadamente del 20-30%.
+Estadio III: La tasa de supervivencia a 5 años es aproximadamente del 10%.
+Estadio IV: La tasa de supervivencia a 5 años es de alrededor del 3%.")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_06 "dolor abdominal")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_06 "ictericia")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_06 "náuseas y vómitos")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_06 "pérdida de peso inexplicada")
+
+# Individual: oncology-ontology:Cancer_07 (oncology-ontology:Cancer_07)
+
+ClassAssertion(oncology-ontology:Cancer oncology-ontology:Cancer_07)
+ObjectPropertyAssertion(oncology-ontology:afectaOrgano oncology-ontology:Cancer_07 oncology-ontology:Organo_03)
+DataPropertyAssertion(oncology-ontology:cancer_nombre oncology-ontology:Cancer_07 "Cancer de estomago")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_07 "antecedentes familiares de cáncer")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_07 "edad avanzada")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_07 "enfermedades gástricas crónicas")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_07 "obesidad")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_07 "tabaquismo")
+DataPropertyAssertion(oncology-ontology:fases_del_cancer oncology-ontology:Cancer_07 "Estadio I: El cáncer está confinado a la mucosa del estómago.
+Estadio II: El cáncer se ha diseminado a las capas más profundas o a los ganglios linfáticos cercanos.
+Estadio III: El cáncer se ha diseminado a estructuras cercanas y ganglios linfáticos.
+Estadio IV: El cáncer se ha diseminado a otros órganos, como el hígado o los pulmones.")
+DataPropertyAssertion(oncology-ontology:probabilidad_de_mortalidad oncology-ontology:Cancer_07 "Estadio IV: Aproximadamente el 90% de las personas con cáncer de estómago en este estadio fallecen dentro de 5 años.")
+DataPropertyAssertion(oncology-ontology:probabilidad_de_recuperacion oncology-ontology:Cancer_07 "Estadio I: La tasa de supervivencia a 5 años es aproximadamente del 68%.
+Estadio II: La tasa de supervivencia a 5 años es aproximadamente del 33-50%.
+Estadio III: La tasa de supervivencia a 5 años es aproximadamente del 10-20%.
+Estadio IV: La tasa de supervivencia a 5 años es menor del 5%.")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_07 "acidez estomacal o indigestión persistente")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_07 "dolor abdominal")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_07 "fatiga y debilidad")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_07 "náuseas y vómitos")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_07 "pérdida de peso inexplicada")
+
+# Individual: oncology-ontology:Cancer_08 (oncology-ontology:Cancer_08)
+
+ClassAssertion(oncology-ontology:Cancer oncology-ontology:Cancer_08)
+ObjectPropertyAssertion(oncology-ontology:afectaOrgano oncology-ontology:Cancer_08 oncology-ontology:Organo_04)
+DataPropertyAssertion(oncology-ontology:cancer_nombre oncology-ontology:Cancer_08 "Cancer de higado")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_08 "antecedentes familiares de cáncer")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_08 "cirrosis")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_08 "consumo excesivo de alcohol")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_08 "diabetes")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_08 "infección crónica por hepatitis B o C")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_08 "obesidad")
+DataPropertyAssertion(oncology-ontology:fases_del_cancer oncology-ontology:Cancer_08 "Estadio I: El cáncer está confinado al hígado y es pequeño.
+Estadio II: El cáncer se ha diseminado a más de un lugar en el hígado o a los ganglios linfáticos cercanos.
+Estadio III: El cáncer se ha diseminado a estructuras cercanas, como vasos sanguíneos o ganglios linfáticos.
+Estadio IV: El cáncer se ha diseminado a otros órganos, como los pulmones o los huesos.")
+DataPropertyAssertion(oncology-ontology:probabilidad_de_mortalidad oncology-ontology:Cancer_08 "Estadio IV: Aproximadamente el 90% de las personas con cáncer de hígado en este estadio fallecen dentro de 5 años.")
+DataPropertyAssertion(oncology-ontology:probabilidad_de_recuperacion oncology-ontology:Cancer_08 "Estadio I: La tasa de supervivencia a 5 años es aproximadamente del 31%.
+Estadio II: La tasa de supervivencia a 5 años es de alrededor del 11-20%.
+Estadio III: La tasa de supervivencia a 5 años es de aproximadamente el 6-11%.
+Estadio IV: La tasa de supervivencia a 5 años es menor del 3%.")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_08 "dolor abdominal")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_08 "hinchazón abdominal")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_08 "ictericia")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_08 "náuseas y vómitos")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_08 "pérdida de apetito")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_08 "pérdida de peso inexplicada")
+
+# Individual: oncology-ontology:Cancer_09 (oncology-ontology:Cancer_09)
+
+ClassAssertion(oncology-ontology:Cancer oncology-ontology:Cancer_09)
+ObjectPropertyAssertion(oncology-ontology:afectaOrgano oncology-ontology:Cancer_09 oncology-ontology:Organo_07)
+DataPropertyAssertion(oncology-ontology:cancer_nombre oncology-ontology:Cancer_09 "Cancer de piel")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_09 "antecedentes familiares de cáncer")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_09 "edad avanzada")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_09 "exposición a la radiación ultravioleta (UV)")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_09 "exposición a productos químicos")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_09 "sistema inmunológico comprometido")
+DataPropertyAssertion(oncology-ontology:factores_de_riesgo oncology-ontology:Cancer_09 "tipo de piel clara")
+DataPropertyAssertion(oncology-ontology:fases_del_cancer oncology-ontology:Cancer_09 "Estadio I: Tumor localizado y pequeño, sin diseminación.
+Estadio II: Tumor más grande, pero aún localizado.
+Estadio III: El cáncer se ha diseminado a los ganglios linfáticos cercanos.
+Estadio IV: El cáncer se ha diseminado a otras partes del cuerpo (metástasis).")
+DataPropertyAssertion(oncology-ontology:probabilidad_de_mortalidad oncology-ontology:Cancer_09 "Melanoma: Aunque es menos común que otros tipos, es el más mortal. La mortalidad aumenta significativamente con el estadio.
+CCB y CCE: Generalmente, tienen tasas de mortalidad muy bajas cuando se tratan a tiempo.")
+DataPropertyAssertion(oncology-ontology:probabilidad_de_recuperacion oncology-ontology:Cancer_09 "Carcinoma de células basocelulares (CCB): Muy alta tasa de curación, generalmente se considera \"no mortal\".
+Carcinoma de células escamosas (CCE): Tasa de supervivencia alta si se detecta temprano; tasa de curación superior al 90%.
+Melanoma: La tasa de supervivencia a 5 años varía según el estadio:
+    Estadio I: ~98%
+    Estadio II: ~70-90%
+    Estadio III: ~40-70%
+    Estadio IV: ~15-20%")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_09 "bultos o protuberancias")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_09 "lesiones que no sanan")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_09 "lunares o manchas nuevas")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_09 "sangrado o costras")
+DataPropertyAssertion(oncology-ontology:sintoma oncology-ontology:Cancer_09 "textura irregular")
+
+# Individual: oncology-ontology:Centro_medico_01 (oncology-ontology:Centro_medico_01)
+
+ClassAssertion(oncology-ontology:Primer_nivel oncology-ontology:Centro_medico_01)
+ObjectPropertyAssertion(oncology-ontology:ofreceTratamiento oncology-ontology:Centro_medico_01 oncology-ontology:Tratamiento_Medico_01)
+ObjectPropertyAssertion(oncology-ontology:ofreceTratamiento oncology-ontology:Centro_medico_01 oncology-ontology:Tratamiento_Medico_03)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_01 oncology-ontology:Prueba_diagnostica_01)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_01 oncology-ontology:Prueba_diagnostica_03)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_01 oncology-ontology:Prueba_diagnostica_05)
+DataPropertyAssertion(oncology-ontology:descripcion_centro_medico oncology-ontology:Centro_medico_01 "Centro de atención primaria que ofrece servicios médicos generales, pediatría y ginecología. Su enfoque está en la prevención y promoción de la salud en la comunidad.")
+DataPropertyAssertion(oncology-ontology:nombre_centro_medico oncology-ontology:Centro_medico_01 "Centro de Salud Las Lomas")
+
+# Individual: oncology-ontology:Centro_medico_02 (oncology-ontology:Centro_medico_02)
+
+ClassAssertion(oncology-ontology:Segundo_nivel oncology-ontology:Centro_medico_02)
+ObjectPropertyAssertion(oncology-ontology:ofreceTratamiento oncology-ontology:Centro_medico_02 oncology-ontology:Tratamiento_Medico_04)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_02 oncology-ontology:Prueba_diagnostica_02)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_02 oncology-ontology:Prueba_diagnostica_03)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_02 oncology-ontology:Prueba_diagnostica_04)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_02 oncology-ontology:Prueba_diagnostica_06)
+DataPropertyAssertion(oncology-ontology:descripcion_centro_medico oncology-ontology:Centro_medico_02 "Centro de salud de segundo nivel que ofrece atención especializada en cirugía, medicina interna y pediatría, con servicios de hospitalización.")
+DataPropertyAssertion(oncology-ontology:nombre_centro_medico oncology-ontology:Centro_medico_02 "Hospital Bolívar")
+
+# Individual: oncology-ontology:Centro_medico_03 (oncology-ontology:Centro_medico_03)
+
+ClassAssertion(oncology-ontology:Tercer_nivel oncology-ontology:Centro_medico_03)
+ObjectPropertyAssertion(oncology-ontology:ofreceTratamiento oncology-ontology:Centro_medico_03 oncology-ontology:Tratamiento_Medico_01)
+ObjectPropertyAssertion(oncology-ontology:ofreceTratamiento oncology-ontology:Centro_medico_03 oncology-ontology:Tratamiento_Medico_02)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_03 oncology-ontology:Prueba_diagnostica_01)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_03 oncology-ontology:Prueba_diagnostica_02)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_03 oncology-ontology:Prueba_diagnostica_03)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_03 oncology-ontology:Prueba_diagnostica_05)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_03 oncology-ontology:Prueba_diagnostica_06)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_03 oncology-ontology:Prueba_diagnostica_07)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_03 oncology-ontology:Prueba_diagnostica_10)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_03 oncology-ontology:Prueba_diagnostica_11)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_03 oncology-ontology:Prueba_diagnostica_12)
+DataPropertyAssertion(oncology-ontology:descripcion_centro_medico oncology-ontology:Centro_medico_03 "Hospital de tercer nivel que brinda atención médica especializada en diversas áreas, incluyendo servicios de cirugía y medicina interna.")
+DataPropertyAssertion(oncology-ontology:nombre_centro_medico oncology-ontology:Centro_medico_03 "Hospital de Clínicas Murillo")
+
+# Individual: oncology-ontology:Centro_medico_04 (oncology-ontology:Centro_medico_04)
+
+ClassAssertion(oncology-ontology:Segundo_nivel oncology-ontology:Centro_medico_04)
+ObjectPropertyAssertion(oncology-ontology:ofreceTratamiento oncology-ontology:Centro_medico_04 oncology-ontology:Tratamiento_Medico_03)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_04 oncology-ontology:Prueba_diagnostica_01)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_04 oncology-ontology:Prueba_diagnostica_02)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_04 oncology-ontology:Prueba_diagnostica_03)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_04 oncology-ontology:Prueba_diagnostica_04)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_04 oncology-ontology:Prueba_diagnostica_05)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_04 oncology-ontology:Prueba_diagnostica_06)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_04 oncology-ontology:Prueba_diagnostica_07)
+DataPropertyAssertion(oncology-ontology:descripcion_centro_medico oncology-ontology:Centro_medico_04 "Establecimiento de segundo nivel que ofrece atención integral en especialidades como pediatría, ginecología y emergencias.")
+DataPropertyAssertion(oncology-ontology:nombre_centro_medico oncology-ontology:Centro_medico_04 "Hospital Juan XXIII")
+
+# Individual: oncology-ontology:Centro_medico_05 (oncology-ontology:Centro_medico_05)
+
+ClassAssertion(oncology-ontology:Tercer_nivel oncology-ontology:Centro_medico_05)
+ObjectPropertyAssertion(oncology-ontology:ofreceTratamiento oncology-ontology:Centro_medico_05 oncology-ontology:Tratamiento_Medico_02)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_05 oncology-ontology:Prueba_diagnostica_01)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_05 oncology-ontology:Prueba_diagnostica_02)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_05 oncology-ontology:Prueba_diagnostica_03)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_05 oncology-ontology:Prueba_diagnostica_04)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_05 oncology-ontology:Prueba_diagnostica_05)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_05 oncology-ontology:Prueba_diagnostica_06)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_05 oncology-ontology:Prueba_diagnostica_07)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_05 oncology-ontology:Prueba_diagnostica_08)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_05 oncology-ontology:Prueba_diagnostica_09)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_05 oncology-ontology:Prueba_diagnostica_10)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_05 oncology-ontology:Prueba_diagnostica_11)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_05 oncology-ontology:Prueba_diagnostica_12)
+DataPropertyAssertion(oncology-ontology:descripcion_centro_medico oncology-ontology:Centro_medico_05 "Hospital de tercer nivel que proporciona atención médica de alta complejidad y especialidades, incluyendo oncología y cirugía avanzada.")
+DataPropertyAssertion(oncology-ontology:nombre_centro_medico oncology-ontology:Centro_medico_05 "Hospital Universitario Joaquín Fernández")
+
+# Individual: oncology-ontology:Centro_medico_06 (oncology-ontology:Centro_medico_06)
+
+ClassAssertion(oncology-ontology:Cuarto_nivel oncology-ontology:Centro_medico_06)
+ObjectPropertyAssertion(oncology-ontology:ofreceTratamiento oncology-ontology:Centro_medico_06 oncology-ontology:Tratamiento_Medico_03)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_06 oncology-ontology:Prueba_diagnostica_01)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_06 oncology-ontology:Prueba_diagnostica_02)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_06 oncology-ontology:Prueba_diagnostica_03)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_06 oncology-ontology:Prueba_diagnostica_04)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_06 oncology-ontology:Prueba_diagnostica_05)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_06 oncology-ontology:Prueba_diagnostica_06)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_06 oncology-ontology:Prueba_diagnostica_07)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_06 oncology-ontology:Prueba_diagnostica_08)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_06 oncology-ontology:Prueba_diagnostica_09)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_06 oncology-ontology:Prueba_diagnostica_10)
+DataPropertyAssertion(oncology-ontology:descripcion_centro_medico oncology-ontology:Centro_medico_06 "Centro especializado en el tratamiento del cáncer, ofreciendo servicios de diagnóstico y terapia oncológica.")
+DataPropertyAssertion(oncology-ontology:nombre_centro_medico oncology-ontology:Centro_medico_06 "Instituto Oncológico de Bolivia (IOB)")
+
+# Individual: oncology-ontology:Centro_medico_07 (oncology-ontology:Centro_medico_07)
+
+ClassAssertion(oncology-ontology:Tercer_nivel oncology-ontology:Centro_medico_07)
+ObjectPropertyAssertion(oncology-ontology:ofreceTratamiento oncology-ontology:Centro_medico_07 oncology-ontology:Tratamiento_Medico_01)
+ObjectPropertyAssertion(oncology-ontology:ofreceTratamiento oncology-ontology:Centro_medico_07 oncology-ontology:Tratamiento_Medico_03)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_07 oncology-ontology:Prueba_diagnostica_01)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_07 oncology-ontology:Prueba_diagnostica_03)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_07 oncology-ontology:Prueba_diagnostica_05)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_07 oncology-ontology:Prueba_diagnostica_07)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_07 oncology-ontology:Prueba_diagnostica_09)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_07 oncology-ontology:Prueba_diagnostica_11)
+DataPropertyAssertion(oncology-ontology:descripcion_centro_medico oncology-ontology:Centro_medico_07 "Brinda atención en más de 20 especialidades, como cirugía oncológica y neurología.")
+DataPropertyAssertion(oncology-ontology:nombre_centro_medico oncology-ontology:Centro_medico_07 "Hospital Japonés")
+
+# Individual: oncology-ontology:Centro_medico_08 (oncology-ontology:Centro_medico_08)
+
+ClassAssertion(oncology-ontology:Tercer_nivel oncology-ontology:Centro_medico_08)
+ObjectPropertyAssertion(oncology-ontology:ofreceTratamiento oncology-ontology:Centro_medico_08 oncology-ontology:Tratamiento_Medico_02)
+ObjectPropertyAssertion(oncology-ontology:ofreceTratamiento oncology-ontology:Centro_medico_08 oncology-ontology:Tratamiento_Medico_04)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_08 oncology-ontology:Prueba_diagnostica_02)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_08 oncology-ontology:Prueba_diagnostica_03)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_08 oncology-ontology:Prueba_diagnostica_05)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_08 oncology-ontology:Prueba_diagnostica_09)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_08 oncology-ontology:Prueba_diagnostica_10)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_08 oncology-ontology:Prueba_diagnostica_12)
+DataPropertyAssertion(oncology-ontology:descripcion_centro_medico oncology-ontology:Centro_medico_08 "Especializado en pediatría avanzada, abarca cardiología, neurología y oncología infantil​.")
+DataPropertyAssertion(oncology-ontology:nombre_centro_medico oncology-ontology:Centro_medico_08 "Hospital del Niño")
+
+# Individual: oncology-ontology:Centro_medico_09 (oncology-ontology:Centro_medico_09)
+
+ClassAssertion(oncology-ontology:Primer_nivel oncology-ontology:Centro_medico_09)
+ObjectPropertyAssertion(oncology-ontology:ofreceTratamiento oncology-ontology:Centro_medico_09 oncology-ontology:Tratamiento_Medico_01)
+ObjectPropertyAssertion(oncology-ontology:ofreceTratamiento oncology-ontology:Centro_medico_09 oncology-ontology:Tratamiento_Medico_03)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_09 oncology-ontology:Prueba_diagnostica_01)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_09 oncology-ontology:Prueba_diagnostica_03)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_09 oncology-ontology:Prueba_diagnostica_05)
+DataPropertyAssertion(oncology-ontology:descripcion_centro_medico oncology-ontology:Centro_medico_09 "Ofrece servicios básicos de atención primaria a la comunidad rural cercana​.")
+DataPropertyAssertion(oncology-ontology:nombre_centro_medico oncology-ontology:Centro_medico_09 "Centro de Salud Itatiqui")
+
+# Individual: oncology-ontology:Centro_medico_10 (oncology-ontology:Centro_medico_10)
+
+ClassAssertion(oncology-ontology:Segundo_nivel oncology-ontology:Centro_medico_10)
+ObjectPropertyAssertion(oncology-ontology:ofreceTratamiento oncology-ontology:Centro_medico_10 oncology-ontology:Tratamiento_Medico_04)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_10 oncology-ontology:Prueba_diagnostica_02)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_10 oncology-ontology:Prueba_diagnostica_03)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_10 oncology-ontology:Prueba_diagnostica_04)
+ObjectPropertyAssertion(oncology-ontology:realizaExamen oncology-ontology:Centro_medico_10 oncology-ontology:Prueba_diagnostica_06)
+DataPropertyAssertion(oncology-ontology:descripcion_centro_medico oncology-ontology:Centro_medico_10 "Brinda atención en medicina interna, cirugía y especialidades básicas. Se enfoca en la atención ambulatoria y hospitalización de mediana complejidad​.")
+DataPropertyAssertion(oncology-ontology:nombre_centro_medico oncology-ontology:Centro_medico_10 "Hospital Municipal La Merced")
+
+# Individual: oncology-ontology:Medicamento_01 (oncology-ontology:Medicamento_01)
+
+DataPropertyAssertion(oncology-ontology:fabricante_medicamento oncology-ontology:Medicamento_01 "Mylan")
+DataPropertyAssertion(oncology-ontology:nombre_medicamento oncology-ontology:Medicamento_01 "Cisplatino")
+DataPropertyAssertion(oncology-ontology:tipo_medicamento oncology-ontology:Medicamento_01 "Quimioterapia")
+
+# Individual: oncology-ontology:Medicamento_02 (oncology-ontology:Medicamento_02)
+
+DataPropertyAssertion(oncology-ontology:fabricante_medicamento oncology-ontology:Medicamento_02 "Hospira")
+DataPropertyAssertion(oncology-ontology:nombre_medicamento oncology-ontology:Medicamento_02 "5-fluorouracilo (5-FU)")
+DataPropertyAssertion(oncology-ontology:tipo_medicamento oncology-ontology:Medicamento_02 "Quimioterapia")
+
+# Individual: oncology-ontology:Medicamento_03 (oncology-ontology:Medicamento_03)
+
+DataPropertyAssertion(oncology-ontology:fabricante_medicamento oncology-ontology:Medicamento_03 "Genentech/Roche")
+DataPropertyAssertion(oncology-ontology:nombre_medicamento oncology-ontology:Medicamento_03 "Trastuzumab")
+DataPropertyAssertion(oncology-ontology:tipo_medicamento oncology-ontology:Medicamento_03 "Quimioterapia")
+
+# Individual: oncology-ontology:Organo_01 (oncology-ontology:Organo_01)
+
+AnnotationAssertion(oncology-ontology:pertenece oncology-ontology:Organo_01 oncology-ontology:Sistema_02)
+ClassAssertion(oncology-ontology:Organo oncology-ontology:Organo_01)
+ObjectPropertyAssertion(oncology-ontology:perteneceA oncology-ontology:Organo_01 oncology-ontology:Sistema_02)
+DataPropertyAssertion(oncology-ontology:glandulas oncology-ontology:Organo_01 "endocrinas")
+DataPropertyAssertion(oncology-ontology:organo_descricion oncology-ontology:Organo_01 "El páncreas es una glándula situada detrás del estómago, que cumple dos funciones principales: la producción de enzimas que ayudan en la digestión de los alimentos y la producción de hormonas, como la insulina, que regula los niveles de azúcar en la sangre.")
+DataPropertyAssertion(oncology-ontology:organo_nombre oncology-ontology:Organo_01 "Pancreas")
+
+# Individual: oncology-ontology:Organo_02 (oncology-ontology:Organo_02)
+
+AnnotationAssertion(oncology-ontology:pertenece oncology-ontology:Organo_02 oncology-ontology:Sistema_02)
+ClassAssertion(oncology-ontology:Organo oncology-ontology:Organo_02)
+ObjectPropertyAssertion(oncology-ontology:perteneceA oncology-ontology:Organo_02 oncology-ontology:Sistema_02)
+DataPropertyAssertion(oncology-ontology:fibras oncology-ontology:Organo_02 "insolubles")
+DataPropertyAssertion(oncology-ontology:fibras oncology-ontology:Organo_02 "musculares")
+DataPropertyAssertion(oncology-ontology:fibras oncology-ontology:Organo_02 "solubles")
+DataPropertyAssertion(oncology-ontology:ganglios oncology-ontology:Organo_02 "linfatico interno")
+DataPropertyAssertion(oncology-ontology:glandulas oncology-ontology:Organo_02 "exocrinas")
+DataPropertyAssertion(oncology-ontology:organo_descricion oncology-ontology:Organo_02 "El colon es la parte más larga del intestino grueso. Su función es absorber agua y sales de los alimentos parcialmente digeridos que llegan del intestino delgado, y formar y almacenar las heces para su posterior eliminación a través del recto.")
+DataPropertyAssertion(oncology-ontology:organo_nombre oncology-ontology:Organo_02 "Colon")
+
+# Individual: oncology-ontology:Organo_03 (oncology-ontology:Organo_03)
+
+AnnotationAssertion(oncology-ontology:pertenece oncology-ontology:Organo_03 oncology-ontology:Sistema_02)
+ClassAssertion(oncology-ontology:Organo oncology-ontology:Organo_03)
+ObjectPropertyAssertion(oncology-ontology:perteneceA oncology-ontology:Organo_03 oncology-ontology:Sistema_02)
+DataPropertyAssertion(oncology-ontology:fibras oncology-ontology:Organo_03 "musculares")
+DataPropertyAssertion(oncology-ontology:ganglios oncology-ontology:Organo_03 "linfatico interno")
+DataPropertyAssertion(oncology-ontology:glandulas oncology-ontology:Organo_03 "exocrinas")
+DataPropertyAssertion(oncology-ontology:organo_descricion oncology-ontology:Organo_03 "El estómago es un órgano en forma de saco ubicado en la parte superior del abdomen. Su función principal es descomponer los alimentos mediante la acción de ácidos gástricos y enzimas digestivas para facilitar la absorción de nutrientes en el intestino delgado.")
+DataPropertyAssertion(oncology-ontology:organo_nombre oncology-ontology:Organo_03 "Estomago")
+
+# Individual: oncology-ontology:Organo_04 (oncology-ontology:Organo_04)
+
+AnnotationAssertion(oncology-ontology:pertenece oncology-ontology:Organo_04 oncology-ontology:Sistema_02)
+ClassAssertion(oncology-ontology:Organo oncology-ontology:Organo_04)
+ObjectPropertyAssertion(oncology-ontology:perteneceA oncology-ontology:Organo_04 oncology-ontology:Sistema_02)
+DataPropertyAssertion(oncology-ontology:celulas oncology-ontology:Organo_04 "adipositos")
+DataPropertyAssertion(oncology-ontology:desechos_metabolicos oncology-ontology:Organo_04 "Acido urico")
+DataPropertyAssertion(oncology-ontology:desechos_metabolicos oncology-ontology:Organo_04 "amoniaco")
+DataPropertyAssertion(oncology-ontology:desechos_metabolicos oncology-ontology:Organo_04 "urea")
+DataPropertyAssertion(oncology-ontology:ganglios oncology-ontology:Organo_04 "linfatico interno")
+DataPropertyAssertion(oncology-ontology:organo_descricion oncology-ontology:Organo_04 "órgano vital que filtra la sangre, procesa nutrientes y desintoxica sustancias. Produce bilis y almacena vitaminas, siendo clave en el metabolismo de carbohidratos, grasas y proteínas.")
+DataPropertyAssertion(oncology-ontology:organo_nombre oncology-ontology:Organo_04 "Higado")
+
+# Individual: oncology-ontology:Organo_05 (oncology-ontology:Organo_05)
+
+AnnotationAssertion(oncology-ontology:pertenece oncology-ontology:Organo_05 oncology-ontology:Sistema_03)
+ClassAssertion(oncology-ontology:Organo oncology-ontology:Organo_05)
+ObjectPropertyAssertion(oncology-ontology:perteneceA oncology-ontology:Organo_05 oncology-ontology:Sistema_03)
+DataPropertyAssertion(oncology-ontology:glandulas oncology-ontology:Organo_05 "exocrinas")
+DataPropertyAssertion(oncology-ontology:organo_descricion oncology-ontology:Organo_05 "Las mamas, o senos, son glándulas situadas en la parte superior del pecho. Su función principal es la producción de leche materna en las mujeres, pero también contienen tejido graso y tejido conectivo. Están formadas por lóbulos, lobulillos y conductos.")
+DataPropertyAssertion(oncology-ontology:organo_nombre oncology-ontology:Organo_05 "Mama")
+
+# Individual: oncology-ontology:Organo_06 (oncology-ontology:Organo_06)
+
+AnnotationAssertion(oncology-ontology:pertenece oncology-ontology:Organo_06 oncology-ontology:Sistema_03)
+ClassAssertion(oncology-ontology:Organo oncology-ontology:Organo_06)
+ObjectPropertyAssertion(oncology-ontology:perteneceA oncology-ontology:Organo_06 oncology-ontology:Sistema_03)
+DataPropertyAssertion(oncology-ontology:glandulas oncology-ontology:Organo_06 "endocrinas")
+DataPropertyAssertion(oncology-ontology:organo_descricion oncology-ontology:Organo_06 "Los ovarios son dos glándulas reproductoras femeninas, situadas a ambos lados del útero en la pelvis. Producen óvulos para la fertilización y también liberan hormonas como el estrógeno y la progesterona, que regulan el ciclo menstrual y el embarazo.")
+DataPropertyAssertion(oncology-ontology:organo_nombre oncology-ontology:Organo_06 "Ovarios")
+
+# Individual: oncology-ontology:Organo_07 (oncology-ontology:Organo_07)
+
+AnnotationAssertion(oncology-ontology:pertenece oncology-ontology:Organo_07 oncology-ontology:Sistema_04)
+ClassAssertion(oncology-ontology:Organo oncology-ontology:Organo_07)
+ObjectPropertyAssertion(oncology-ontology:perteneceA oncology-ontology:Organo_07 oncology-ontology:Sistema_04)
+DataPropertyAssertion(oncology-ontology:celulas oncology-ontology:Organo_07 "cutaneas")
+DataPropertyAssertion(oncology-ontology:celulas oncology-ontology:Organo_07 "queratinocitos")
+DataPropertyAssertion(oncology-ontology:desechos_metabolicos oncology-ontology:Organo_07 "agua")
+DataPropertyAssertion(oncology-ontology:desechos_metabolicos oncology-ontology:Organo_07 "sales")
+DataPropertyAssertion(oncology-ontology:ganglios oncology-ontology:Organo_07 "linfaticos perifericos")
+DataPropertyAssertion(oncology-ontology:glandulas oncology-ontology:Organo_07 "exocrinas")
+DataPropertyAssertion(oncology-ontology:organo_descricion oncology-ontology:Organo_07 "órgano más grande del cuerpo, que actúa como barrera protectora. Regula la temperatura, permite la sensación y ayuda en la producción de vitamina D. Además, protege contra infecciones y deshidratación.")
+DataPropertyAssertion(oncology-ontology:organo_nombre oncology-ontology:Organo_07 "Piel")
+
+# Individual: oncology-ontology:Organo_08 (oncology-ontology:Organo_08)
+
+AnnotationAssertion(oncology-ontology:pertenece oncology-ontology:Organo_08 oncology-ontology:Sistema_03)
+ClassAssertion(oncology-ontology:Organo oncology-ontology:Organo_08)
+ObjectPropertyAssertion(oncology-ontology:perteneceA oncology-ontology:Organo_08 oncology-ontology:Sistema_03)
+DataPropertyAssertion(oncology-ontology:ganglios oncology-ontology:Organo_08 "linfaticos internos")
+DataPropertyAssertion(oncology-ontology:organo_descricion oncology-ontology:Organo_08 "La próstata es una glándula pequeña en los hombres, situada debajo de la vejiga y delante del recto. Su función principal es producir líquido prostático, que es parte del semen, y desempeña un papel en la fertilidad al ayudar en el transporte y la nutrición de los espermatozoides.")
+DataPropertyAssertion(oncology-ontology:organo_nombre oncology-ontology:Organo_08 "Prostata")
+
+# Individual: oncology-ontology:Organo_09 (oncology-ontology:Organo_09)
+
+AnnotationAssertion(oncology-ontology:pertenece oncology-ontology:Organo_09 oncology-ontology:Sistema_05)
+ClassAssertion(oncology-ontology:Organo oncology-ontology:Organo_09)
+ObjectPropertyAssertion(oncology-ontology:perteneceA oncology-ontology:Organo_09 oncology-ontology:Sistema_05)
+DataPropertyAssertion(oncology-ontology:celulas oncology-ontology:Organo_09 "adipositos")
+DataPropertyAssertion(oncology-ontology:desechos_metabolicos oncology-ontology:Organo_09 "acido urico")
+DataPropertyAssertion(oncology-ontology:desechos_metabolicos oncology-ontology:Organo_09 "agua")
+DataPropertyAssertion(oncology-ontology:desechos_metabolicos oncology-ontology:Organo_09 "creatina")
+DataPropertyAssertion(oncology-ontology:desechos_metabolicos oncology-ontology:Organo_09 "sales")
+DataPropertyAssertion(oncology-ontology:desechos_metabolicos oncology-ontology:Organo_09 "urea")
+DataPropertyAssertion(oncology-ontology:organo_descricion oncology-ontology:Organo_09 "Los riñones son dos órganos en forma de frijol situados a ambos lados de la columna vertebral, en la parte posterior del abdomen. Su función principal es filtrar la sangre para eliminar desechos y exceso de líquidos, que luego se excretan como orina. También regulan el equilibrio de electrolitos y la presión arterial.")
+DataPropertyAssertion(oncology-ontology:organo_nombre oncology-ontology:Organo_09 "Riñones")
+DataPropertyAssertion(oncology-ontology:organo_nombre oncology-ontology:Organo_09 "suprarrenales")
+
+# Individual: oncology-ontology:Organo_10 (oncology-ontology:Organo_10)
+
+AnnotationAssertion(oncology-ontology:pertenece oncology-ontology:Organo_10 oncology-ontology:Sistema_03)
+ClassAssertion(oncology-ontology:Organo oncology-ontology:Organo_10)
+ObjectPropertyAssertion(oncology-ontology:perteneceA oncology-ontology:Organo_10 oncology-ontology:Sistema_03)
+DataPropertyAssertion(oncology-ontology:fibras oncology-ontology:Organo_10 "musculares")
+DataPropertyAssertion(oncology-ontology:ganglios oncology-ontology:Organo_10 "linfaticos internos")
+DataPropertyAssertion(oncology-ontology:organo_descricion oncology-ontology:Organo_10 "El útero es un órgano muscular hueco en forma de pera, ubicado en la pelvis femenina. Es el lugar donde se desarrolla el feto durante el embarazo. Su revestimiento, el endometrio, se desprende durante la menstruación si no hay embarazo.")
+DataPropertyAssertion(oncology-ontology:organo_nombre oncology-ontology:Organo_10 "Utero")
+
+# Individual: oncology-ontology:Organo_11 (oncology-ontology:Organo_11)
+
+AnnotationAssertion(oncology-ontology:pertenece oncology-ontology:Organo_11 oncology-ontology:Sistema_06)
+ClassAssertion(oncology-ontology:Organo oncology-ontology:Organo_11)
+ObjectPropertyAssertion(oncology-ontology:perteneceA oncology-ontology:Organo_11 oncology-ontology:Sistema_06)
+DataPropertyAssertion(oncology-ontology:desechos_metabolicos oncology-ontology:Organo_11 "agua")
+DataPropertyAssertion(oncology-ontology:desechos_metabolicos oncology-ontology:Organo_11 "dioxido de carbono")
+DataPropertyAssertion(oncology-ontology:fibras oncology-ontology:Organo_11 "musculares")
+DataPropertyAssertion(oncology-ontology:ganglios oncology-ontology:Organo_11 "mediastinicos")
+DataPropertyAssertion(oncology-ontology:organo_descricion oncology-ontology:Organo_11 "Los pulmones son órganos esponjosos ubicados en el tórax, responsables del intercambio de gases")
+DataPropertyAssertion(oncology-ontology:organo_nombre oncology-ontology:Organo_11 "Pulmon")
+
+# Individual: oncology-ontology:Persona_1 (oncology-ontology:Persona_1)
+
+AnnotationAssertion(oncology-ontology:puedeTenerCancer oncology-ontology:Persona_1 oncology-ontology:Cancer_05)
+ClassAssertion(oncology-ontology:Persona oncology-ontology:Persona_1)
+ObjectPropertyAssertion(oncology-ontology:puedeHacerceUna oncology-ontology:Persona_1 oncology-ontology:Prueba_diagnostica_01)
+DataPropertyAssertion(oncology-ontology:edad oncology-ontology:Persona_1 "45"^^xsd:integer)
+DataPropertyAssertion(oncology-ontology:genero oncology-ontology:Persona_1 "Masculino")
+DataPropertyAssertion(oncology-ontology:nombre_persona oncology-ontology:Persona_1 "Juan")
+
+# Individual: oncology-ontology:Persona_2 (oncology-ontology:Persona_2)
+
+ClassAssertion(oncology-ontology:Persona oncology-ontology:Persona_2)
+ObjectPropertyAssertion(oncology-ontology:puedeHacerceUna oncology-ontology:Persona_2 oncology-ontology:Prueba_diagnostica_08)
+ObjectPropertyAssertion(oncology-ontology:tienenUn oncology-ontology:Persona_2 oncology-ontology:Cancer_05)
+DataPropertyAssertion(oncology-ontology:edad oncology-ontology:Persona_2 "6"^^xsd:integer)
+DataPropertyAssertion(oncology-ontology:genero oncology-ontology:Persona_2 "Femenino")
+DataPropertyAssertion(oncology-ontology:nombre_persona oncology-ontology:Persona_2 "Guadalupe")
+
+# Individual: oncology-ontology:Persona_3 (oncology-ontology:Persona_3)
+
+ClassAssertion(oncology-ontology:Persona oncology-ontology:Persona_3)
+ObjectPropertyAssertion(oncology-ontology:puedeHacerceUna oncology-ontology:Persona_3 oncology-ontology:Prueba_diagnostica_02)
+ObjectPropertyAssertion(oncology-ontology:tienenUn oncology-ontology:Persona_3 oncology-ontology:Cancer_05)
+DataPropertyAssertion(oncology-ontology:edad oncology-ontology:Persona_3 "25"^^xsd:integer)
+DataPropertyAssertion(oncology-ontology:genero oncology-ontology:Persona_3 "Masculino")
+DataPropertyAssertion(oncology-ontology:nombre_persona oncology-ontology:Persona_3 "Maximiliano")
+
+# Individual: oncology-ontology:Persona_4 (oncology-ontology:Persona_4)
+
+ClassAssertion(oncology-ontology:Persona oncology-ontology:Persona_4)
+ObjectPropertyAssertion(oncology-ontology:puedeHacerceUna oncology-ontology:Persona_4 oncology-ontology:Prueba_diagnostica_06)
+ObjectPropertyAssertion(oncology-ontology:tienenUn oncology-ontology:Persona_4 oncology-ontology:Cancer_05)
+DataPropertyAssertion(oncology-ontology:edad oncology-ontology:Persona_4 "32"^^xsd:integer)
+DataPropertyAssertion(oncology-ontology:genero oncology-ontology:Persona_4 "Masculino")
+DataPropertyAssertion(oncology-ontology:nombre_persona oncology-ontology:Persona_4 "Diego")
+
+# Individual: oncology-ontology:Persona_5 (oncology-ontology:Persona_5)
+
+ClassAssertion(oncology-ontology:Persona oncology-ontology:Persona_5)
+ObjectPropertyAssertion(oncology-ontology:puedeHacerceUna oncology-ontology:Persona_5 oncology-ontology:Prueba_diagnostica_06)
+ObjectPropertyAssertion(oncology-ontology:tienenUn oncology-ontology:Persona_5 oncology-ontology:Cancer_05)
+DataPropertyAssertion(oncology-ontology:edad oncology-ontology:Persona_5 "15"^^xsd:integer)
+DataPropertyAssertion(oncology-ontology:genero oncology-ontology:Persona_5 "Femenino")
+DataPropertyAssertion(oncology-ontology:nombre_persona oncology-ontology:Persona_5 "Ana María")
+
+# Individual: oncology-ontology:Persona_6 (oncology-ontology:Persona_6)
+
+ClassAssertion(oncology-ontology:Persona oncology-ontology:Persona_6)
+ObjectPropertyAssertion(oncology-ontology:puedeHacerceUna oncology-ontology:Persona_6 oncology-ontology:Prueba_diagnostica_08)
+ObjectPropertyAssertion(oncology-ontology:tienenUn oncology-ontology:Persona_6 oncology-ontology:Cancer_05)
+DataPropertyAssertion(oncology-ontology:edad oncology-ontology:Persona_6 "25"^^xsd:integer)
+DataPropertyAssertion(oncology-ontology:genero oncology-ontology:Persona_6 "Femenino")
+DataPropertyAssertion(oncology-ontology:nombre_persona oncology-ontology:Persona_6 "Valeria")
+
+# Individual: oncology-ontology:Persona_7 (oncology-ontology:Persona_7)
+
+ClassAssertion(oncology-ontology:Persona oncology-ontology:Persona_7)
+ObjectPropertyAssertion(oncology-ontology:puedeHacerceUna oncology-ontology:Persona_7 oncology-ontology:Prueba_diagnostica_02)
+ObjectPropertyAssertion(oncology-ontology:tienenUn oncology-ontology:Persona_7 oncology-ontology:Cancer_05)
+DataPropertyAssertion(oncology-ontology:edad oncology-ontology:Persona_7 "20"^^xsd:integer)
+DataPropertyAssertion(oncology-ontology:genero oncology-ontology:Persona_7 "Masculino")
+DataPropertyAssertion(oncology-ontology:nombre_persona oncology-ontology:Persona_7 "Túpac")
+
+# Individual: oncology-ontology:Prueba_diagnostica_01 (oncology-ontology:Prueba_diagnostica_01)
+
+ClassAssertion(oncology-ontology:Examen_de_imagen oncology-ontology:Prueba_diagnostica_01)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_01 oncology-ontology:Cancer_05)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_01 oncology-ontology:Cancer_07)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_01 oncology-ontology:Cancer_09)
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_area_de_evaluacion oncology-ontology:Prueba_diagnostica_01 "cuerpo humano")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_descripcion oncology-ontology:Prueba_diagnostica_01 "Procedimiento que utiliza rayos X para crear imagenes internas de cuerpo, permitiendo visualizar el estado interno del mismo.")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_nombre oncology-ontology:Prueba_diagnostica_01 "Radiografia")
+
+# Individual: oncology-ontology:Prueba_diagnostica_02 (oncology-ontology:Prueba_diagnostica_02)
+
+ClassAssertion(oncology-ontology:Examen_de_imagen oncology-ontology:Prueba_diagnostica_02)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_02 oncology-ontology:Cancer_02)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_02 oncology-ontology:Cancer_03)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_02 oncology-ontology:Cancer_04)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_02 oncology-ontology:Cancer_05)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_02 oncology-ontology:Cancer_06)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_02 oncology-ontology:Cancer_07)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_02 oncology-ontology:Cancer_08)
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_area_de_evaluacion oncology-ontology:Prueba_diagnostica_02 "cuerpo humano")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_descripcion oncology-ontology:Prueba_diagnostica_02 "Tecnica de imagen que utiliza rayos X y un computador para crear imagenes transversales detalladas del cuerpo.")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_nombre oncology-ontology:Prueba_diagnostica_02 "Tomografia computarizada")
+
+# Individual: oncology-ontology:Prueba_diagnostica_03 (oncology-ontology:Prueba_diagnostica_03)
+
+ClassAssertion(oncology-ontology:Examen_de_imagen oncology-ontology:Prueba_diagnostica_03)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_03 oncology-ontology:Cancer_06)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_03 oncology-ontology:Cancer_08)
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_area_de_evaluacion oncology-ontology:Prueba_diagnostica_03 "cuerpo humano")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_descripcion oncology-ontology:Prueba_diagnostica_03 "Tecnica de imagen que usa campos magneticos y ondas de radio para generar imagenes del cuerpo")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_nombre oncology-ontology:Prueba_diagnostica_03 "Resonancia magnetica")
+
+# Individual: oncology-ontology:Prueba_diagnostica_04 (oncology-ontology:Prueba_diagnostica_04)
+
+ClassAssertion(oncology-ontology:Examen_de_imagen oncology-ontology:Prueba_diagnostica_04)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_04 oncology-ontology:Cancer_01)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_04 oncology-ontology:Cancer_03)
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_area_de_evaluacion oncology-ontology:Prueba_diagnostica_04 "musculos, organos")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_descripcion oncology-ontology:Prueba_diagnostica_04 "Utilizo de ondas sonoras de alta frecuencia para crear imagenes en tiempo real")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_nombre oncology-ontology:Prueba_diagnostica_04 "Ultrasonido")
+
+# Individual: oncology-ontology:Prueba_diagnostica_05 (oncology-ontology:Prueba_diagnostica_05)
+
+ClassAssertion(oncology-ontology:Biopsia oncology-ontology:Prueba_diagnostica_05)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_05 oncology-ontology:Cancer_01)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_05 oncology-ontology:Cancer_03)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_05 oncology-ontology:Cancer_04)
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_area_de_evaluacion oncology-ontology:Prueba_diagnostica_05 "organos, ganglios")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_descripcion oncology-ontology:Prueba_diagnostica_05 "Procedimiento para extraer muestras de tejido de una masa o lesion")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_nombre oncology-ontology:Prueba_diagnostica_05 "Biopsia por aguja")
+
+# Individual: oncology-ontology:Prueba_diagnostica_06 (oncology-ontology:Prueba_diagnostica_06)
+
+ClassAssertion(oncology-ontology:Biopsia oncology-ontology:Prueba_diagnostica_06)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_06 oncology-ontology:Cancer_01)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_06 oncology-ontology:Cancer_02)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_06 oncology-ontology:Cancer_05)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_06 oncology-ontology:Cancer_06)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_06 oncology-ontology:Cancer_09)
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_area_de_evaluacion oncology-ontology:Prueba_diagnostica_06 "cuerpo humano")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_descripcion oncology-ontology:Prueba_diagnostica_06 "Extirpacion de una porcion de tejido o lesion completa para su analisis, se realiza bajo anestesia local o general")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_nombre oncology-ontology:Prueba_diagnostica_06 "Biopsia quirurgica")
+
+# Individual: oncology-ontology:Prueba_diagnostica_07 (oncology-ontology:Prueba_diagnostica_07)
+
+ClassAssertion(oncology-ontology:Examen_de_sangre oncology-ontology:Prueba_diagnostica_07)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_07 oncology-ontology:Cancer_06)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_07 oncology-ontology:Cancer_08)
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_area_de_evaluacion oncology-ontology:Prueba_diagnostica_07 "sistema cardiovascular")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_descripcion oncology-ontology:Prueba_diagnostica_07 "Sustancias y/o proteinas en la sangre que indican la presencia de cancer, utilizada para monitorio y deteccion.")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_nombre oncology-ontology:Prueba_diagnostica_07 "Marcadores tumorales")
+
+# Individual: oncology-ontology:Prueba_diagnostica_08 (oncology-ontology:Prueba_diagnostica_08)
+
+ClassAssertion(oncology-ontology:Examen_de_sangre oncology-ontology:Prueba_diagnostica_08)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_08 oncology-ontology:Cancer_05)
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_area_de_evaluacion oncology-ontology:Prueba_diagnostica_08 "sistema circulatorio")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_descripcion oncology-ontology:Prueba_diagnostica_08 "Analisis de sangre que evalua los componentes presentes en la sangre, incluyendo globulos rojos, blancos y plaquetas.")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_nombre oncology-ontology:Prueba_diagnostica_08 "Hemograma completo")
+
+# Individual: oncology-ontology:Prueba_diagnostica_09 (oncology-ontology:Prueba_diagnostica_09)
+
+ClassAssertion(oncology-ontology:Endoscopia oncology-ontology:Prueba_diagnostica_09)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_09 oncology-ontology:Cancer_07)
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_area_de_evaluacion oncology-ontology:Prueba_diagnostica_09 "sistema digestivo")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_nombre oncology-ontology:Prueba_diagnostica_09 "Gastroscopia")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_nombre oncology-ontology:Prueba_diagnostica_09 "Procedimiento endoscopico que permite visualizar el interior del esofago, estomago y duodeno.")
+
+# Individual: oncology-ontology:Prueba_diagnostica_10 (oncology-ontology:Prueba_diagnostica_10)
+
+ClassAssertion(oncology-ontology:Endoscopia oncology-ontology:Prueba_diagnostica_10)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_10 oncology-ontology:Cancer_06)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_10 oncology-ontology:Cancer_08)
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_area_de_evaluacion oncology-ontology:Prueba_diagnostica_10 "sistema digestivo")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_descripcion oncology-ontology:Prueba_diagnostica_10 "Procedimiento endoscopico que permite visualizar el interior del colon y recto utilizando un tubo flexible con una camara")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_nombre oncology-ontology:Prueba_diagnostica_10 "Colonoscopia")
+
+# Individual: oncology-ontology:Prueba_diagnostica_11 (oncology-ontology:Prueba_diagnostica_11)
+
+ClassAssertion(oncology-ontology:Prueba_genetica oncology-ontology:Prueba_diagnostica_11)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_11 oncology-ontology:Cancer_04)
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_area_de_evaluacion oncology-ontology:Prueba_diagnostica_11 "fluidos, teijdos")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_descripcion oncology-ontology:Prueba_diagnostica_11 "Examen del material genetico (ADN) para identificar variaciones o mutaciones asociados con enfermedades hereditarias")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_nombre oncology-ontology:Prueba_diagnostica_11 "Analisis genetico")
+
+# Individual: oncology-ontology:Prueba_diagnostica_12 (oncology-ontology:Prueba_diagnostica_12)
+
+ClassAssertion(oncology-ontology:Examen_fisico oncology-ontology:Prueba_diagnostica_12)
+ObjectPropertyAssertion(oncology-ontology:detecta oncology-ontology:Prueba_diagnostica_12 oncology-ontology:Cancer_09)
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_area_de_evaluacion oncology-ontology:Prueba_diagnostica_12 "cuerpo humano")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_descripcion oncology-ontology:Prueba_diagnostica_12 "Evaluacion fisica realizada por un profesional de la salud para valorar el estado general de un paciente")
+DataPropertyAssertion(oncology-ontology:prueba_diagnostica_nombre oncology-ontology:Prueba_diagnostica_12 "Examen clinico")
+
+# Individual: oncology-ontology:Remedio_Herbal_01 (oncology-ontology:Remedio_Herbal_01)
+
+ClassAssertion(oncology-ontology:Remedio_Herbal oncology-ontology:Remedio_Herbal_01)
+ObjectPropertyAssertion(oncology-ontology:aliviaSintomasDe oncology-ontology:Remedio_Herbal_01 oncology-ontology:Cancer_02)
+DataPropertyAssertion(oncology-ontology:beneficio oncology-ontology:Remedio_Herbal_01 "Alivia el dolor")
+DataPropertyAssertion(oncology-ontology:beneficio oncology-ontology:Remedio_Herbal_01 "Apoya el sistema inmunológico")
+DataPropertyAssertion(oncology-ontology:beneficio oncology-ontology:Remedio_Herbal_01 "Propiedades antioxidantes")
+DataPropertyAssertion(oncology-ontology:beneficio oncology-ontology:Remedio_Herbal_01 "Puede ayudar a reducir el crecimiento tumoral")
+DataPropertyAssertion(oncology-ontology:beneficio oncology-ontology:Remedio_Herbal_01 "Reduce la inflamación")
+DataPropertyAssertion(oncology-ontology:descripcion_remedio oncology-ontology:Remedio_Herbal_01 "La cúrcuma contiene curcumina, un compuesto con propiedades antiinflamatorias y antioxidantes que puede ayudar a reducir la inflamación y el dolor en pacientes con cáncer.")
+DataPropertyAssertion(oncology-ontology:remedio_nombre oncology-ontology:Remedio_Herbal_01 "Cúrcuma")
+
+# Individual: oncology-ontology:Remedio_Herbal_02 (oncology-ontology:Remedio_Herbal_02)
+
+ClassAssertion(oncology-ontology:Remedio_Herbal oncology-ontology:Remedio_Herbal_02)
+ObjectPropertyAssertion(oncology-ontology:aliviaSintomasDe oncology-ontology:Remedio_Herbal_02 oncology-ontology:Cancer_03)
+ObjectPropertyAssertion(oncology-ontology:aliviaSintomasDe oncology-ontology:Remedio_Herbal_02 oncology-ontology:Cancer_07)
+DataPropertyAssertion(oncology-ontology:beneficio oncology-ontology:Remedio_Herbal_02 "Fortalece el sistema inmunológico")
+DataPropertyAssertion(oncology-ontology:beneficio oncology-ontology:Remedio_Herbal_02 "Mejora la digestión")
+DataPropertyAssertion(oncology-ontology:beneficio oncology-ontology:Remedio_Herbal_02 "Propiedades antiinflamatorias")
+DataPropertyAssertion(oncology-ontology:beneficio oncology-ontology:Remedio_Herbal_02 "Reduce el malestar gástrico")
+DataPropertyAssertion(oncology-ontology:beneficio oncology-ontology:Remedio_Herbal_02 "Reduce las náuseas")
+DataPropertyAssertion(oncology-ontology:descripcion_remedio oncology-ontology:Remedio_Herbal_02 "El jengibre se utiliza comúnmente para aliviar las náuseas, un síntoma frecuente durante la quimioterapia. También puede tener propiedades antiinflamatorias.")
+DataPropertyAssertion(oncology-ontology:remedio_nombre oncology-ontology:Remedio_Herbal_02 "Jengibre")
+
+# Individual: oncology-ontology:Remedio_Herbal_03 (oncology-ontology:Remedio_Herbal_03)
+
+ClassAssertion(oncology-ontology:Remedio_Herbal oncology-ontology:Remedio_Herbal_03)
+ObjectPropertyAssertion(oncology-ontology:aliviaSintomasDe oncology-ontology:Remedio_Herbal_03 oncology-ontology:Cancer_05)
+ObjectPropertyAssertion(oncology-ontology:aliviaSintomasDe oncology-ontology:Remedio_Herbal_03 oncology-ontology:Cancer_09)
+DataPropertyAssertion(oncology-ontology:beneficio oncology-ontology:Remedio_Herbal_03 "Apoya la salud cardiovascular")
+DataPropertyAssertion(oncology-ontology:beneficio oncology-ontology:Remedio_Herbal_03 "Ayuda a reducir el crecimiento tumoral")
+DataPropertyAssertion(oncology-ontology:beneficio oncology-ontology:Remedio_Herbal_03 "Mejora el metabolismo")
+DataPropertyAssertion(oncology-ontology:beneficio oncology-ontology:Remedio_Herbal_03 "Propiedades antioxidantes")
+DataPropertyAssertion(oncology-ontology:descripcion_remedio oncology-ontology:Remedio_Herbal_03 "El té verde es rico en catequinas, antioxidantes que ayudan a reducir la proliferación de células cancerígenas.")
+DataPropertyAssertion(oncology-ontology:remedio_nombre oncology-ontology:Remedio_Herbal_03 "Té Verde")
+
+# Individual: oncology-ontology:Remedio_Herbal_04 (oncology-ontology:Remedio_Herbal_04)
+
+ClassAssertion(oncology-ontology:Remedio_Herbal oncology-ontology:Remedio_Herbal_04)
+ObjectPropertyAssertion(oncology-ontology:aliviaSintomasDe oncology-ontology:Remedio_Herbal_04 oncology-ontology:Cancer_01)
+ObjectPropertyAssertion(oncology-ontology:aliviaSintomasDe oncology-ontology:Remedio_Herbal_04 oncology-ontology:Cancer_04)
+DataPropertyAssertion(oncology-ontology:descripcion_remedio oncology-ontology:Remedio_Herbal_04 "Ayuda a prevenir el cáncer")
+DataPropertyAssertion(oncology-ontology:descripcion_remedio oncology-ontology:Remedio_Herbal_04 "El ajo contiene compuestos que estimulan el sistema inmunológico, combatiendo el cáncer y reduciendo su recurrencia.")
+DataPropertyAssertion(oncology-ontology:descripcion_remedio oncology-ontology:Remedio_Herbal_04 "Estimula el sistema inmunológico")
+DataPropertyAssertion(oncology-ontology:descripcion_remedio oncology-ontology:Remedio_Herbal_04 "Mejora la circulación")
+DataPropertyAssertion(oncology-ontology:descripcion_remedio oncology-ontology:Remedio_Herbal_04 "Propiedades anticancerígenas")
+DataPropertyAssertion(oncology-ontology:descripcion_remedio oncology-ontology:Remedio_Herbal_04 "Reduce el crecimiento tumoral")
+DataPropertyAssertion(oncology-ontology:remedio_nombre oncology-ontology:Remedio_Herbal_04 "Ajo")
+
+# Individual: oncology-ontology:Remedio_Herbal_05 (oncology-ontology:Remedio_Herbal_05)
+
+ClassAssertion(oncology-ontology:Remedio_Herbal oncology-ontology:Remedio_Herbal_05)
+ObjectPropertyAssertion(oncology-ontology:aliviaSintomasDe oncology-ontology:Remedio_Herbal_05 oncology-ontology:Cancer_04)
+ObjectPropertyAssertion(oncology-ontology:aliviaSintomasDe oncology-ontology:Remedio_Herbal_05 oncology-ontology:Cancer_05)
+DataPropertyAssertion(oncology-ontology:descripcion_remedio oncology-ontology:Remedio_Herbal_05 "El ginseng es conocido por mejorar la energía y reducir la fatiga en pacientes oncológicos durante el tratamiento.")
+DataPropertyAssertion(oncology-ontology:remedio_nombre oncology-ontology:Remedio_Herbal_05 "Aumenta la energía")
+DataPropertyAssertion(oncology-ontology:remedio_nombre oncology-ontology:Remedio_Herbal_05 "Estimula el sistema inmunológico")
+DataPropertyAssertion(oncology-ontology:remedio_nombre oncology-ontology:Remedio_Herbal_05 "Ginseng")
+DataPropertyAssertion(oncology-ontology:remedio_nombre oncology-ontology:Remedio_Herbal_05 "Mejora la capacidad física")
+DataPropertyAssertion(oncology-ontology:remedio_nombre oncology-ontology:Remedio_Herbal_05 "Reduce el estrés")
+DataPropertyAssertion(oncology-ontology:remedio_nombre oncology-ontology:Remedio_Herbal_05 "Reduce la fatiga")
+
+# Individual: oncology-ontology:Remedio_Herbal_06 (oncology-ontology:Remedio_Herbal_06)
+
+ClassAssertion(oncology-ontology:Remedio_Herbal oncology-ontology:Remedio_Herbal_06)
+ObjectPropertyAssertion(oncology-ontology:aliviaSintomasDe oncology-ontology:Remedio_Herbal_06 oncology-ontology:Cancer_01)
+ObjectPropertyAssertion(oncology-ontology:aliviaSintomasDe oncology-ontology:Remedio_Herbal_06 oncology-ontology:Cancer_06)
+DataPropertyAssertion(oncology-ontology:beneficio oncology-ontology:Remedio_Herbal_06 "Fortalece el sistema inmunológico")
+DataPropertyAssertion(oncology-ontology:beneficio oncology-ontology:Remedio_Herbal_06 "Mejora la cicatrización")
+DataPropertyAssertion(oncology-ontology:beneficio oncology-ontology:Remedio_Herbal_06 "Previene infecciones")
+DataPropertyAssertion(oncology-ontology:beneficio oncology-ontology:Remedio_Herbal_06 "Propiedades antioxidantes")
+DataPropertyAssertion(oncology-ontology:beneficio oncology-ontology:Remedio_Herbal_06 "Reduce la inflamación")
+DataPropertyAssertion(oncology-ontology:descripcion_remedio oncology-ontology:Remedio_Herbal_06 "Fortalece el sistema inmunológico, ayudando a los pacientes de cáncer a combatir infecciones durante el tratamiento.")
+DataPropertyAssertion(oncology-ontology:remedio_nombre oncology-ontology:Remedio_Herbal_06 "Equinácea")
+
+# Individual: oncology-ontology:Sistema_01 (oncology-ontology:Sistema_01)
+
+ClassAssertion(oncology-ontology:Sistema oncology-ontology:Sistema_01)
+DataPropertyAssertion(oncology-ontology:sistema_nombre oncology-ontology:Sistema_01 "Sistema Circulatorio")
+
+# Individual: oncology-ontology:Sistema_02 (oncology-ontology:Sistema_02)
+
+ClassAssertion(oncology-ontology:Sistema oncology-ontology:Sistema_02)
+DataPropertyAssertion(oncology-ontology:sistema_nombre oncology-ontology:Sistema_02 "Sistema Digestivo")
+
+# Individual: oncology-ontology:Sistema_03 (oncology-ontology:Sistema_03)
+
+ClassAssertion(oncology-ontology:Sistema oncology-ontology:Sistema_03)
+DataPropertyAssertion(oncology-ontology:sistema_nombre oncology-ontology:Sistema_03 "Sistema reproductor")
+
+# Individual: oncology-ontology:Sistema_04 (oncology-ontology:Sistema_04)
+
+ClassAssertion(oncology-ontology:Sistema oncology-ontology:Sistema_04)
+DataPropertyAssertion(oncology-ontology:sistema_nombre oncology-ontology:Sistema_04 "Sistema tegumentario")
+
+# Individual: oncology-ontology:Sistema_05 (oncology-ontology:Sistema_05)
+
+ClassAssertion(oncology-ontology:Sistema oncology-ontology:Sistema_05)
+DataPropertyAssertion(oncology-ontology:sistema_nombre oncology-ontology:Sistema_05 "Sistema urinario")
+
+# Individual: oncology-ontology:Sistema_06 (oncology-ontology:Sistema_06)
+
+ClassAssertion(oncology-ontology:Sistema oncology-ontology:Sistema_06)
+DataPropertyAssertion(oncology-ontology:sistema_nombre oncology-ontology:Sistema_06 "Sistema respiratorio")
+
+# Individual: oncology-ontology:Suplemento_Nutricional_01 (oncology-ontology:Suplemento_Nutricional_01)
+
+DataPropertyAssertion(oncology-ontology:caloria_suplemento_nutricional oncology-ontology:Suplemento_Nutricional_01 "150"^^xsd:decimal)
+DataPropertyAssertion(oncology-ontology:fabricante_suplemento_nutricional oncology-ontology:Suplemento_Nutricional_01 "NutriHealth Corp")
+DataPropertyAssertion(oncology-ontology:nombre_suplemento_nutricional oncology-ontology:Suplemento_Nutricional_01 "NutriCervix Plus")
+DataPropertyAssertion(oncology-ontology:proteina_suplemento_nutricional oncology-ontology:Suplemento_Nutricional_01 "20.0"^^xsd:double)
+
+# Individual: oncology-ontology:Suplemento_Nutricional_02 (oncology-ontology:Suplemento_Nutricional_02)
+
+DataPropertyAssertion(oncology-ontology:caloria_suplemento_nutricional oncology-ontology:Suplemento_Nutricional_02 "200"^^xsd:decimal)
+DataPropertyAssertion(oncology-ontology:fabricante_suplemento_nutricional oncology-ontology:Suplemento_Nutricional_02 "Wellness Foods Inc.")
+DataPropertyAssertion(oncology-ontology:nombre_suplemento_nutricional oncology-ontology:Suplemento_Nutricional_02 "ColonSupport Shake")
+DataPropertyAssertion(oncology-ontology:proteina_suplemento_nutricional oncology-ontology:Suplemento_Nutricional_02 "25.0"^^xsd:double)
+
+# Individual: oncology-ontology:Suplemento_Nutricional_03 (oncology-ontology:Suplemento_Nutricional_03)
+
+DataPropertyAssertion(oncology-ontology:caloria_suplemento_nutricional oncology-ontology:Suplemento_Nutricional_03 "180"^^xsd:decimal)
+DataPropertyAssertion(oncology-ontology:fabricante_suplemento_nutricional oncology-ontology:Suplemento_Nutricional_03 "HealthPlus Nutrition")
+DataPropertyAssertion(oncology-ontology:nombre_suplemento_nutricional oncology-ontology:Suplemento_Nutricional_03 "BreastCare Protein")
+DataPropertyAssertion(oncology-ontology:proteina_suplemento_nutricional oncology-ontology:Suplemento_Nutricional_03 "30.0"^^xsd:double)
+
+# Individual: oncology-ontology:Tratamiento_Medico_01 (oncology-ontology:Tratamiento_Medico_01)
+
+ClassAssertion(oncology-ontology:Tratamiento_Medico oncology-ontology:Tratamiento_Medico_01)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_01 oncology-ontology:Cancer_01)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_01 oncology-ontology:Cancer_02)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_01 oncology-ontology:Cancer_03)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_01 oncology-ontology:Cancer_04)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_01 oncology-ontology:Cancer_05)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_01 oncology-ontology:Cancer_06)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_01 oncology-ontology:Cancer_07)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_01 oncology-ontology:Cancer_09)
+DataPropertyAssertion(oncology-ontology:descripcion_tratamiento_medico oncology-ontology:Tratamiento_Medico_01 "La cirugía es un tratamiento común para muchos tipos de cáncer. Durante la operación, el cirujano extrae una masa de células cancerígenas (tumor) y algo de los tejidos circundantes")
+DataPropertyAssertion(oncology-ontology:funcion_tratamiento_medico oncology-ontology:Tratamiento_Medico_01 "La cirugía se lleva a cabo para aliviar los efectos secundarios causados por un tumor")
+DataPropertyAssertion(oncology-ontology:nombre_tratamiento_medico oncology-ontology:Tratamiento_Medico_01 "Cirugía")
+DataPropertyAssertion(oncology-ontology:tipo_tratamiento_medico oncology-ontology:Tratamiento_Medico_01 "Cirugía")
+
+# Individual: oncology-ontology:Tratamiento_Medico_02 (oncology-ontology:Tratamiento_Medico_02)
+
+ClassAssertion(oncology-ontology:Tratamiento_Medico oncology-ontology:Tratamiento_Medico_02)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_02 oncology-ontology:Cancer_03)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_02 oncology-ontology:Cancer_04)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_02 oncology-ontology:Cancer_05)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_02 oncology-ontology:Cancer_07)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_02 oncology-ontology:Cancer_09)
+DataPropertyAssertion(oncology-ontology:descripcion_tratamiento_medico oncology-ontology:Tratamiento_Medico_02 "La cirugía curativa o primaria se hace cuando el cáncer se encuentra únicamente en una parte del cuerpo, y es probable que se pueda extirpar por completo")
+DataPropertyAssertion(oncology-ontology:funcion_tratamiento_medico oncology-ontology:Tratamiento_Medico_02 "El propósito de la cirugía es extirpar el cáncer por completo")
+DataPropertyAssertion(oncology-ontology:nombre_tratamiento_medico oncology-ontology:Tratamiento_Medico_02 "Cirugía curativa")
+DataPropertyAssertion(oncology-ontology:tipo_tratamiento_medico oncology-ontology:Tratamiento_Medico_02 "Cirugía")
+
+# Individual: oncology-ontology:Tratamiento_Medico_03 (oncology-ontology:Tratamiento_Medico_03)
+
+ClassAssertion(oncology-ontology:Tratamiento_Medico oncology-ontology:Tratamiento_Medico_03)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_03 oncology-ontology:Cancer_02)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_03 oncology-ontology:Cancer_05)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_03 oncology-ontology:Cancer_06)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_03 oncology-ontology:Cancer_07)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_03 oncology-ontology:Cancer_08)
+DataPropertyAssertion(oncology-ontology:descripcion_tratamiento_medico oncology-ontology:Tratamiento_Medico_03 "Este tipo de cirugía se realiza para tratar las complicaciones causadas por el cáncer avanzado")
+DataPropertyAssertion(oncology-ontology:funcion_tratamiento_medico oncology-ontology:Tratamiento_Medico_03 "La cirugía paliativa se puede usar con otros tratamientos para corregir un problema que esté causando incomodidad o incapacidad")
+DataPropertyAssertion(oncology-ontology:funcion_tratamiento_medico oncology-ontology:Tratamiento_Medico_03 "La cirugía paliativa también podría usarse para tratar el dolor cuando es difícil controlarlo con medicamentos. Esta operación ayuda a aliviar problemas causados por el cáncer y ayuda a las personas a sentirse mejor, pero debido a que por lo general el cáncer está en una etapa avanzada, no se usa para tratar o curar el cáncer en sí")
+DataPropertyAssertion(oncology-ontology:nombre_tratamiento_medico oncology-ontology:Tratamiento_Medico_03 "Cirugía paliativa")
+DataPropertyAssertion(oncology-ontology:tipo_tratamiento_medico oncology-ontology:Tratamiento_Medico_03 "Cirugía")
+
+# Individual: oncology-ontology:Tratamiento_Medico_04 (oncology-ontology:Tratamiento_Medico_04)
+
+ClassAssertion(oncology-ontology:Tratamiento_Medico oncology-ontology:Tratamiento_Medico_04)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_04 oncology-ontology:Cancer_02)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_04 oncology-ontology:Cancer_04)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_04 oncology-ontology:Cancer_05)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_04 oncology-ontology:Cancer_06)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_04 oncology-ontology:Cancer_08)
+ObjectPropertyAssertion(oncology-ontology:combate oncology-ontology:Tratamiento_Medico_04 oncology-ontology:Cancer_09)
+DataPropertyAssertion(oncology-ontology:descripcion_tratamiento_medico oncology-ontology:Tratamiento_Medico_04 "Se conoce como quimioterapia, de forma genérica, a todos los fármacos que se utilizan clásicamente para el tratamiento del cáncer y que van a interferir en los mecanismos de división de la célula tumoral impidiendo o retrasando el crecimiento del tumor. Estos medicamentos pueden administrarse por vía intravenosa o por vía oral.")
+DataPropertyAssertion(oncology-ontology:efecto_secundario_tratamiento_medico oncology-ontology:Tratamiento_Medico_04 "Algunos medicamentos de quimioterapia pueden dañar las células del corazón, los riñones, la vejiga, los pulmones y el sistema nervioso")
+DataPropertyAssertion(oncology-ontology:efecto_secundario_tratamiento_medico oncology-ontology:Tratamiento_Medico_04 "La causa de los efectos secundarios es el daño ocasionado a las células sanas")
+DataPropertyAssertion(oncology-ontology:nombre_tratamiento_medico oncology-ontology:Tratamiento_Medico_04 "Quimioterapia")
+DataPropertyAssertion(oncology-ontology:tipo_tratamiento_medico oncology-ontology:Tratamiento_Medico_04 "Terapia")
+
+
+DisjointClasses(oncology-ontology:Biopsia oncology-ontology:Endoscopia oncology-ontology:Examen_de_imagen oncology-ontology:Examen_de_sangre oncology-ontology:Examen_fisico oncology-ontology:Prueba_genetica)
+DisjointClasses(oncology-ontology:Cancer oncology-ontology:Centro_medico oncology-ontology:Organo oncology-ontology:Persona oncology-ontology:Sistema oncology-ontology:Tratamiento)
+DisjointClasses(oncology-ontology:Cancer oncology-ontology:Organo oncology-ontology:Prueba_diagnostica oncology-ontology:Sistema)
+DisjointClasses(oncology-ontology:Cuarto_nivel oncology-ontology:Primer_nivel oncology-ontology:Segundo_nivel oncology-ontology:Tercer_nivel)
+DisjointClasses(oncology-ontology:Medicamento oncology-ontology:Tratamiento_Complementario oncology-ontology:Tratamiento_Medico)
+DisjointClasses(oncology-ontology:Medicina_Alternativa oncology-ontology:Medicina_Tradicional oncology-ontology:Suplemento_Alimenticio)
+DisjointClasses(oncology-ontology:Persona oncology-ontology:Prueba_diagnostica oncology-ontology:Sistema)
+)

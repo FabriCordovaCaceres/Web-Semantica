@@ -1,0 +1,2 @@
+1.Se hizo el proceso de diagosticar a un paciente,chequen si ven bien las clases y las relaciones y sus propiedades
+2.Falta hacer la parte de disjoint with de todas las clases(No entendi muy bien esa parte)

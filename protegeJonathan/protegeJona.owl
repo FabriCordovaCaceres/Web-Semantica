@@ -1,0 +1,552 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#asociadoCon -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#asociadoCon">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Resultado_Diagnóstico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Paciente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#basadoEnResultado -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#basadoEnResultado">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Tratamiento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Resultado_Diagnóstico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#esRealizadaPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#esRealizadaPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Consulta_Médica"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Médico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#esReportadoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#esReportadoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Sintoma"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Paciente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#formaParteDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#formaParteDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Examen_Físico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Consulta_Médica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#generaResultado -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#generaResultado">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Prueba_Diagnóstica"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Resultado_Diagnóstico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#generadoPorPrueba -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#generadoPorPrueba">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Resultado_Diagnóstico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Prueba_Diagnóstica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#puedeDerivarEn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#puedeDerivarEn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Consulta_Médica"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Prueba_Diagnóstica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#realizaConsultaMedica -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#realizaConsultaMedica">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Médico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Consulta_Médica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#realizadaA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#realizadaA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Prueba_Diagnóstica"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Paciente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#seEvaluaEn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#seEvaluaEn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Sintoma"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Consulta_Médica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#solicitaPruebaDiagnostica -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#solicitaPruebaDiagnostica">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Médico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Prueba_Diagnóstica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#solicitadaPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#solicitadaPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Prueba_Diagnóstica"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Médico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#tieneConsulta -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#tieneConsulta">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Consulta_Médica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#tieneExamenFisico -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#tieneExamenFisico">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Consulta_Médica"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Examen_Físico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#tieneResultadoDiagnostico -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#tieneResultadoDiagnostico">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Resultado_Diagnóstico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#tieneSintoma -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#tieneSintoma">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Sintoma"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Años_de_Experiencia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Años_de_Experiencia">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Médico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Descripcion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Descripcion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Sintoma"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Diagnóstico_Final -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Diagnóstico_Final">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Resultado_Diagnóstico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Duración -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Duración">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Sintoma"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Duración_Estimada -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Duración_Estimada">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Tratamiento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Edad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Edad">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Especialidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Especialidad">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Médico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Factores_de_Riesgo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Factores_de_Riesgo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Fecha_Consulta -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Fecha_Consulta">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Consulta_Médica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Fecha_de_Diagnóstico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Fecha_de_Diagnóstico">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Resultado_Diagnóstico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Fecha_de_Inicio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Fecha_de_Inicio">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Tratamiento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Fecha_de_Realización -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Fecha_de_Realización">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Prueba_Diagnóstica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Hallazgos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Hallazgos">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Examen_Físico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Historial_Medico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Historial_Medico">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#ID_del_Médico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#ID_del_Médico">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Médico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#ID_del_Paciente -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#ID_del_Paciente">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Localización -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Localización">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Sintoma"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Motivo_Consulta -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Motivo_Consulta">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Consulta_Médica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Nombre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Médico"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Número_de_Licencia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Número_de_Licencia">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Médico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Parte_del_Cuerpo_Evaluada -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Parte_del_Cuerpo_Evaluada">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Examen_Físico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Resultado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Resultado">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Prueba_Diagnóstica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Sexo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Sexo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Sintomas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Sintomas">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Tipo_de_Prueba -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Tipo_de_Prueba">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Prueba_Diagnóstica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Tipo_de_Tratamiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Tipo_de_Tratamiento">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Tratamiento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Consulta_Médica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Consulta_Médica"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Examen_Físico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Examen_Físico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Médico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Médico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Paciente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Paciente"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Prueba_Diagnóstica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Prueba_Diagnóstica"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Resultado_Diagnóstico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Resultado_Diagnóstico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Sintoma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Sintoma"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Tratamiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Tratamiento"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Consulta_Médica"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Examen_Físico"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Médico"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Paciente"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Prueba_Diagnóstica"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Resultado_Diagnóstico"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Sintoma"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jonat/ontologies/2024/9/untitled-ontology-6#Tratamiento"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

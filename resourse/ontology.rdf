@@ -1,0 +1,2381 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies//untitled-ontoloy-10/"
+     xml:base="http://www.semanticweb.org/ontologies//untitled-ontoloy-10/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oncology-ontology="http://www.semanticweb.org/ontologies/oncology-ontology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#pertenece -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#pertenece"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#puedeTenerCancer -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#puedeTenerCancer"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#afectaAUn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#afectaAUn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#afectaOrgano -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#afectaOrgano">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#aliviaSintomasDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#aliviaSintomasDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#ayudaAl -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#ayudaAl">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#combate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#combate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#detecta -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#detecta">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#noPuedeConsumirseEn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#noPuedeConsumirseEn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_Restringuido"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#ofreceTratamiento -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#ofreceTratamiento">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#perteneceA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#perteneceA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#puedeConsumirseEn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#puedeConsumirseEn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_Permitido"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#puedeHacerceUna -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#puedeHacerceUna">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#realizaExamen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#realizaExamen">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#tienenUn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#tienenUn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#advertencia_abandono_tratamiento_medico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#advertencia_abandono_tratamiento_medico">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#alimento_nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#alimento_nombre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#beneficio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#beneficio">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#caloria_suplemento_nutricional -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#caloria_suplemento_nutricional">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Suplemento_Nutricional"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#cancer_nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#cancer_nombre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#celulas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#celulas">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#descripcion_alimento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#descripcion_alimento">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#descripcion_centro_medico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#descripcion_centro_medico">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#descripcion_remedio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#descripcion_remedio">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#descripcion_tratamiento_medico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#descripcion_tratamiento_medico">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#desechos_metabolicos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#desechos_metabolicos">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#desventaja_tratamiento_medico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#desventaja_tratamiento_medico">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#duracion_tratamiento_medico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#duracion_tratamiento_medico">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#edad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#edad">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#efecto_colateral_tratamiento_medico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#efecto_colateral_tratamiento_medico">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#efecto_remedio_herbal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#efecto_remedio_herbal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#efecto_secundario_tratamiento_medico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#efecto_secundario_tratamiento_medico">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#fabricante_medicamento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#fabricante_medicamento">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Medicamento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#fabricante_suplemento_nutricional -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#fabricante_suplemento_nutricional">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Suplemento_Nutricional"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#factores_de_riesgo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#factores_de_riesgo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#fases_del_cancer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#fases_del_cancer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#fibras -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#fibras">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#funcion_medicina_alternativa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#funcion_medicina_alternativa">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Medicina_Alternativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#funcion_remedio_herbal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#funcion_remedio_herbal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#funcion_tratamiento_medico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#funcion_tratamiento_medico">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#ganglios -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#ganglios">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#genero -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#genero">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Persona"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Femenino</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Masculino</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#glandulas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#glandulas">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#nombre_alimento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#nombre_alimento">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#nombre_centro_medico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#nombre_centro_medico">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#nombre_medicamento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#nombre_medicamento">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Medicamento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#nombre_medicina_alternativa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#nombre_medicina_alternativa">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Medicina_Alternativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#nombre_persona -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#nombre_persona">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#nombre_remedio_herbal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#nombre_remedio_herbal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#nombre_suplemento_nutricional -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#nombre_suplemento_nutricional">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Suplemento_Nutricional"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#nombre_tratamiento_medico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#nombre_tratamiento_medico">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#organo_descricion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#organo_descricion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#organo_nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#organo_nombre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#probabilidad_de_mortalidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#probabilidad_de_mortalidad">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#probabilidad_de_recuperacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#probabilidad_de_recuperacion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#probabilidad_supervivencia_tratamiento_medico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#probabilidad_supervivencia_tratamiento_medico">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#proteina_suplemento_nutricional -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#proteina_suplemento_nutricional">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Suplemento_Nutricional"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#prueba_diagnostica_area_de_evaluacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#prueba_diagnostica_area_de_evaluacion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#prueba_diagnostica_descripcion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#prueba_diagnostica_descripcion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#prueba_diagnostica_nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#prueba_diagnostica_nombre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#remedio_nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#remedio_nombre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#riesgo_tratamiento_medico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#riesgo_tratamiento_medico">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#sintoma -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#sintoma">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#sistema_nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#sistema_nombre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#tipo_alimento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#tipo_alimento">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#tipo_medicamento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#tipo_medicamento">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Medicamento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#tipo_tratamiento_medico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#tipo_tratamiento_medico">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#ventaja_tratamiento_medico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#ventaja_tratamiento_medico">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#vitamina -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#vitamina">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Alimento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Suplemento_Alimenticio"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Suplemento_Nutricional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_Permitido -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_Permitido">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_Restringuido"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_Restringuido -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_Restringuido">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Biopsia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Biopsia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Cancer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Cuarto_nivel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Cuarto_nivel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Endoscopia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Endoscopia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Examen_de_imagen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Examen_de_imagen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Examen_de_sangre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Examen_de_sangre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Examen_fisico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Examen_fisico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Medicamento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Medicamento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Medicina_Alternativa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Medicina_Alternativa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Complementario"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Medicina_Tradicional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Medicina_Tradicional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Complementario"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Membrana -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Membrana">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tejido"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tipo_Tejido"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Organo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Organo">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Cumple una funcion dentro de un sistema</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Persona">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Primer_nivel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Primer_nivel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Biopsia"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Endoscopia"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Examen_de_imagen"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Examen_de_sangre"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Examen_fisico"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_genetica"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_genetica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_genetica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Medicina_Tradicional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Segundo_nivel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Segundo_nivel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Sistema -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Suplemento_Alimenticio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Suplemento_Alimenticio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Complementario"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Suplemento_Nutricional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Suplemento_Nutricional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Suplemento_Alimenticio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Tejido -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Tejido">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Tercer_nivel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Tercer_nivel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Tipo_Tejido -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Tipo_Tejido">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tejido"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Complementario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Complementario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_Permitido"/>
+        <oncology-ontology:puedeConsumirseEn rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_04"/>
+        <oncology-ontology:alimento_nombre>Brócoli</oncology-ontology:alimento_nombre>
+        <oncology-ontology:descripcion_alimento>El brócoli es una hortaliza rica en antioxidantes, fibra y compuestos como el sulforafano, que han demostrado tener propiedades anticancerígenas.</oncology-ontology:descripcion_alimento>
+        <oncology-ontology:vitamina>Vitamina A</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Vitamina B6</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Vitamina C</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Vitamina K</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Ácido fólico</oncology-ontology:vitamina>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_Permitido"/>
+        <oncology-ontology:puedeConsumirseEn rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_04"/>
+        <oncology-ontology:alimento_nombre>Zanahoria</oncology-ontology:alimento_nombre>
+        <oncology-ontology:descripcion_alimento>La zanahoria es una fuente excelente de betacarotenos, precursores de la vitamina A, y tiene propiedades antioxidantes que pueden ayudar a combatir el cáncer.</oncology-ontology:descripcion_alimento>
+        <oncology-ontology:vitamina>Vitamina A</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Vitamina B6</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Vitamina B8</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Vitamina C</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Vitamina K</oncology-ontology:vitamina>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_Permitido"/>
+        <oncology-ontology:puedeConsumirseEn rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_04"/>
+        <oncology-ontology:alimento_nombre>Tomate</oncology-ontology:alimento_nombre>
+        <oncology-ontology:descripcion_alimento>El tomate es rico en licopeno, un antioxidante que ha sido vinculado a la reducción del riesgo de cáncer, especialmente en el cáncer de próstata.</oncology-ontology:descripcion_alimento>
+        <oncology-ontology:vitamina>Vitamina A</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Vitamina B6</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Vitamina C</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Vitamina E</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Vitamina K</oncology-ontology:vitamina>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_Permitido"/>
+        <oncology-ontology:puedeConsumirseEn rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_04"/>
+        <oncology-ontology:alimento_nombre>Espinaca</oncology-ontology:alimento_nombre>
+        <oncology-ontology:descripcion_alimento>La espinaca es rica en hierro y antioxidantes, y ha demostrado ayudar a la prevención del cáncer debido a su contenido en flavonoides y otros compuestos antiinflamatorios.</oncology-ontology:descripcion_alimento>
+        <oncology-ontology:vitamina>Vitamina A</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Vitamina C</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Vitamina E</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Vitamina K</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Ácido fólico</oncology-ontology:vitamina>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_Permitido"/>
+        <oncology-ontology:puedeConsumirseEn rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_01"/>
+        <oncology-ontology:puedeConsumirseEn rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_04"/>
+        <oncology-ontology:alimento_nombre>Cúrcuma</oncology-ontology:alimento_nombre>
+        <oncology-ontology:descripcion_alimento>La cúrcuma contiene curcumina, un compuesto que tiene propiedades antiinflamatorias y ha sido estudiado por su posible efecto en la prevención y tratamiento de diversos tipos de cáncer.</oncology-ontology:descripcion_alimento>
+        <oncology-ontology:vitamina>Vitamina B6</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Vitamina C</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Vitamina E</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Vitamina K</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Ácido fólico</oncology-ontology:vitamina>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_06">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_Restringuido"/>
+        <oncology-ontology:noPuedeConsumirseEn rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_04"/>
+        <oncology-ontology:descripcion_alimento>Carne roja</oncology-ontology:descripcion_alimento>
+        <oncology-ontology:descripcion_alimento>La carne roja procesada o en exceso puede aumentar el riesgo de inflamación y está asociada a mayores riesgos en pacientes con cáncer de colon.</oncology-ontology:descripcion_alimento>
+        <oncology-ontology:vitamina>Grasas Saturadas</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Hierro</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Proteninas</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Vitamina B12</oncology-ontology:vitamina>
+        <oncology-ontology:vitamina>Zinc</oncology-ontology:vitamina>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_07 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_07">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_Restringuido"/>
+        <oncology-ontology:noPuedeConsumirseEn rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_04"/>
+        <oncology-ontology:alimento_nombre>Alcohol</oncology-ontology:alimento_nombre>
+        <oncology-ontology:descripcion_alimento>El alcohol en exceso puede debilitar el sistema inmunológico y aumentar el riesgo de recurrencia del cáncer.</oncology-ontology:descripcion_alimento>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_08 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_08">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_Restringuido"/>
+        <oncology-ontology:noPuedeConsumirseEn rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_04"/>
+        <oncology-ontology:alimento_nombre>Azúcar Refinada</oncology-ontology:alimento_nombre>
+        <oncology-ontology:descripcion_alimento>El azúcar refinada puede aumentar los niveles de insulina, lo cual puede favorecer el crecimiento de células cancerosas.</oncology-ontology:descripcion_alimento>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_09 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_09">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_Restringuido"/>
+        <oncology-ontology:noPuedeConsumirseEn rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_04"/>
+        <oncology-ontology:alimento_nombre>Sal</oncology-ontology:alimento_nombre>
+        <oncology-ontology:descripcion_alimento>El consumo excesivo de sal puede aumentar el riesgo de cáncer gástrico y otros problemas relacionados con la salud digestiva.</oncology-ontology:descripcion_alimento>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Alimento_Restringuido"/>
+        <oncology-ontology:noPuedeConsumirseEn rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_04"/>
+        <oncology-ontology:alimento_nombre>Alimentos Fritos</oncology-ontology:alimento_nombre>
+        <oncology-ontology:descripcion_alimento>Los alimentos fritos pueden contener grasas trans que aumentan el riesgo de inflamación y empeoran la condición de pacientes con cáncer.</oncology-ontology:descripcion_alimento>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+        <oncology-ontology:afectaOrgano rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo_10"/>
+        <oncology-ontology:cancer_nombre>Cancer de cervix</oncology-ontology:cancer_nombre>
+        <oncology-ontology:factores_de_riesgo>Infección por virus del papiloma humano (VPH)</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>antecedentes de cáncer cervical en la familia</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>inmunosupresión</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>tabaquismo</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:fases_del_cancer>Estadio 0: Carcinoma in situ.
+Estadio I: Cáncer limitado al cuello uterino.
+Estadio II: Cáncer que se ha diseminado a la parte superior de la vagina o los tejidos alrededor del útero.
+Estadio III: Cáncer que se ha diseminado a la parte inferior de la vagina o las paredes pélvicas.
+Estadio IV: Cáncer metastásico.</oncology-ontology:fases_del_cancer>
+        <oncology-ontology:probabilidad_de_mortalidad>En estadios III y IV, la mortalidad puede ser del 30-50%.</oncology-ontology:probabilidad_de_mortalidad>
+        <oncology-ontology:probabilidad_de_recuperacion>En estadios tempranas (I y II), la tasa de recuperación puede ser del 80-90%. En etapas avanzadas, puede caer por debajo del 50%.</oncology-ontology:probabilidad_de_recuperacion>
+        <oncology-ontology:sintoma>Sangrado vaginal anormal</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>dolor durante las relaciones sexuales</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>dolor pélvico</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>secreción vaginal inusual</oncology-ontology:sintoma>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+        <oncology-ontology:afectaOrgano rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo_02"/>
+        <oncology-ontology:cancer_nombre>Cancer de colon</oncology-ontology:cancer_nombre>
+        <oncology-ontology:factores_de_riesgo>antecedentes familiares</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>dieta baja en fibra y alta en grasas</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>edad avanzada</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>enfermedades inflamatorias del intestino</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:fases_del_cancer>Estadio 0: Carcinoma in situ.
+Estadio I: Tumor en la pared del colon, sin afectación de ganglios linfáticos.
+Estadio II: Tumor más profundo, posiblemente afectando la pared del colon, pero sin afectación de ganglios linfáticos.
+Estadio III: Diseminación a ganglios linfáticos cercanos.
+Estadio IV: Cáncer metastásico.</oncology-ontology:fases_del_cancer>
+        <oncology-ontology:probabilidad_de_mortalidad>En estadios III y IV, la tasa de mortalidad puede ser del 30-50%.</oncology-ontology:probabilidad_de_mortalidad>
+        <oncology-ontology:probabilidad_de_recuperacion>En estadios tempranos (I y II), puede ser del 90%. En estadios avanzados, puede disminuir a 20-30%.</oncology-ontology:probabilidad_de_recuperacion>
+        <oncology-ontology:sintoma>Cambios en los hábitos intestinales</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>dolor abdominal persistente</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>pérdida de peso inexplicada</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>sangrado rectal</oncology-ontology:sintoma>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+        <oncology-ontology:afectaOrgano rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo_05"/>
+        <oncology-ontology:cancer_nombre>Cancer de mama</oncology-ontology:cancer_nombre>
+        <oncology-ontology:factores_de_riesgo>Bulto en el seno</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>cambios en la forma o tamaño del seno</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>piel de naranja en el seno</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>secreción del pezón</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:fases_del_cancer>Estadio 0: Carcinoma in situ (no invasivo).
+Estadio I: Tumor pequeño (≤ 2 cm), sin ganglios linfáticos afectados.
+Estadio II: Tumor más grande (2-5 cm) o ganglios linfáticos afectados.
+Estadio III: Tumor de mayor tamaño y múltiples ganglios linfáticos afectados.
+Estadio IV: Cáncer metastásico (se ha diseminado a otros órganos).</oncology-ontology:fases_del_cancer>
+        <oncology-ontology:probabilidad_de_mortalidad>En etapas avanzadas (III y IV), la tasa de mortalidad puede ser del 20-30%.</oncology-ontology:probabilidad_de_mortalidad>
+        <oncology-ontology:probabilidad_de_recuperacion>En estadios tempranas (I y II), la probabilidad de recuperación es superior al 90%. En etapas avanzadas, puede disminuir considerablemente.</oncology-ontology:probabilidad_de_recuperacion>
+        <oncology-ontology:sintoma>Historia familiar de cáncer de mama</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>consumo de alcohol</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>exposición a radiación</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>mutaciones genéticas (BRCA1, BRCA2)</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>obesidad</oncology-ontology:sintoma>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+        <oncology-ontology:afectaOrgano rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo_08"/>
+        <oncology-ontology:cancer_nombre>Cancer de prostata</oncology-ontology:cancer_nombre>
+        <oncology-ontology:factores_de_riesgo>Edad avanzada</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>dieta alta en grasas</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>historia familiar</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>raza (más común en hombres afroamericanos)</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:fases_del_cancer>Estadio I: Tumor pequeño, no se siente durante un examen rectal.
+Estadio II: Tumor más grande, aún confinado a la próstata.
+Estadio III: Cáncer que se ha diseminado fuera de la próstata pero no a otros órganos.
+Estadio IV: Cáncer que se ha diseminado a otros órganos, como huesos o ganglios linfáticos.</oncology-ontology:fases_del_cancer>
+        <oncology-ontology:probabilidad_de_mortalidad>En estadios III y IV, la mortalidad puede ser del 10-30%.</oncology-ontology:probabilidad_de_mortalidad>
+        <oncology-ontology:probabilidad_de_recuperacion>Alta en estadios tempranos (I y II), con tasas de recuperación del 95% o más. En estadios avanzados, puede bajar a alrededor del 30-40%.</oncology-ontology:probabilidad_de_recuperacion>
+        <oncology-ontology:sintoma>Dificultad para orinar</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>dolor en la pelvis o en la espalda baja</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>flujo de orina débil</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>sangre en la orina</oncology-ontology:sintoma>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+        <oncology-ontology:afectaOrgano rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo_11"/>
+        <oncology-ontology:cancer_nombre>Cancer de pulmon</oncology-ontology:cancer_nombre>
+        <oncology-ontology:factores_de_riesgo>antecedentes familiares de cáncer</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>exposición a asbestos</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>exposición a humo de segunda mano</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>tabaquismo</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:fases_del_cancer>Estadio I: Tumor pequeño, confinado a los pulmones.
+Estadio II: Tumor más grande o diseminación a ganglios linfáticos cercanos.
+Estadio III: Diseminación a ganglios linfáticos en el tórax o estructuras cercanas.
+Estadio IV: Cáncer metastásico.</oncology-ontology:fases_del_cancer>
+        <oncology-ontology:probabilidad_de_mortalidad>Altamente mortal; en estadios avanzados, la tasa de mortalidad puede ser superior al 80%.</oncology-ontology:probabilidad_de_mortalidad>
+        <oncology-ontology:probabilidad_de_recuperacion>En estadios tempranos (I y II), puede ser del 50-70%, pero en estadios avanzados, puede bajar a menos del 5%.</oncology-ontology:probabilidad_de_recuperacion>
+        <oncology-ontology:sintoma>Tos persistente</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>dificultad para respirar</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>dolor en el pecho</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>hemoptisis (tos con sangre)</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>pérdida de peso inexplicada</oncology-ontology:sintoma>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_06">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+        <oncology-ontology:afectaOrgano rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo_01"/>
+        <oncology-ontology:cancer_nombre>Cancer de pancreas</oncology-ontology:cancer_nombre>
+        <oncology-ontology:factores_de_riesgo>antecedentes familiares de cáncer</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>dietas altas en grasas</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>edad avanzada</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>sobrepeso</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>tabaquismo</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:fases_del_cancer>Estadio I: El cáncer está confinado al páncreas.
+Estadio II: El cáncer se ha diseminado a tejidos cercanos o ganglios linfáticos.
+Estadio III: El cáncer se ha diseminado a estructuras cercanas y ganglios linfáticos.
+Estadio IV: El cáncer se ha diseminado a otras partes del cuerpo, como el hígado o los pulmones.</oncology-ontology:fases_del_cancer>
+        <oncology-ontology:probabilidad_de_mortalidad>Aproximadamente el 95% de las personas con cáncer de páncreas en este estadio fallecen dentro de 5 años</oncology-ontology:probabilidad_de_mortalidad>
+        <oncology-ontology:probabilidad_de_recuperacion>Estadio I: La tasa de supervivencia a 5 años es aproximadamente del 39%.
+Estadio II: La tasa de supervivencia a 5 años es aproximadamente del 20-30%.
+Estadio III: La tasa de supervivencia a 5 años es aproximadamente del 10%.
+Estadio IV: La tasa de supervivencia a 5 años es de alrededor del 3%.</oncology-ontology:probabilidad_de_recuperacion>
+        <oncology-ontology:sintoma>dolor abdominal</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>ictericia</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>náuseas y vómitos</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>pérdida de peso inexplicada</oncology-ontology:sintoma>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_07 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_07">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+        <oncology-ontology:afectaOrgano rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo_03"/>
+        <oncology-ontology:cancer_nombre>Cancer de estomago</oncology-ontology:cancer_nombre>
+        <oncology-ontology:factores_de_riesgo>antecedentes familiares de cáncer</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>edad avanzada</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>enfermedades gástricas crónicas</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>obesidad</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>tabaquismo</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:fases_del_cancer>Estadio I: El cáncer está confinado a la mucosa del estómago.
+Estadio II: El cáncer se ha diseminado a las capas más profundas o a los ganglios linfáticos cercanos.
+Estadio III: El cáncer se ha diseminado a estructuras cercanas y ganglios linfáticos.
+Estadio IV: El cáncer se ha diseminado a otros órganos, como el hígado o los pulmones.</oncology-ontology:fases_del_cancer>
+        <oncology-ontology:probabilidad_de_mortalidad>Estadio IV: Aproximadamente el 90% de las personas con cáncer de estómago en este estadio fallecen dentro de 5 años.</oncology-ontology:probabilidad_de_mortalidad>
+        <oncology-ontology:probabilidad_de_recuperacion>Estadio I: La tasa de supervivencia a 5 años es aproximadamente del 68%.
+Estadio II: La tasa de supervivencia a 5 años es aproximadamente del 33-50%.
+Estadio III: La tasa de supervivencia a 5 años es aproximadamente del 10-20%.
+Estadio IV: La tasa de supervivencia a 5 años es menor del 5%.</oncology-ontology:probabilidad_de_recuperacion>
+        <oncology-ontology:sintoma>acidez estomacal o indigestión persistente</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>dolor abdominal</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>fatiga y debilidad</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>náuseas y vómitos</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>pérdida de peso inexplicada</oncology-ontology:sintoma>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_08 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_08">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+        <oncology-ontology:afectaOrgano rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo_04"/>
+        <oncology-ontology:cancer_nombre>Cancer de higado</oncology-ontology:cancer_nombre>
+        <oncology-ontology:factores_de_riesgo>antecedentes familiares de cáncer</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>cirrosis</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>consumo excesivo de alcohol</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>diabetes</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>infección crónica por hepatitis B o C</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>obesidad</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:fases_del_cancer>Estadio I: El cáncer está confinado al hígado y es pequeño.
+Estadio II: El cáncer se ha diseminado a más de un lugar en el hígado o a los ganglios linfáticos cercanos.
+Estadio III: El cáncer se ha diseminado a estructuras cercanas, como vasos sanguíneos o ganglios linfáticos.
+Estadio IV: El cáncer se ha diseminado a otros órganos, como los pulmones o los huesos.</oncology-ontology:fases_del_cancer>
+        <oncology-ontology:probabilidad_de_mortalidad>Estadio IV: Aproximadamente el 90% de las personas con cáncer de hígado en este estadio fallecen dentro de 5 años.</oncology-ontology:probabilidad_de_mortalidad>
+        <oncology-ontology:probabilidad_de_recuperacion>Estadio I: La tasa de supervivencia a 5 años es aproximadamente del 31%.
+Estadio II: La tasa de supervivencia a 5 años es de alrededor del 11-20%.
+Estadio III: La tasa de supervivencia a 5 años es de aproximadamente el 6-11%.
+Estadio IV: La tasa de supervivencia a 5 años es menor del 3%.</oncology-ontology:probabilidad_de_recuperacion>
+        <oncology-ontology:sintoma>dolor abdominal</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>hinchazón abdominal</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>ictericia</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>náuseas y vómitos</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>pérdida de apetito</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>pérdida de peso inexplicada</oncology-ontology:sintoma>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_09 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_09">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+        <oncology-ontology:afectaOrgano rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo_07"/>
+        <oncology-ontology:cancer_nombre>Cancer de piel</oncology-ontology:cancer_nombre>
+        <oncology-ontology:factores_de_riesgo>antecedentes familiares de cáncer</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>edad avanzada</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>exposición a la radiación ultravioleta (UV)</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>exposición a productos químicos</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>sistema inmunológico comprometido</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:factores_de_riesgo>tipo de piel clara</oncology-ontology:factores_de_riesgo>
+        <oncology-ontology:fases_del_cancer>Estadio I: Tumor localizado y pequeño, sin diseminación.
+Estadio II: Tumor más grande, pero aún localizado.
+Estadio III: El cáncer se ha diseminado a los ganglios linfáticos cercanos.
+Estadio IV: El cáncer se ha diseminado a otras partes del cuerpo (metástasis).</oncology-ontology:fases_del_cancer>
+        <oncology-ontology:probabilidad_de_mortalidad>Melanoma: Aunque es menos común que otros tipos, es el más mortal. La mortalidad aumenta significativamente con el estadio.
+CCB y CCE: Generalmente, tienen tasas de mortalidad muy bajas cuando se tratan a tiempo.</oncology-ontology:probabilidad_de_mortalidad>
+        <oncology-ontology:probabilidad_de_recuperacion>Carcinoma de células basocelulares (CCB): Muy alta tasa de curación, generalmente se considera &quot;no mortal&quot;.
+Carcinoma de células escamosas (CCE): Tasa de supervivencia alta si se detecta temprano; tasa de curación superior al 90%.
+Melanoma: La tasa de supervivencia a 5 años varía según el estadio:
+    Estadio I: ~98%
+    Estadio II: ~70-90%
+    Estadio III: ~40-70%
+    Estadio IV: ~15-20%</oncology-ontology:probabilidad_de_recuperacion>
+        <oncology-ontology:sintoma>bultos o protuberancias</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>lesiones que no sanan</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>lunares o manchas nuevas</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>sangrado o costras</oncology-ontology:sintoma>
+        <oncology-ontology:sintoma>textura irregular</oncology-ontology:sintoma>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Primer_nivel"/>
+        <oncology-ontology:ofreceTratamiento rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_01"/>
+        <oncology-ontology:ofreceTratamiento rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_03"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_01"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_03"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_05"/>
+        <oncology-ontology:descripcion_centro_medico>Centro de atención primaria que ofrece servicios médicos generales, pediatría y ginecología. Su enfoque está en la prevención y promoción de la salud en la comunidad.</oncology-ontology:descripcion_centro_medico>
+        <oncology-ontology:nombre_centro_medico>Centro de Salud Las Lomas</oncology-ontology:nombre_centro_medico>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Segundo_nivel"/>
+        <oncology-ontology:ofreceTratamiento rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_04"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_02"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_03"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_04"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_06"/>
+        <oncology-ontology:descripcion_centro_medico>Centro de salud de segundo nivel que ofrece atención especializada en cirugía, medicina interna y pediatría, con servicios de hospitalización.</oncology-ontology:descripcion_centro_medico>
+        <oncology-ontology:nombre_centro_medico>Hospital Bolívar</oncology-ontology:nombre_centro_medico>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico_03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico_03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tercer_nivel"/>
+        <oncology-ontology:ofreceTratamiento rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_01"/>
+        <oncology-ontology:ofreceTratamiento rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_02"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_01"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_02"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_03"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_05"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_06"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_07"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_10"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_11"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_12"/>
+        <oncology-ontology:descripcion_centro_medico>Hospital de tercer nivel que brinda atención médica especializada en diversas áreas, incluyendo servicios de cirugía y medicina interna.</oncology-ontology:descripcion_centro_medico>
+        <oncology-ontology:nombre_centro_medico>Hospital de Clínicas Murillo</oncology-ontology:nombre_centro_medico>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico_04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico_04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Segundo_nivel"/>
+        <oncology-ontology:ofreceTratamiento rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_03"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_01"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_02"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_03"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_04"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_05"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_06"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_07"/>
+        <oncology-ontology:descripcion_centro_medico>Establecimiento de segundo nivel que ofrece atención integral en especialidades como pediatría, ginecología y emergencias.</oncology-ontology:descripcion_centro_medico>
+        <oncology-ontology:nombre_centro_medico>Hospital Juan XXIII</oncology-ontology:nombre_centro_medico>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico_05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico_05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tercer_nivel"/>
+        <oncology-ontology:ofreceTratamiento rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_02"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_01"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_02"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_03"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_04"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_05"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_06"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_07"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_08"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_09"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_10"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_11"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_12"/>
+        <oncology-ontology:descripcion_centro_medico>Hospital de tercer nivel que proporciona atención médica de alta complejidad y especialidades, incluyendo oncología y cirugía avanzada.</oncology-ontology:descripcion_centro_medico>
+        <oncology-ontology:nombre_centro_medico>Hospital Universitario Joaquín Fernández</oncology-ontology:nombre_centro_medico>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico_06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico_06">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cuarto_nivel"/>
+        <oncology-ontology:ofreceTratamiento rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_03"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_01"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_02"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_03"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_04"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_05"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_06"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_07"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_08"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_09"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_10"/>
+        <oncology-ontology:descripcion_centro_medico>Centro especializado en el tratamiento del cáncer, ofreciendo servicios de diagnóstico y terapia oncológica.</oncology-ontology:descripcion_centro_medico>
+        <oncology-ontology:nombre_centro_medico>Instituto Oncológico de Bolivia (IOB)</oncology-ontology:nombre_centro_medico>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico_07 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico_07">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tercer_nivel"/>
+        <oncology-ontology:ofreceTratamiento rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_01"/>
+        <oncology-ontology:ofreceTratamiento rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_03"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_01"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_03"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_05"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_07"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_09"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_11"/>
+        <oncology-ontology:descripcion_centro_medico>Brinda atención en más de 20 especialidades, como cirugía oncológica y neurología.</oncology-ontology:descripcion_centro_medico>
+        <oncology-ontology:nombre_centro_medico>Hospital Japonés</oncology-ontology:nombre_centro_medico>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico_08 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico_08">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tercer_nivel"/>
+        <oncology-ontology:ofreceTratamiento rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_02"/>
+        <oncology-ontology:ofreceTratamiento rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_04"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_02"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_03"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_05"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_09"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_10"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_12"/>
+        <oncology-ontology:descripcion_centro_medico>Especializado en pediatría avanzada, abarca cardiología, neurología y oncología infantil​.</oncology-ontology:descripcion_centro_medico>
+        <oncology-ontology:nombre_centro_medico>Hospital del Niño</oncology-ontology:nombre_centro_medico>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico_09 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico_09">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Primer_nivel"/>
+        <oncology-ontology:ofreceTratamiento rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_01"/>
+        <oncology-ontology:ofreceTratamiento rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_03"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_01"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_03"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_05"/>
+        <oncology-ontology:descripcion_centro_medico>Ofrece servicios básicos de atención primaria a la comunidad rural cercana​.</oncology-ontology:descripcion_centro_medico>
+        <oncology-ontology:nombre_centro_medico>Centro de Salud Itatiqui</oncology-ontology:nombre_centro_medico>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico_10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico_10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Segundo_nivel"/>
+        <oncology-ontology:ofreceTratamiento rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_04"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_02"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_03"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_04"/>
+        <oncology-ontology:realizaExamen rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_06"/>
+        <oncology-ontology:descripcion_centro_medico>Brinda atención en medicina interna, cirugía y especialidades básicas. Se enfoca en la atención ambulatoria y hospitalización de mediana complejidad​.</oncology-ontology:descripcion_centro_medico>
+        <oncology-ontology:nombre_centro_medico>Hospital Municipal La Merced</oncology-ontology:nombre_centro_medico>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Medicamento_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Medicamento_01">
+        <oncology-ontology:fabricante_medicamento>Mylan</oncology-ontology:fabricante_medicamento>
+        <oncology-ontology:nombre_medicamento>Cisplatino</oncology-ontology:nombre_medicamento>
+        <oncology-ontology:tipo_medicamento>Quimioterapia</oncology-ontology:tipo_medicamento>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Medicamento_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Medicamento_02">
+        <oncology-ontology:fabricante_medicamento>Hospira</oncology-ontology:fabricante_medicamento>
+        <oncology-ontology:nombre_medicamento>5-fluorouracilo (5-FU)</oncology-ontology:nombre_medicamento>
+        <oncology-ontology:tipo_medicamento>Quimioterapia</oncology-ontology:tipo_medicamento>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Medicamento_03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Medicamento_03">
+        <oncology-ontology:fabricante_medicamento>Genentech/Roche</oncology-ontology:fabricante_medicamento>
+        <oncology-ontology:nombre_medicamento>Trastuzumab</oncology-ontology:nombre_medicamento>
+        <oncology-ontology:tipo_medicamento>Quimioterapia</oncology-ontology:tipo_medicamento>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Organo_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Organo_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+        <oncology-ontology:perteneceA rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_02"/>
+        <oncology-ontology:glandulas>endocrinas</oncology-ontology:glandulas>
+        <oncology-ontology:organo_descricion>El páncreas es una glándula situada detrás del estómago, que cumple dos funciones principales: la producción de enzimas que ayudan en la digestión de los alimentos y la producción de hormonas, como la insulina, que regula los niveles de azúcar en la sangre.</oncology-ontology:organo_descricion>
+        <oncology-ontology:organo_nombre>Pancreas</oncology-ontology:organo_nombre>
+        <oncology-ontology:pertenece rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Organo_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Organo_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+        <oncology-ontology:perteneceA rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_02"/>
+        <oncology-ontology:fibras>insolubles</oncology-ontology:fibras>
+        <oncology-ontology:fibras>musculares</oncology-ontology:fibras>
+        <oncology-ontology:fibras>solubles</oncology-ontology:fibras>
+        <oncology-ontology:ganglios>linfatico interno</oncology-ontology:ganglios>
+        <oncology-ontology:glandulas>exocrinas</oncology-ontology:glandulas>
+        <oncology-ontology:organo_descricion>El colon es la parte más larga del intestino grueso. Su función es absorber agua y sales de los alimentos parcialmente digeridos que llegan del intestino delgado, y formar y almacenar las heces para su posterior eliminación a través del recto.</oncology-ontology:organo_descricion>
+        <oncology-ontology:organo_nombre>Colon</oncology-ontology:organo_nombre>
+        <oncology-ontology:pertenece rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Organo_03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Organo_03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+        <oncology-ontology:perteneceA rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_02"/>
+        <oncology-ontology:fibras>musculares</oncology-ontology:fibras>
+        <oncology-ontology:ganglios>linfatico interno</oncology-ontology:ganglios>
+        <oncology-ontology:glandulas>exocrinas</oncology-ontology:glandulas>
+        <oncology-ontology:organo_descricion>El estómago es un órgano en forma de saco ubicado en la parte superior del abdomen. Su función principal es descomponer los alimentos mediante la acción de ácidos gástricos y enzimas digestivas para facilitar la absorción de nutrientes en el intestino delgado.</oncology-ontology:organo_descricion>
+        <oncology-ontology:organo_nombre>Estomago</oncology-ontology:organo_nombre>
+        <oncology-ontology:pertenece rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Organo_04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Organo_04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+        <oncology-ontology:perteneceA rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_02"/>
+        <oncology-ontology:celulas>adipositos</oncology-ontology:celulas>
+        <oncology-ontology:desechos_metabolicos>Acido urico</oncology-ontology:desechos_metabolicos>
+        <oncology-ontology:desechos_metabolicos>amoniaco</oncology-ontology:desechos_metabolicos>
+        <oncology-ontology:desechos_metabolicos>urea</oncology-ontology:desechos_metabolicos>
+        <oncology-ontology:ganglios>linfatico interno</oncology-ontology:ganglios>
+        <oncology-ontology:organo_descricion>órgano vital que filtra la sangre, procesa nutrientes y desintoxica sustancias. Produce bilis y almacena vitaminas, siendo clave en el metabolismo de carbohidratos, grasas y proteínas.</oncology-ontology:organo_descricion>
+        <oncology-ontology:organo_nombre>Higado</oncology-ontology:organo_nombre>
+        <oncology-ontology:pertenece rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Organo_05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Organo_05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+        <oncology-ontology:perteneceA rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_03"/>
+        <oncology-ontology:glandulas>exocrinas</oncology-ontology:glandulas>
+        <oncology-ontology:organo_descricion>Las mamas, o senos, son glándulas situadas en la parte superior del pecho. Su función principal es la producción de leche materna en las mujeres, pero también contienen tejido graso y tejido conectivo. Están formadas por lóbulos, lobulillos y conductos.</oncology-ontology:organo_descricion>
+        <oncology-ontology:organo_nombre>Mama</oncology-ontology:organo_nombre>
+        <oncology-ontology:pertenece rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Organo_06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Organo_06">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+        <oncology-ontology:perteneceA rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_03"/>
+        <oncology-ontology:glandulas>endocrinas</oncology-ontology:glandulas>
+        <oncology-ontology:organo_descricion>Los ovarios son dos glándulas reproductoras femeninas, situadas a ambos lados del útero en la pelvis. Producen óvulos para la fertilización y también liberan hormonas como el estrógeno y la progesterona, que regulan el ciclo menstrual y el embarazo.</oncology-ontology:organo_descricion>
+        <oncology-ontology:organo_nombre>Ovarios</oncology-ontology:organo_nombre>
+        <oncology-ontology:pertenece rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Organo_07 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Organo_07">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+        <oncology-ontology:perteneceA rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_04"/>
+        <oncology-ontology:celulas>cutaneas</oncology-ontology:celulas>
+        <oncology-ontology:celulas>queratinocitos</oncology-ontology:celulas>
+        <oncology-ontology:desechos_metabolicos>agua</oncology-ontology:desechos_metabolicos>
+        <oncology-ontology:desechos_metabolicos>sales</oncology-ontology:desechos_metabolicos>
+        <oncology-ontology:ganglios>linfaticos perifericos</oncology-ontology:ganglios>
+        <oncology-ontology:glandulas>exocrinas</oncology-ontology:glandulas>
+        <oncology-ontology:organo_descricion>órgano más grande del cuerpo, que actúa como barrera protectora. Regula la temperatura, permite la sensación y ayuda en la producción de vitamina D. Además, protege contra infecciones y deshidratación.</oncology-ontology:organo_descricion>
+        <oncology-ontology:organo_nombre>Piel</oncology-ontology:organo_nombre>
+        <oncology-ontology:pertenece rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_04"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Organo_08 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Organo_08">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+        <oncology-ontology:perteneceA rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_03"/>
+        <oncology-ontology:ganglios>linfaticos internos</oncology-ontology:ganglios>
+        <oncology-ontology:organo_descricion>La próstata es una glándula pequeña en los hombres, situada debajo de la vejiga y delante del recto. Su función principal es producir líquido prostático, que es parte del semen, y desempeña un papel en la fertilidad al ayudar en el transporte y la nutrición de los espermatozoides.</oncology-ontology:organo_descricion>
+        <oncology-ontology:organo_nombre>Prostata</oncology-ontology:organo_nombre>
+        <oncology-ontology:pertenece rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Organo_09 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Organo_09">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+        <oncology-ontology:perteneceA rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_05"/>
+        <oncology-ontology:celulas>adipositos</oncology-ontology:celulas>
+        <oncology-ontology:desechos_metabolicos>acido urico</oncology-ontology:desechos_metabolicos>
+        <oncology-ontology:desechos_metabolicos>agua</oncology-ontology:desechos_metabolicos>
+        <oncology-ontology:desechos_metabolicos>creatina</oncology-ontology:desechos_metabolicos>
+        <oncology-ontology:desechos_metabolicos>sales</oncology-ontology:desechos_metabolicos>
+        <oncology-ontology:desechos_metabolicos>urea</oncology-ontology:desechos_metabolicos>
+        <oncology-ontology:organo_descricion>Los riñones son dos órganos en forma de frijol situados a ambos lados de la columna vertebral, en la parte posterior del abdomen. Su función principal es filtrar la sangre para eliminar desechos y exceso de líquidos, que luego se excretan como orina. También regulan el equilibrio de electrolitos y la presión arterial.</oncology-ontology:organo_descricion>
+        <oncology-ontology:organo_nombre>Riñones</oncology-ontology:organo_nombre>
+        <oncology-ontology:organo_nombre>suprarrenales</oncology-ontology:organo_nombre>
+        <oncology-ontology:pertenece rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_05"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Organo_10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Organo_10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+        <oncology-ontology:perteneceA rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_03"/>
+        <oncology-ontology:fibras>musculares</oncology-ontology:fibras>
+        <oncology-ontology:ganglios>linfaticos internos</oncology-ontology:ganglios>
+        <oncology-ontology:organo_descricion>El útero es un órgano muscular hueco en forma de pera, ubicado en la pelvis femenina. Es el lugar donde se desarrolla el feto durante el embarazo. Su revestimiento, el endometrio, se desprende durante la menstruación si no hay embarazo.</oncology-ontology:organo_descricion>
+        <oncology-ontology:organo_nombre>Utero</oncology-ontology:organo_nombre>
+        <oncology-ontology:pertenece rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Organo_11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Organo_11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+        <oncology-ontology:perteneceA rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_06"/>
+        <oncology-ontology:desechos_metabolicos>agua</oncology-ontology:desechos_metabolicos>
+        <oncology-ontology:desechos_metabolicos>dioxido de carbono</oncology-ontology:desechos_metabolicos>
+        <oncology-ontology:fibras>musculares</oncology-ontology:fibras>
+        <oncology-ontology:ganglios>mediastinicos</oncology-ontology:ganglios>
+        <oncology-ontology:organo_descricion>Los pulmones son órganos esponjosos ubicados en el tórax, responsables del intercambio de gases</oncology-ontology:organo_descricion>
+        <oncology-ontology:organo_nombre>Pulmon</oncology-ontology:organo_nombre>
+        <oncology-ontology:pertenece rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_06"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Persona_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Persona_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Persona"/>
+        <oncology-ontology:puedeHacerceUna rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_01"/>
+        <oncology-ontology:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</oncology-ontology:edad>
+        <oncology-ontology:genero>Masculino</oncology-ontology:genero>
+        <oncology-ontology:nombre_persona>Juan</oncology-ontology:nombre_persona>
+        <oncology-ontology:puedeTenerCancer rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_05"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Persona_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Persona_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Persona"/>
+        <oncology-ontology:puedeHacerceUna rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_08"/>
+        <oncology-ontology:tienenUn rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_05"/>
+        <oncology-ontology:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</oncology-ontology:edad>
+        <oncology-ontology:genero>Femenino</oncology-ontology:genero>
+        <oncology-ontology:nombre_persona>Guadalupe</oncology-ontology:nombre_persona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Persona_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Persona_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Persona"/>
+        <oncology-ontology:puedeHacerceUna rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_02"/>
+        <oncology-ontology:tienenUn rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_05"/>
+        <oncology-ontology:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</oncology-ontology:edad>
+        <oncology-ontology:genero>Masculino</oncology-ontology:genero>
+        <oncology-ontology:nombre_persona>Maximiliano</oncology-ontology:nombre_persona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Persona_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Persona_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Persona"/>
+        <oncology-ontology:puedeHacerceUna rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_06"/>
+        <oncology-ontology:tienenUn rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_05"/>
+        <oncology-ontology:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</oncology-ontology:edad>
+        <oncology-ontology:genero>Masculino</oncology-ontology:genero>
+        <oncology-ontology:nombre_persona>Diego</oncology-ontology:nombre_persona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Persona_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Persona_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Persona"/>
+        <oncology-ontology:puedeHacerceUna rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_06"/>
+        <oncology-ontology:tienenUn rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_05"/>
+        <oncology-ontology:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</oncology-ontology:edad>
+        <oncology-ontology:genero>Femenino</oncology-ontology:genero>
+        <oncology-ontology:nombre_persona>Ana María</oncology-ontology:nombre_persona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Persona_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Persona_6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Persona"/>
+        <oncology-ontology:puedeHacerceUna rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_08"/>
+        <oncology-ontology:tienenUn rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_05"/>
+        <oncology-ontology:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</oncology-ontology:edad>
+        <oncology-ontology:genero>Femenino</oncology-ontology:genero>
+        <oncology-ontology:nombre_persona>Valeria</oncology-ontology:nombre_persona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Persona_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Persona_7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Persona"/>
+        <oncology-ontology:puedeHacerceUna rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_02"/>
+        <oncology-ontology:tienenUn rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_05"/>
+        <oncology-ontology:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</oncology-ontology:edad>
+        <oncology-ontology:genero>Masculino</oncology-ontology:genero>
+        <oncology-ontology:nombre_persona>Túpac</oncology-ontology:nombre_persona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Examen_de_imagen"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_05"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_07"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_09"/>
+        <oncology-ontology:prueba_diagnostica_area_de_evaluacion>cuerpo humano</oncology-ontology:prueba_diagnostica_area_de_evaluacion>
+        <oncology-ontology:prueba_diagnostica_descripcion>Procedimiento que utiliza rayos X para crear imagenes internas de cuerpo, permitiendo visualizar el estado interno del mismo.</oncology-ontology:prueba_diagnostica_descripcion>
+        <oncology-ontology:prueba_diagnostica_nombre>Radiografia</oncology-ontology:prueba_diagnostica_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Examen_de_imagen"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_02"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_03"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_04"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_05"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_06"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_07"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_08"/>
+        <oncology-ontology:prueba_diagnostica_area_de_evaluacion>cuerpo humano</oncology-ontology:prueba_diagnostica_area_de_evaluacion>
+        <oncology-ontology:prueba_diagnostica_descripcion>Tecnica de imagen que utiliza rayos X y un computador para crear imagenes transversales detalladas del cuerpo.</oncology-ontology:prueba_diagnostica_descripcion>
+        <oncology-ontology:prueba_diagnostica_nombre>Tomografia computarizada</oncology-ontology:prueba_diagnostica_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Examen_de_imagen"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_06"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_08"/>
+        <oncology-ontology:prueba_diagnostica_area_de_evaluacion>cuerpo humano</oncology-ontology:prueba_diagnostica_area_de_evaluacion>
+        <oncology-ontology:prueba_diagnostica_descripcion>Tecnica de imagen que usa campos magneticos y ondas de radio para generar imagenes del cuerpo</oncology-ontology:prueba_diagnostica_descripcion>
+        <oncology-ontology:prueba_diagnostica_nombre>Resonancia magnetica</oncology-ontology:prueba_diagnostica_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Examen_de_imagen"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_01"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_03"/>
+        <oncology-ontology:prueba_diagnostica_area_de_evaluacion>musculos, organos</oncology-ontology:prueba_diagnostica_area_de_evaluacion>
+        <oncology-ontology:prueba_diagnostica_descripcion>Utilizo de ondas sonoras de alta frecuencia para crear imagenes en tiempo real</oncology-ontology:prueba_diagnostica_descripcion>
+        <oncology-ontology:prueba_diagnostica_nombre>Ultrasonido</oncology-ontology:prueba_diagnostica_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Biopsia"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_01"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_03"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_04"/>
+        <oncology-ontology:prueba_diagnostica_area_de_evaluacion>organos, ganglios</oncology-ontology:prueba_diagnostica_area_de_evaluacion>
+        <oncology-ontology:prueba_diagnostica_descripcion>Procedimiento para extraer muestras de tejido de una masa o lesion</oncology-ontology:prueba_diagnostica_descripcion>
+        <oncology-ontology:prueba_diagnostica_nombre>Biopsia por aguja</oncology-ontology:prueba_diagnostica_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_06">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Biopsia"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_01"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_02"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_05"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_06"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_09"/>
+        <oncology-ontology:prueba_diagnostica_area_de_evaluacion>cuerpo humano</oncology-ontology:prueba_diagnostica_area_de_evaluacion>
+        <oncology-ontology:prueba_diagnostica_descripcion>Extirpacion de una porcion de tejido o lesion completa para su analisis, se realiza bajo anestesia local o general</oncology-ontology:prueba_diagnostica_descripcion>
+        <oncology-ontology:prueba_diagnostica_nombre>Biopsia quirurgica</oncology-ontology:prueba_diagnostica_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_07 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_07">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Examen_de_sangre"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_06"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_08"/>
+        <oncology-ontology:prueba_diagnostica_area_de_evaluacion>sistema cardiovascular</oncology-ontology:prueba_diagnostica_area_de_evaluacion>
+        <oncology-ontology:prueba_diagnostica_descripcion>Sustancias y/o proteinas en la sangre que indican la presencia de cancer, utilizada para monitorio y deteccion.</oncology-ontology:prueba_diagnostica_descripcion>
+        <oncology-ontology:prueba_diagnostica_nombre>Marcadores tumorales</oncology-ontology:prueba_diagnostica_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_08 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_08">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Examen_de_sangre"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_05"/>
+        <oncology-ontology:prueba_diagnostica_area_de_evaluacion>sistema circulatorio</oncology-ontology:prueba_diagnostica_area_de_evaluacion>
+        <oncology-ontology:prueba_diagnostica_descripcion>Analisis de sangre que evalua los componentes presentes en la sangre, incluyendo globulos rojos, blancos y plaquetas.</oncology-ontology:prueba_diagnostica_descripcion>
+        <oncology-ontology:prueba_diagnostica_nombre>Hemograma completo</oncology-ontology:prueba_diagnostica_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_09 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_09">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Endoscopia"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_07"/>
+        <oncology-ontology:prueba_diagnostica_area_de_evaluacion>sistema digestivo</oncology-ontology:prueba_diagnostica_area_de_evaluacion>
+        <oncology-ontology:prueba_diagnostica_nombre>Gastroscopia</oncology-ontology:prueba_diagnostica_nombre>
+        <oncology-ontology:prueba_diagnostica_nombre>Procedimiento endoscopico que permite visualizar el interior del esofago, estomago y duodeno.</oncology-ontology:prueba_diagnostica_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Endoscopia"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_06"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_08"/>
+        <oncology-ontology:prueba_diagnostica_area_de_evaluacion>sistema digestivo</oncology-ontology:prueba_diagnostica_area_de_evaluacion>
+        <oncology-ontology:prueba_diagnostica_descripcion>Procedimiento endoscopico que permite visualizar el interior del colon y recto utilizando un tubo flexible con una camara</oncology-ontology:prueba_diagnostica_descripcion>
+        <oncology-ontology:prueba_diagnostica_nombre>Colonoscopia</oncology-ontology:prueba_diagnostica_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_genetica"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_04"/>
+        <oncology-ontology:prueba_diagnostica_area_de_evaluacion>fluidos, teijdos</oncology-ontology:prueba_diagnostica_area_de_evaluacion>
+        <oncology-ontology:prueba_diagnostica_descripcion>Examen del material genetico (ADN) para identificar variaciones o mutaciones asociados con enfermedades hereditarias</oncology-ontology:prueba_diagnostica_descripcion>
+        <oncology-ontology:prueba_diagnostica_nombre>Analisis genetico</oncology-ontology:prueba_diagnostica_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica_12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Examen_fisico"/>
+        <oncology-ontology:detecta rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_09"/>
+        <oncology-ontology:prueba_diagnostica_area_de_evaluacion>cuerpo humano</oncology-ontology:prueba_diagnostica_area_de_evaluacion>
+        <oncology-ontology:prueba_diagnostica_descripcion>Evaluacion fisica realizada por un profesional de la salud para valorar el estado general de un paciente</oncology-ontology:prueba_diagnostica_descripcion>
+        <oncology-ontology:prueba_diagnostica_nombre>Examen clinico</oncology-ontology:prueba_diagnostica_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal"/>
+        <oncology-ontology:aliviaSintomasDe rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_02"/>
+        <oncology-ontology:beneficio>Alivia el dolor</oncology-ontology:beneficio>
+        <oncology-ontology:beneficio>Apoya el sistema inmunológico</oncology-ontology:beneficio>
+        <oncology-ontology:beneficio>Propiedades antioxidantes</oncology-ontology:beneficio>
+        <oncology-ontology:beneficio>Puede ayudar a reducir el crecimiento tumoral</oncology-ontology:beneficio>
+        <oncology-ontology:beneficio>Reduce la inflamación</oncology-ontology:beneficio>
+        <oncology-ontology:descripcion_remedio>La cúrcuma contiene curcumina, un compuesto con propiedades antiinflamatorias y antioxidantes que puede ayudar a reducir la inflamación y el dolor en pacientes con cáncer.</oncology-ontology:descripcion_remedio>
+        <oncology-ontology:remedio_nombre>Cúrcuma</oncology-ontology:remedio_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal"/>
+        <oncology-ontology:aliviaSintomasDe rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_03"/>
+        <oncology-ontology:aliviaSintomasDe rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_07"/>
+        <oncology-ontology:beneficio>Fortalece el sistema inmunológico</oncology-ontology:beneficio>
+        <oncology-ontology:beneficio>Mejora la digestión</oncology-ontology:beneficio>
+        <oncology-ontology:beneficio>Propiedades antiinflamatorias</oncology-ontology:beneficio>
+        <oncology-ontology:beneficio>Reduce el malestar gástrico</oncology-ontology:beneficio>
+        <oncology-ontology:beneficio>Reduce las náuseas</oncology-ontology:beneficio>
+        <oncology-ontology:descripcion_remedio>El jengibre se utiliza comúnmente para aliviar las náuseas, un síntoma frecuente durante la quimioterapia. También puede tener propiedades antiinflamatorias.</oncology-ontology:descripcion_remedio>
+        <oncology-ontology:remedio_nombre>Jengibre</oncology-ontology:remedio_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal_03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal_03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal"/>
+        <oncology-ontology:aliviaSintomasDe rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_05"/>
+        <oncology-ontology:aliviaSintomasDe rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_09"/>
+        <oncology-ontology:beneficio>Apoya la salud cardiovascular</oncology-ontology:beneficio>
+        <oncology-ontology:beneficio>Ayuda a reducir el crecimiento tumoral</oncology-ontology:beneficio>
+        <oncology-ontology:beneficio>Mejora el metabolismo</oncology-ontology:beneficio>
+        <oncology-ontology:beneficio>Propiedades antioxidantes</oncology-ontology:beneficio>
+        <oncology-ontology:descripcion_remedio>El té verde es rico en catequinas, antioxidantes que ayudan a reducir la proliferación de células cancerígenas.</oncology-ontology:descripcion_remedio>
+        <oncology-ontology:remedio_nombre>Té Verde</oncology-ontology:remedio_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal_04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal_04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal"/>
+        <oncology-ontology:aliviaSintomasDe rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_01"/>
+        <oncology-ontology:aliviaSintomasDe rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_04"/>
+        <oncology-ontology:descripcion_remedio>Ayuda a prevenir el cáncer</oncology-ontology:descripcion_remedio>
+        <oncology-ontology:descripcion_remedio>El ajo contiene compuestos que estimulan el sistema inmunológico, combatiendo el cáncer y reduciendo su recurrencia.</oncology-ontology:descripcion_remedio>
+        <oncology-ontology:descripcion_remedio>Estimula el sistema inmunológico</oncology-ontology:descripcion_remedio>
+        <oncology-ontology:descripcion_remedio>Mejora la circulación</oncology-ontology:descripcion_remedio>
+        <oncology-ontology:descripcion_remedio>Propiedades anticancerígenas</oncology-ontology:descripcion_remedio>
+        <oncology-ontology:descripcion_remedio>Reduce el crecimiento tumoral</oncology-ontology:descripcion_remedio>
+        <oncology-ontology:remedio_nombre>Ajo</oncology-ontology:remedio_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal_05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal_05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal"/>
+        <oncology-ontology:aliviaSintomasDe rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_04"/>
+        <oncology-ontology:aliviaSintomasDe rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_05"/>
+        <oncology-ontology:descripcion_remedio>El ginseng es conocido por mejorar la energía y reducir la fatiga en pacientes oncológicos durante el tratamiento.</oncology-ontology:descripcion_remedio>
+        <oncology-ontology:remedio_nombre>Aumenta la energía</oncology-ontology:remedio_nombre>
+        <oncology-ontology:remedio_nombre>Estimula el sistema inmunológico</oncology-ontology:remedio_nombre>
+        <oncology-ontology:remedio_nombre>Ginseng</oncology-ontology:remedio_nombre>
+        <oncology-ontology:remedio_nombre>Mejora la capacidad física</oncology-ontology:remedio_nombre>
+        <oncology-ontology:remedio_nombre>Reduce el estrés</oncology-ontology:remedio_nombre>
+        <oncology-ontology:remedio_nombre>Reduce la fatiga</oncology-ontology:remedio_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal_06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal_06">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Remedio_Herbal"/>
+        <oncology-ontology:aliviaSintomasDe rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_01"/>
+        <oncology-ontology:aliviaSintomasDe rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_06"/>
+        <oncology-ontology:beneficio>Fortalece el sistema inmunológico</oncology-ontology:beneficio>
+        <oncology-ontology:beneficio>Mejora la cicatrización</oncology-ontology:beneficio>
+        <oncology-ontology:beneficio>Previene infecciones</oncology-ontology:beneficio>
+        <oncology-ontology:beneficio>Propiedades antioxidantes</oncology-ontology:beneficio>
+        <oncology-ontology:beneficio>Reduce la inflamación</oncology-ontology:beneficio>
+        <oncology-ontology:descripcion_remedio>Fortalece el sistema inmunológico, ayudando a los pacientes de cáncer a combatir infecciones durante el tratamiento.</oncology-ontology:descripcion_remedio>
+        <oncology-ontology:remedio_nombre>Equinácea</oncology-ontology:remedio_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema"/>
+        <oncology-ontology:sistema_nombre>Sistema Circulatorio</oncology-ontology:sistema_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema"/>
+        <oncology-ontology:sistema_nombre>Sistema Digestivo</oncology-ontology:sistema_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema"/>
+        <oncology-ontology:sistema_nombre>Sistema reproductor</oncology-ontology:sistema_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema"/>
+        <oncology-ontology:sistema_nombre>Sistema tegumentario</oncology-ontology:sistema_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema"/>
+        <oncology-ontology:sistema_nombre>Sistema urinario</oncology-ontology:sistema_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema_06">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema"/>
+        <oncology-ontology:sistema_nombre>Sistema respiratorio</oncology-ontology:sistema_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Suplemento_Nutricional_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Suplemento_Nutricional_01">
+        <oncology-ontology:caloria_suplemento_nutricional rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">150</oncology-ontology:caloria_suplemento_nutricional>
+        <oncology-ontology:fabricante_suplemento_nutricional>NutriHealth Corp</oncology-ontology:fabricante_suplemento_nutricional>
+        <oncology-ontology:nombre_suplemento_nutricional>NutriCervix Plus</oncology-ontology:nombre_suplemento_nutricional>
+        <oncology-ontology:proteina_suplemento_nutricional rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.0</oncology-ontology:proteina_suplemento_nutricional>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Suplemento_Nutricional_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Suplemento_Nutricional_02">
+        <oncology-ontology:caloria_suplemento_nutricional rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200</oncology-ontology:caloria_suplemento_nutricional>
+        <oncology-ontology:fabricante_suplemento_nutricional>Wellness Foods Inc.</oncology-ontology:fabricante_suplemento_nutricional>
+        <oncology-ontology:nombre_suplemento_nutricional>ColonSupport Shake</oncology-ontology:nombre_suplemento_nutricional>
+        <oncology-ontology:proteina_suplemento_nutricional rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.0</oncology-ontology:proteina_suplemento_nutricional>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Suplemento_Nutricional_03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Suplemento_Nutricional_03">
+        <oncology-ontology:caloria_suplemento_nutricional rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">180</oncology-ontology:caloria_suplemento_nutricional>
+        <oncology-ontology:fabricante_suplemento_nutricional>HealthPlus Nutrition</oncology-ontology:fabricante_suplemento_nutricional>
+        <oncology-ontology:nombre_suplemento_nutricional>BreastCare Protein</oncology-ontology:nombre_suplemento_nutricional>
+        <oncology-ontology:proteina_suplemento_nutricional rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.0</oncology-ontology:proteina_suplemento_nutricional>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_01"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_02"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_03"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_04"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_05"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_06"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_07"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_09"/>
+        <oncology-ontology:descripcion_tratamiento_medico>La cirugía es un tratamiento común para muchos tipos de cáncer. Durante la operación, el cirujano extrae una masa de células cancerígenas (tumor) y algo de los tejidos circundantes</oncology-ontology:descripcion_tratamiento_medico>
+        <oncology-ontology:funcion_tratamiento_medico>La cirugía se lleva a cabo para aliviar los efectos secundarios causados por un tumor</oncology-ontology:funcion_tratamiento_medico>
+        <oncology-ontology:nombre_tratamiento_medico>Cirugía</oncology-ontology:nombre_tratamiento_medico>
+        <oncology-ontology:tipo_tratamiento_medico>Cirugía</oncology-ontology:tipo_tratamiento_medico>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_03"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_04"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_05"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_07"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_09"/>
+        <oncology-ontology:descripcion_tratamiento_medico>La cirugía curativa o primaria se hace cuando el cáncer se encuentra únicamente en una parte del cuerpo, y es probable que se pueda extirpar por completo</oncology-ontology:descripcion_tratamiento_medico>
+        <oncology-ontology:funcion_tratamiento_medico>El propósito de la cirugía es extirpar el cáncer por completo</oncology-ontology:funcion_tratamiento_medico>
+        <oncology-ontology:nombre_tratamiento_medico>Cirugía curativa</oncology-ontology:nombre_tratamiento_medico>
+        <oncology-ontology:tipo_tratamiento_medico>Cirugía</oncology-ontology:tipo_tratamiento_medico>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_02"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_05"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_06"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_07"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_08"/>
+        <oncology-ontology:descripcion_tratamiento_medico>Este tipo de cirugía se realiza para tratar las complicaciones causadas por el cáncer avanzado</oncology-ontology:descripcion_tratamiento_medico>
+        <oncology-ontology:funcion_tratamiento_medico>La cirugía paliativa se puede usar con otros tratamientos para corregir un problema que esté causando incomodidad o incapacidad</oncology-ontology:funcion_tratamiento_medico>
+        <oncology-ontology:funcion_tratamiento_medico>La cirugía paliativa también podría usarse para tratar el dolor cuando es difícil controlarlo con medicamentos. Esta operación ayuda a aliviar problemas causados por el cáncer y ayuda a las personas a sentirse mejor, pero debido a que por lo general el cáncer está en una etapa avanzada, no se usa para tratar o curar el cáncer en sí</oncology-ontology:funcion_tratamiento_medico>
+        <oncology-ontology:nombre_tratamiento_medico>Cirugía paliativa</oncology-ontology:nombre_tratamiento_medico>
+        <oncology-ontology:tipo_tratamiento_medico>Cirugía</oncology-ontology:tipo_tratamiento_medico>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico_04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_02"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_04"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_05"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_06"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_08"/>
+        <oncology-ontology:combate rdf:resource="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer_09"/>
+        <oncology-ontology:descripcion_tratamiento_medico>Se conoce como quimioterapia, de forma genérica, a todos los fármacos que se utilizan clásicamente para el tratamiento del cáncer y que van a interferir en los mecanismos de división de la célula tumoral impidiendo o retrasando el crecimiento del tumor. Estos medicamentos pueden administrarse por vía intravenosa o por vía oral.</oncology-ontology:descripcion_tratamiento_medico>
+        <oncology-ontology:efecto_secundario_tratamiento_medico>Algunos medicamentos de quimioterapia pueden dañar las células del corazón, los riñones, la vejiga, los pulmones y el sistema nervioso</oncology-ontology:efecto_secundario_tratamiento_medico>
+        <oncology-ontology:efecto_secundario_tratamiento_medico>La causa de los efectos secundarios es el daño ocasionado a las células sanas</oncology-ontology:efecto_secundario_tratamiento_medico>
+        <oncology-ontology:nombre_tratamiento_medico>Quimioterapia</oncology-ontology:nombre_tratamiento_medico>
+        <oncology-ontology:tipo_tratamiento_medico>Terapia</oncology-ontology:tipo_tratamiento_medico>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Biopsia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Endoscopia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Examen_de_imagen"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Examen_de_sangre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Examen_fisico"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_genetica"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Centro_medico"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Persona"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Cancer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Organo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Cuarto_nivel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Primer_nivel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Segundo_nivel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Tercer_nivel"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Medicamento"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Complementario"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Tratamiento_Medico"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Medicina_Alternativa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Medicina_Tradicional"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Suplemento_Alimenticio"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Persona"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Prueba_diagnostica"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/oncology-ontology#Sistema"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
